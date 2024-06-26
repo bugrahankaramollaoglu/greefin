@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "840668605334",
+    "project_id": "greefin-95a5a",
+    "storage_bucket": "greefin-95a5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840668605334:android:95ef1c2dc0869a7c130bb7",
+        "android_client_info": {
+          "package_name": "com.oua.greefin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgCQuU1452wuGL3_lr3Fv-I7Evfy0wcxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
