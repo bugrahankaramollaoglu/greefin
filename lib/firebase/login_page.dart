@@ -1,10 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:greefin/auth.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/main.dart';
 
-import 'home_page.dart';
+import '../home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -219,6 +221,10 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
+  Widget _ouathRow() {
+    return Row();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -241,6 +247,7 @@ class _LoginPageState extends State<LoginPage> {
               _submitButton(),
               _loginOrRegisterButton(),
               _divider(),
+              _ouathRow(),
             ],
           ),
         ),
