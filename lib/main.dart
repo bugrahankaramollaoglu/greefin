@@ -26,15 +26,12 @@ class GreefinApp extends StatefulWidget {
 class _GreefinAppState extends State<GreefinApp> {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
       home: const FirebaseAuth(),
-      getPages: [
-        GetPage(name: '/', page: () => const LoginPage()),
-      ],
     );
   }
 }
