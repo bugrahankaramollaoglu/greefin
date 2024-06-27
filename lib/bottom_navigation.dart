@@ -25,7 +25,7 @@ class _BottomNavState extends State<BottomNav> {
     });
     if (_selectedIndex == 1) {
       // Navigator.pushNamed(context, '/track');
-      Get.to(() => LoginPage());
+      // Get.to(() => LoginPage());
       // Get.offAll(() => FirebaseAuthPage());
     } else if (_selectedIndex == 2) {
       Navigator.pushNamed(context, '/track');
