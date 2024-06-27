@@ -1,8 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/main.dart';
 
@@ -221,8 +223,52 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
+  Future<void> _signInWithGoogle() async {
+    final GoogleSignIn _googleSignIn = GoogleSignIn();
+
+    try {
+      final GoogleSignInAccount? googleSignInAccount =
+          await _googleSignIn.signIn();
+
+      if (googleSignInAccount != null) {
+        final GoogleSignInAuthentication googleAuth =
+            await googleSignInAccount.authentication;
+
+        final credential = GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken,
+          idToken: googleAuth.idToken,
+        );
+
+        final UserCredential userCredential =
+            await FirebaseAuth.instance.signInWithCredential(credential);
+
+        if (userCredential.user != null) {
+          Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (context) => const HomePage()),
+            (route) => false,
+          );
+        }
+      } else {
+        _showToast('Google Sign-In canceled.');
+      }
+    } catch (e) {
+      print('hatta: $e');
+    }
+  }
+
   Widget _ouathRow() {
-    return Row();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        IconButton(
+            onPressed: _signInWithGoogle,
+            icon: Icon(
+              FontAwesomeIcons.google,
+              color: Colors.white,
+            )),
+      ],
+    );
   }
 
   @override
