@@ -16,7 +16,7 @@ class _FirebaseAuthState extends State<FirebaseAuth> {
     return StreamBuilder(
       stream: Auth().authStateChanges,
       builder: (context, snapshot) {
-        if (!snapshot.hasData) {
+        if (snapshot.hasData) {
           return const HomePage();
         } else {
           return const LoginPage();

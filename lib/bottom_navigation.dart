@@ -32,43 +32,63 @@ class _BottomNavState extends State<BottomNav> {
       _selectedIndex = index;
     });
     if (_selectedIndex == 1) {
-      _signOut().then((_) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => LoginPage()),
-        );
-      });
+      // _signOut().then((_) {
+      //   Navigator.pushReplacement(
+      //     context,
+      //     MaterialPageRoute(builder: (context) => LoginPage()),
+      //   );
+      // });
     } else if (_selectedIndex == 2) {
-      Navigator.pushNamed(context, '/track');
-    } else if (_selectedIndex == 3) {
       Navigator.pushNamed(context, '/track');
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      currentIndex: _selectedIndex,
-      backgroundColor: Colors.white.withOpacity(0.3),
-      selectedItemColor: Colors.white,
-      unselectedItemColor: Colors.black,
-      selectedFontSize: 20,
-      elevation: 20,
-      onTap: _onItemTapped, // Assign the callback function
-      items: const [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'home',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.money),
-          label: 'track',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.camera),
-          label: 'camera',
-        ),
-      ],
+    return Scaffold(
+      body: Stack(
+        children: [
+          Center(
+            child: _widgetOptions.elementAt(_selectedIndex),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: ClipPath(
+              clipper: CustomClipPath(),
+              child: Container(
+                height: 80,
+                color: Colors.blue,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.home,
+                          color: _selectedIndex == 0
+                              ? Colors.white
+                              : Colors.black),
+                      onPressed: () => _onItemTapped(0),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.person,
+                          color: _selectedIndex == 1
+                              ? Colors.white
+                              : Colors.black),
+                      onPressed: () => _onItemTapped(1),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.notifications,
+                          color: _selectedIndex == 2
+                              ? Colors.white
+                              : Colors.black),
+                      onPressed: () => _onItemTapped(2),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
