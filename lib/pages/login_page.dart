@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -92,11 +91,11 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Future<void> _signInWithGoogle() async {
-    final GoogleSignIn _googleSignIn = GoogleSignIn();
+    final GoogleSignIn googleSignIn = GoogleSignIn();
 
     try {
       final GoogleSignInAccount? googleSignInAccount =
-          await _googleSignIn.signIn();
+          await googleSignIn.signIn();
 
       if (googleSignInAccount != null) {
         final GoogleSignInAuthentication googleAuth =
@@ -113,7 +112,7 @@ class _LoginPageState extends State<LoginPage> {
         if (userCredential.user != null) {
           Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(builder: (context) => HomePage()),
+            MaterialPageRoute(builder: (context) => const HomePage()),
             (route) => false,
           );
         }

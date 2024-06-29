@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_onboarding_slider/background_final_button.dart';
 import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
 import 'package:greefin/pages/login_page.dart';
 
-final Color kDarkBlueColor = const Color(0xFF053149);
+const Color kDarkBlueColor = Color(0xFF053149);
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -12,7 +11,12 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OnBoardingSlider(
-      finishButtonText: 'Register',
+      finishButtonText: 'Start',
+      finishButtonTextStyle: const TextStyle(
+        color: Colors.black,
+        fontSize: 18.0,
+        fontWeight: FontWeight.w600,
+      ),
       onFinish: () {
         Navigator.push(
           context,
@@ -21,38 +25,28 @@ class OnboardingPage extends StatelessWidget {
           ),
         );
       },
-      centerBackground: true,
-      finishButtonStyle: FinishButtonStyle(
-        backgroundColor: kDarkBlueColor,
+      trailing: Container(
+        color: const Color.fromARGB(255, 24, 24, 26),
       ),
-      skipTextButton: Text(
+      centerBackground: true,
+      finishButtonStyle: const FinishButtonStyle(
+        backgroundColor: Colors.lightGreenAccent,
+        focusColor: Colors.black,
+        splashColor: Colors.white,
+        foregroundColor: Colors.black,
+      ),
+      skipTextButton: const Text(
         'Skip',
         style: TextStyle(
           fontSize: 16,
-          color: kDarkBlueColor,
+          color: Colors.white,
           fontWeight: FontWeight.w600,
         ),
       ),
-      trailing: Text(
-        'Login',
-        style: TextStyle(
-          fontSize: 16,
-          color: kDarkBlueColor,
-          fontWeight: FontWeight.w600,
-        ),
-      ),
-      trailingFunction: () {
-        Navigator.push(
-          context,
-          CupertinoPageRoute(
-            builder: (context) => const LoginPage(),
-          ),
-        );
-      },
       controllerColor: kDarkBlueColor,
       totalPage: 6,
-      headerBackgroundColor: Colors.white,
-      pageBackgroundColor: Colors.white,
+      headerBackgroundColor: const Color.fromARGB(255, 24, 24, 26),
+      pageBackgroundColor: const Color.fromARGB(255, 24, 24, 26),
       background: [
         Image.asset(
           'assets/greefin.png',
@@ -79,13 +73,12 @@ class OnboardingPage extends StatelessWidget {
           height: 400,
         ),
       ],
-      speed: 1.8,
+      speed: 1.4,
       pageBodies: [
         OnboardingPageTemplate(
           context,
           'Welcome to Greefin',
           'Greefin is a platform that helps you to manage your finances and investments.',
-          isFirst: true,
         ),
         OnboardingPageTemplate(
           context,
@@ -118,46 +111,39 @@ class OnboardingPage extends StatelessWidget {
 }
 
 Widget OnboardingPageTemplate(
-  BuildContext context,
-  String title,
-  String description, {
-  bool isFirst = false,
-}) {
-  return !isFirst
-      ? Container(
-          alignment: Alignment.center,
-          width: MediaQuery.of(context).size.width,
-          padding: const EdgeInsets.symmetric(horizontal: 40),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              const SizedBox(
-                height: 480,
-              ),
-              Text(
-                title,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: kDarkBlueColor,
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Text(
-                description,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black26,
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ],
+    BuildContext context, String title, String description) {
+  return Container(
+      alignment: Alignment.center,
+      width: MediaQuery.of(context).size.width,
+      padding: const EdgeInsets.symmetric(horizontal: 40),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          const SizedBox(
+            height: 480,
           ),
-        )
-      : Container();
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: kDarkBlueColor,
+              fontSize: 24.0,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Text(
+            description,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontSize: 18.0,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
+      ));
 }

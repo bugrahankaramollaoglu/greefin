@@ -1,9 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
 import 'package:greefin/auth.dart';
 import 'package:greefin/onboarding.dart';
-import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/pages/login_page.dart';
 
 class FirebaseRouter extends StatefulWidget {
@@ -24,9 +21,9 @@ class _FirebaseRouterState extends State<FirebaseRouter> {
         }
         if (snapshot.hasData) {
           // return HomePage();
-          return OnboardingPage();
+          return const OnboardingPage();
         }
-        return LoginPage();
+        return const LoginPage();
       },
     );
   }

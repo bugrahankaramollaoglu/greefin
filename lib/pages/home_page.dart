@@ -4,7 +4,7 @@ import 'package:greefin/auth.dart';
 import 'package:greefin/pages/login_page.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         WidgetsBinding.instance.addPostFrameCallback((_) {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => LoginPage()),
+            MaterialPageRoute(builder: (context) => const LoginPage()),
           );
         });
       }
