@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/firebase_options.dart';
-import 'package:greefin/pages/firabase_router.dart';
+import 'package:greefin/pages/firebase_router.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:riverpod/riverpod.dart';
 
