@@ -21,6 +21,7 @@ class OnboardingPage extends StatelessWidget {
           ),
         );
       },
+      centerBackground: true,
       finishButtonStyle: FinishButtonStyle(
         backgroundColor: kDarkBlueColor,
       ),
@@ -54,27 +55,27 @@ class OnboardingPage extends StatelessWidget {
       pageBackgroundColor: Colors.white,
       background: [
         Image.asset(
-          'assets/slide_3.png',
+          'assets/greefin.png',
           height: 400,
         ),
         Image.asset(
-          'assets/slide_3.png',
+          'assets/greefin.png',
           height: 400,
         ),
         Image.asset(
-          'assets/slide_3.png',
+          'assets/greefin.png',
           height: 400,
         ),
         Image.asset(
-          'assets/slide_3.png',
+          'assets/greefin.png',
           height: 400,
         ),
         Image.asset(
-          'assets/slide_3.png',
+          'assets/greefin.png',
           height: 400,
         ),
         Image.asset(
-          'assets/slide_3.png',
+          'assets/greefin.png',
           height: 400,
         ),
       ],
@@ -84,6 +85,7 @@ class OnboardingPage extends StatelessWidget {
           context,
           'Welcome to Greefin',
           'Greefin is a platform that helps you to manage your finances and investments.',
+          isFirst: true,
         ),
         OnboardingPageTemplate(
           context,
@@ -116,40 +118,46 @@ class OnboardingPage extends StatelessWidget {
 }
 
 Widget OnboardingPageTemplate(
-    BuildContext context, String title, String description) {
-  return Container(
-    alignment: Alignment.center,
-    width: MediaQuery.of(context).size.width,
-    padding: const EdgeInsets.symmetric(horizontal: 40),
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
-        const SizedBox(
-          height: 480,
-        ),
-        Text(
-          title,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: kDarkBlueColor,
-            fontSize: 24.0,
-            fontWeight: FontWeight.w600,
+  BuildContext context,
+  String title,
+  String description, {
+  bool isFirst = false,
+}) {
+  return !isFirst
+      ? Container(
+          alignment: Alignment.center,
+          width: MediaQuery.of(context).size.width,
+          padding: const EdgeInsets.symmetric(horizontal: 40),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              const SizedBox(
+                height: 480,
+              ),
+              Text(
+                title,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: kDarkBlueColor,
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Text(
+                description,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black26,
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
           ),
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        Text(
-          description,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.black26,
-            fontSize: 18.0,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ],
-    ),
-  );
+        )
+      : Container();
 }
