@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:greefin/auth.dart';
+import 'package:greefin/pages/auth.dart';
 import 'package:greefin/pages/login_page.dart';
 
 class HomePage extends StatefulWidget {

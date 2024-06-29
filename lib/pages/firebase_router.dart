@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:greefin/auth.dart';
+import 'package:greefin/deneme.dart';
+import 'package:greefin/pages/auth.dart';
 import 'package:greefin/onboarding.dart';
+import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/pages/login_page.dart';
 
 class FirebaseRouter extends StatefulWidget {
@@ -20,8 +22,7 @@ class _FirebaseRouterState extends State<FirebaseRouter> {
           return const CircularProgressIndicator();
         }
         if (snapshot.hasData) {
-          // return HomePage();
-          return const OnboardingPage();
+          return DenemePage();
         }
         return const LoginPage();
       },

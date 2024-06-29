@@ -1,12 +1,25 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
+import 'package:greefin/pages/firebase_router.dart';
 import 'package:greefin/pages/login_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 const Color kDarkBlueColor = Color(0xFF053149);
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
+
+  Future<void> _completeOnboarding(BuildContext context) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('onboardingCompleted', true);
+    Navigator.pushReplacement(
+      context,
+      CupertinoPageRoute(
+        builder: (context) => const FirebaseRouter(),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +30,7 @@ class OnboardingPage extends StatelessWidget {
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
       ),
-      onFinish: () {
-        Navigator.push(
-          context,
-          CupertinoPageRoute(
-            builder: (context) => const LoginPage(),
-          ),
-        );
-      },
+      onFinish: () => _completeOnboarding(context),
       trailing: Container(
         color: const Color.fromARGB(255, 24, 24, 26),
       ),

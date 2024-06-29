@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:greefin/auth.dart';
+import 'package:greefin/pages/auth.dart';
 import 'package:greefin/pages/home_page.dart';
 
 class LoginPage extends StatefulWidget {
