@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/firebase/login_page.dart';
-import 'package:greefin/home_page.dart';
+import 'package:greefin/onboarding.dart';
 
 class FirebaseAuth extends StatefulWidget {
   const FirebaseAuth({super.key});
@@ -17,7 +17,8 @@ class _FirebaseAuthState extends State<FirebaseAuth> {
       stream: Auth().authStateChanges,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return const HomePage();
+          return const OnboardingScreen();
+          // return const HomePage();
         } else {
           return const LoginPage();
         }

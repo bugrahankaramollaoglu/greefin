@@ -1,10 +1,10 @@
+// main.dart
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:greefin/firebase/firebase_options.dart';
-import 'package:greefin/firebase/login_page.dart';
 import 'package:greefin/home_page.dart';
+import 'package:greefin/onboarding.dart';
+import 'package:greefin/shared_preferences.dart';
 
 import 'firebase/firebase_auth.dart';
 
@@ -24,6 +24,21 @@ class GreefinApp extends StatefulWidget {
 }
 
 class _GreefinAppState extends State<GreefinApp> {
+  bool _isOpenedBefore = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadIsOpenedStatus();
+  }
+
+  Future<void> _loadIsOpenedStatus() async {
+    final isOpened = await loadIsOpened('isOpenedBefore');
+    setState(() {
+      _isOpenedBefore = isOpened ?? false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,7 +46,7 @@ class _GreefinAppState extends State<GreefinApp> {
       theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: const FirebaseAuth(),
+      home: _isOpenedBefore ? FirebaseAuth() : OnboardingScreen(),
     );
   }
 }
