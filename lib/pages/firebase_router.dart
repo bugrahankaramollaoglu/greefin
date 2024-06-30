@@ -22,7 +22,7 @@ class _FirebaseRouterState extends State<FirebaseRouter> {
           return const CircularProgressIndicator();
         }
         if (snapshot.hasData) {
-          return DenemePage();
+          return HomePage();
         }
         return const LoginPage();
       },
