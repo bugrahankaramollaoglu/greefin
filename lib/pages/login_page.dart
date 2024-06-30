@@ -1,3 +1,4 @@
+import 'package:auth_button_kit/auth_button_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -5,6 +6,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/onboarding.dart';
 import 'package:greefin/pages/home_page.dart';
+import 'package:neumorphic_button/neumorphic_button.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -15,7 +17,6 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String? errorMessage;
-  bool isLogin = true;
 
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
@@ -88,32 +89,34 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _loginButton() {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        backgroundColor: Color.fromARGB(255, 39, 155, 42),
-      ),
-      onPressed: _signInWithEmailAndPassword,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Text('Login',
-            style: const TextStyle(color: kDarkBlueColor, fontSize: 20)),
-      ),
+    return AuthButton(
+      onPressed: (method) => _signInWithEmailAndPassword(),
+      brand: Method.custom,
+      customImage: Image.asset('assets/signin.png'),
+      text: 'Login',
+      backgroundColor: Colors.green,
     );
   }
 
-  Widget _switchButton() {
-    return TextButton(
-      onPressed: () {
-        setState(() {
-          isLogin = !isLogin;
-        });
-      },
-      child: Text(isLogin
-          ? 'Don\'t have an account? Sign up'
-          : 'Already have an account? Sign in'),
+  Widget _registerButton() {
+    return AuthButton(
+      onPressed: (method) => _createUserWithEmailAndPassword(),
+      brand: Method.custom,
+      customImage: Image.asset('assets/signup.png'),
+      text: 'Register',
+      backgroundColor: Colors.blue,
+    );
+  }
+
+  Widget _guestButton() {
+    return AuthButton(
+      onPressed: (method) => Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+        (route) => false,
+      ),
+      brand: Method.custom,
+      text: 'Continue as Guest',
     );
   }
 
@@ -272,18 +275,11 @@ class _LoginPageState extends State<LoginPage> {
                       errorMessageWidget(),
                       const SizedBox(height: 20),
                       _loginButton(),
-                      const SizedBox(height: 20),
-                      _switchButton(),
-                      const SizedBox(height: 10),
-                      TextButton(
-                        onPressed: () {
-                          // Add forgot password functionality here
-                        },
-                        child: const Text('Forgot Password?'),
-                      ),
-                      const SizedBox(height: 20),
+                      _registerButton(),
+                      _guestButton(),
+                      const SizedBox(height: 30),
                       _divider(),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                       _oauthRow(),
                     ],
                   ),

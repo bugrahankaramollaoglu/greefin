@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
       case _SelectedTab.main:
         return MainPage();
       case _SelectedTab.stats:
-        return MyHomePage();
+        return StatsPage();
       case _SelectedTab.add:
         return AddPage();
       case _SelectedTab.green:
