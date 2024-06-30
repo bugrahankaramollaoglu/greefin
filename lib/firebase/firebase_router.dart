@@ -29,3 +29,12 @@ class _FirebaseRouterState extends State<FirebaseRouter> {
     );
   }
 }
+
+class HomePage2 extends StatelessWidget {
+  const HomePage2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}

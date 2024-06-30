@@ -2,7 +2,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/bottom_navigation.dart';
 import 'package:greefin/firebase/auth.dart';
+import 'package:greefin/pages/add_page.dart';
+import 'package:greefin/pages/green_page.dart';
 import 'package:greefin/pages/login_page.dart';
+import 'package:greefin/pages/main_page.dart';
+import 'package:greefin/pages/profile_page.dart';
+import 'package:greefin/pages/stats_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,12 +21,12 @@ class _HomePageState extends State<HomePage> {
   User? user;
   int _selectedIndex = 0;
 
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text('Home Page'),
-    Text('Search Page'),
-    Text('Add Page'),
-    Text('Green Page'),
-    Text('Profile Page'),
+  static const List<Widget> _bottomPages = <Widget>[
+    MainPage(),
+    StatsPage(),
+    AddPage(),
+    GreenPage(),
+    ProfilePage(),
   ];
 
   void _onItemTapped(int index) {
@@ -56,13 +61,7 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
-            child: _widgetOptions.elementAt(_selectedIndex),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              _auth.signOut();
-            },
-            child: const Text('Sign Out'),
+            child: _bottomPages.elementAt(_selectedIndex),
           ),
         ],
       ),
