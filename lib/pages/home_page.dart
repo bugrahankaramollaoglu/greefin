@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/bottom_navigation.dart';
-import 'package:greefin/pages/auth.dart';
+import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/login_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,7 +19,8 @@ class _HomePageState extends State<HomePage> {
   static const List<Widget> _widgetOptions = <Widget>[
     Text('Home Page'),
     Text('Search Page'),
-    Text('Search Page'),
+    Text('Add Page'),
+    Text('Green Page'),
     Text('Profile Page'),
   ];
 

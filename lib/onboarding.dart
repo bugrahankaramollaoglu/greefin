@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
-import 'package:greefin/pages/firebase_router.dart';
+import 'package:greefin/firebase/firebase_router.dart';
 import 'package:greefin/pages/login_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

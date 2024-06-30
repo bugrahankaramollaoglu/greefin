@@ -38,10 +38,11 @@ class _BottomNavState extends State<BottomNav> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            _buildNavItem(Icons.home, 0),
-            _buildNavItem(Icons.search, 1),
-            _buildNavItem(Icons.search, 2),
-            _buildNavItem(Icons.person, 3),
+            _buildNavItem(Icons.home_rounded, 0),
+            _buildNavItem(Icons.analytics_rounded, 1),
+            _buildNavItem(Icons.add_rounded, 2),
+            _buildNavItem(Icons.energy_savings_leaf_rounded, 3),
+            _buildNavItem(Icons.person_rounded, 4),
           ],
         ),
       ),

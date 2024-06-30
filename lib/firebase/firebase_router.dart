@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greefin/deneme.dart';
-import 'package:greefin/pages/auth.dart';
+import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/onboarding.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/pages/login_page.dart';
