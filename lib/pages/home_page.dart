@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   static const List<Widget> _widgetOptions = <Widget>[
     Text('Home Page'),
     Text('Search Page'),
+    Text('Search Page'),
     Text('Profile Page'),
   ];
 
@@ -64,7 +65,10 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNav(),
+      bottomNavigationBar: BottomNav(
+        selectedIndex: _selectedIndex,
+        onItemTapped: _onItemTapped,
+      ),
     );
   }
 }
