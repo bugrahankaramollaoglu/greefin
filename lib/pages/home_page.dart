@@ -1,7 +1,6 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/add_page.dart';
 import 'package:greefin/pages/green_page.dart';
@@ -9,6 +8,7 @@ import 'package:greefin/pages/login_page.dart';
 import 'package:greefin/pages/main_page.dart';
 import 'package:greefin/pages/profile_page.dart';
 import 'package:greefin/pages/stats_page.dart';
+import 'package:iconly/iconly.dart';
 
 enum _SelectedTab { main, stats, add, green, profile }
 
@@ -91,9 +91,9 @@ class _HomePageState extends State<HomePage> {
             unselectedIcon: IconlyLight.search,
           ),
           CrystalNavigationBarItem(
-            icon: IconlyBold.user2,
+            icon: IconlyBold.user_2,
             selectedColor: Colors.white,
-            unselectedIcon: IconlyLight.user2,
+            unselectedIcon: IconlyLight.user,
           ),
         ],
       ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:glass/glass.dart';
 import 'package:greefin/my_colors.dart';
 
 class MainPage extends StatefulWidget {
