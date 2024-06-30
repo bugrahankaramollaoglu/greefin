@@ -1,6 +1,7 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:greefin/deneme.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/add_page.dart';
 import 'package:greefin/pages/green_page.dart';
@@ -52,6 +53,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
+      backgroundColor: Colors.brown,
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: _buildBody(),
@@ -105,7 +107,7 @@ class _HomePageState extends State<HomePage> {
       case _SelectedTab.main:
         return MainPage();
       case _SelectedTab.stats:
-        return StatsPage();
+        return MyHomePage();
       case _SelectedTab.add:
         return AddPage();
       case _SelectedTab.green:

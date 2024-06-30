@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
+import 'package:greefin/onboarding.dart';
 import 'package:greefin/pages/home_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -25,6 +26,11 @@ class _LoginPageState extends State<LoginPage> {
         email: _emailController.text,
         password: _passwordController.text,
       );
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+        (route) => false,
+      );
     } on FirebaseAuthException catch (e) {
       setState(() {
         errorMessage = e.message;
@@ -38,6 +44,11 @@ class _LoginPageState extends State<LoginPage> {
         email: _emailController.text,
         password: _passwordController.text,
       );
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+        (route) => false,
+      );
     } on FirebaseAuthException catch (e) {
       setState(() {
         errorMessage = e.message;
@@ -48,11 +59,19 @@ class _LoginPageState extends State<LoginPage> {
   Widget _entryField(
     String title,
     TextEditingController controller,
+    IconData icon,
+    bool isPassword,
   ) {
     return TextField(
       controller: controller,
+      obscureText: isPassword,
       decoration: InputDecoration(
+        prefixIcon: Icon(icon),
         labelText: title,
+        border: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.black),
+          borderRadius: BorderRadius.circular(5),
+        ),
       ),
     );
   }
@@ -68,12 +87,20 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-  Widget _submitButton() {
+  Widget _loginButton() {
     return ElevatedButton(
-      onPressed: isLogin
-          ? _signInWithEmailAndPassword
-          : _createUserWithEmailAndPassword,
-      child: Text(isLogin ? 'Login' : 'Create Account'),
+      style: ElevatedButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        backgroundColor: Colors.lightGreen,
+      ),
+      onPressed: _signInWithEmailAndPassword,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text('Login',
+            style: const TextStyle(color: kDarkBlueColor, fontSize: 20)),
+      ),
     );
   }
 
@@ -120,51 +147,170 @@ class _LoginPageState extends State<LoginPage> {
         // _showToast('Google Sign-In canceled.');
       }
     } catch (e) {
-      print('hatta: $e');
+      print('Error: $e');
     }
   }
 
-  Widget _ouathRow() {
+  Widget _forgotPassword() {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: TextButton(
+        onPressed: () {
+          // Add forgot password functionality here
+        },
+        child: const Text(
+          'Forgot Password?',
+          style: TextStyle(
+            fontSize: 15,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _oauthRow() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        IconButton(
-          onPressed: _signInWithGoogle,
-          icon: const Icon(
-            FontAwesomeIcons.google,
-            color: Colors.black,
-            size: 40,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: IconButton(
+            onPressed: _signInWithGoogle,
+            icon: const Icon(
+              FontAwesomeIcons.google,
+              color: Colors.black87,
+              size: 30,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: IconButton(
+            onPressed: _signInWithGoogle,
+            icon: const Icon(
+              FontAwesomeIcons.microsoft,
+              color: Colors.black87,
+              size: 35,
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: IconButton(
+            onPressed: _signInWithGoogle,
+            icon: const Icon(
+              FontAwesomeIcons.apple,
+              color: Colors.black87,
+              size: 35,
+            ),
           ),
         ),
       ],
     );
   }
 
+  Widget _divider() {
+    return const SizedBox(
+      width: 200, // Specify the width you want
+      child: Row(
+        children: [
+          const Expanded(
+            child: Divider(
+              color: Colors.black,
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
+            child: Text(
+              'OR',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          const Expanded(
+            child: Divider(
+              color: Colors.black,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const SizedBox(height: 100),
-            _entryField('Email', _emailController),
-            const SizedBox(height: 20),
-            _entryField('Password', _passwordController),
-            const SizedBox(height: 20),
-            errorMessageWidget(),
-            const SizedBox(height: 20),
-            _submitButton(),
-            const SizedBox(height: 20),
-            _switchButton(),
-            const SizedBox(height: 20),
-            _ouathRow(),
-          ],
-        ),
+      body: Stack(
+        children: [
+          // Background image
+          Positioned.fill(
+            child: Image.asset(
+              'assets/leaf.png',
+              fit: BoxFit.cover,
+            ),
+          ),
+          // Gradient overlay
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.black.withOpacity(0.5),
+                    Colors.black.withOpacity(0.5)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+            ),
+          ),
+          // Login form
+          Container(
+            height: double.infinity,
+            width: double.infinity,
+            padding: const EdgeInsets.all(20),
+            child: Center(
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                elevation: 5,
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const SizedBox(height: 20),
+                      _entryField(
+                          'Email', _emailController, Icons.email, false),
+                      const SizedBox(height: 20),
+                      _entryField(
+                          'Password', _passwordController, Icons.lock, true),
+                      _forgotPassword(),
+                      errorMessageWidget(),
+                      const SizedBox(height: 20),
+                      _loginButton(),
+                      const SizedBox(height: 20),
+                      _switchButton(),
+                      const SizedBox(height: 10),
+                      TextButton(
+                        onPressed: () {
+                          // Add forgot password functionality here
+                        },
+                        child: const Text('Forgot Password?'),
+                      ),
+                      const SizedBox(height: 20),
+                      _divider(),
+                      const SizedBox(height: 20),
+                      _oauthRow(),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
