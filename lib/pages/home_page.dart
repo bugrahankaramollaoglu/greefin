@@ -1,6 +1,7 @@
+import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:greefin/bottom_navigation.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/add_page.dart';
 import 'package:greefin/pages/green_page.dart';
@@ -9,8 +10,10 @@ import 'package:greefin/pages/main_page.dart';
 import 'package:greefin/pages/profile_page.dart';
 import 'package:greefin/pages/stats_page.dart';
 
+enum _SelectedTab { main, stats, add, green, profile }
+
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -19,19 +22,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final Auth _auth = Auth();
   User? user;
-  int _selectedIndex = 0;
+  var _selectedTab = _SelectedTab.main;
 
-  static const List<Widget> _bottomPages = <Widget>[
-    MainPage(),
-    StatsPage(),
-    AddPage(),
-    GreenPage(),
-    ProfilePage(),
-  ];
-
-  void _onItemTapped(int index) {
+  void _handleIndexChanged(int index) {
     setState(() {
-      _selectedIndex = index;
+      _selectedTab = _SelectedTab.values[index];
     });
   }
 
@@ -43,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         this.user = user;
       });
       if (user == null) {
-        WidgetsBinding.instance.addPostFrameCallback((_) {
+        WidgetsBinding.instance!.addPostFrameCallback((_) {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(builder: (context) => const LoginPage()),
@@ -56,19 +51,67 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Center(
-            child: _bottomPages.elementAt(_selectedIndex),
+      extendBody: true,
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        child: _buildBody(),
+      ),
+      bottomNavigationBar: CrystalNavigationBar(
+        duration: Duration(milliseconds: 500),
+        currentIndex: _SelectedTab.values.indexOf(_selectedTab),
+        height: 50,
+        borderRadius: 15,
+        splashBorderRadius: 15,
+        outlineBorderColor: Colors.white,
+        indicatorColor: Colors.transparent,
+        backgroundColor: Colors.black.withOpacity(0.9),
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white70,
+        onTap: _handleIndexChanged,
+        enablePaddingAnimation: true,
+        items: [
+          CrystalNavigationBarItem(
+            icon: IconlyBold.home,
+            selectedColor: Colors.white,
+            unselectedIcon: IconlyLight.home,
+          ),
+          CrystalNavigationBarItem(
+            icon: IconlyBold.heart,
+            selectedColor: Colors.white,
+            unselectedIcon: IconlyLight.heart,
+          ),
+          CrystalNavigationBarItem(
+            icon: IconlyBold.plus,
+            selectedColor: Colors.white,
+            unselectedIcon: IconlyLight.plus,
+          ),
+          CrystalNavigationBarItem(
+            icon: IconlyBold.search,
+            selectedColor: Colors.white,
+            unselectedIcon: IconlyLight.search,
+          ),
+          CrystalNavigationBarItem(
+            icon: IconlyBold.user2,
+            selectedColor: Colors.white,
+            unselectedIcon: IconlyLight.user2,
           ),
         ],
       ),
-      bottomNavigationBar: BottomNav(
-        selectedIndex: _selectedIndex,
-        onItemTapped: _onItemTapped,
-      ),
     );
+  }
+
+  Widget _buildBody() {
+    switch (_selectedTab) {
+      case _SelectedTab.main:
+        return MainPage();
+      case _SelectedTab.stats:
+        return StatsPage();
+      case _SelectedTab.add:
+        return AddPage();
+      case _SelectedTab.green:
+        return GreenPage();
+      case _SelectedTab.profile:
+        return ProfilePage();
+    }
   }
 }

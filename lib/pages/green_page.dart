@@ -10,8 +10,22 @@ class GreenPage extends StatefulWidget {
 class _GreenPageState extends State<GreenPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.orange,
+    return Scaffold(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        color: Colors.green,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Green Page',
+              style: TextStyle(fontSize: 36),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
