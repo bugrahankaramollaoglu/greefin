@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Color.fromARGB(255, 39, 155, 42),
       ),
       onPressed: _signInWithEmailAndPassword,
       child: Padding(
@@ -210,31 +210,10 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _divider() {
-    return const SizedBox(
-      width: 200, // Specify the width you want
-      child: Row(
-        children: [
-          const Expanded(
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: Text(
-              'OR',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-          const Expanded(
-            child: Divider(
-              color: Colors.black,
-            ),
-          ),
-        ],
-      ),
+    return SizedBox(
+      child: Image.asset('assets/or.png'),
+      width: 300,
+      height: 75,
     );
   }
 
@@ -256,11 +235,11 @@ class _LoginPageState extends State<LoginPage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Colors.black.withOpacity(0.5),
-                    Colors.black.withOpacity(0.5)
+                    Colors.black.withOpacity(0.1),
+                    Colors.black.withOpacity(0.8)
                   ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
                 ),
               ),
             ),
@@ -269,13 +248,15 @@ class _LoginPageState extends State<LoginPage> {
           Container(
             height: double.infinity,
             width: double.infinity,
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.fromLTRB(20, 150, 20, 20),
             child: Center(
               child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                elevation: 5,
+                surfaceTintColor: Colors.black,
+                shadowColor: Colors.black,
+                elevation: 35,
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Column(
