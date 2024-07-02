@@ -93,9 +93,9 @@ class _HomePageState extends State<HomePage> {
             unselectedIcon: IconlyLight.search,
           ),
           CrystalNavigationBarItem(
-            icon: IconlyBold.user_2,
+            icon: IconlyBold.profile,
             selectedColor: Colors.white,
-            unselectedIcon: IconlyLight.user,
+            unselectedIcon: IconlyLight.profile,
           ),
         ],
       ),
