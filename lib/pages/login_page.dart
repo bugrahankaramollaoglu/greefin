@@ -100,6 +100,7 @@ class _LoginPageState extends State<LoginPage> {
       customImage: Image.asset('assets/signin.png'),
       text: 'Login',
       backgroundColor: Colors.green,
+      textColor: Colors.black54,
     );
   }
 
@@ -113,7 +114,8 @@ class _LoginPageState extends State<LoginPage> {
       customImage: Image.asset('assets/signup.png'),
       text: 'Register',
       backgroundColor: Colors.blue,
-    );
+      textColor: Colors.black54,
+        );
   }
 
   Widget _guestButton() {
