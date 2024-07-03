@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
         prefixIcon: Icon(icon),
         labelText: title,
         border: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.black),
           borderRadius: BorderRadius.circular(5),
         ),
       ),
@@ -115,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
       text: 'Register',
       backgroundColor: Colors.blue,
       textColor: Colors.black54,
-        );
+    );
   }
 
   Widget _guestButton() {
@@ -237,6 +237,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           // Background image
@@ -260,54 +261,58 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          Container(
-            alignment: Alignment.center,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(25),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                child: Container(
-                  height: 700,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Colors.white60, Colors.white10],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
+          SingleChildScrollView(
+            child: Container(
+              width: double.maxFinite,
+              height: 1000,
+              alignment: Alignment.center,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(25),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                  child: Container(
+                    height: 700,
+                    width: 350,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [Colors.white60, Colors.white10],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(25),
+                      border: Border.all(
+                        width: 2,
+                        color: Colors.black87.withOpacity(0.4),
+                      ),
                     ),
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      width: 2,
-                      color: Colors.black87.withOpacity(0.4),
-                    ),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'GREEFIN',
-                          style: TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(height: 20),
-                        _entryField(
-                            'Email', _emailController, Icons.email, false),
-                        const SizedBox(height: 20),
-                        _entryField(
-                            'Password', _passwordController, Icons.lock, true),
-                        _forgotPassword(),
-                        errorMessageWidget(),
-                        const SizedBox(height: 20),
-                        _loginButton(),
-                        _registerButton(),
-                        _guestButton(),
-                        const SizedBox(height: 30),
-                        _divider(),
-                        const SizedBox(height: 10),
-                        _oauthRow(),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'GREEFIN',
+                            style: TextStyle(
+                                fontSize: 30, fontWeight: FontWeight.bold),
+                          ),
+                          const SizedBox(height: 20),
+                          _entryField(
+                              'Email', _emailController, Icons.email, false),
+                          const SizedBox(height: 20),
+                          _entryField('Password', _passwordController,
+                              Icons.lock, true),
+                          _forgotPassword(),
+                          errorMessageWidget(),
+                          const SizedBox(height: 20),
+                          _loginButton(),
+                          _registerButton(),
+                          _guestButton(),
+                          const SizedBox(height: 30),
+                          _divider(),
+                          const SizedBox(height: 10),
+                          _oauthRow(),
+                        ],
+                      ),
                     ),
                   ),
                 ),

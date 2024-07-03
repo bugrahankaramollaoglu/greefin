@@ -20,19 +20,10 @@ class _FirebaseRouterState extends State<FirebaseRouter> {
           return const CircularProgressIndicator();
         }
         if (snapshot.hasData) {
-          return HomePage();
+          return const HomePage();
         }
         return const LoginPage();
       },
     );
-  }
-}
-
-class HomePage2 extends StatelessWidget {
-  const HomePage2({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

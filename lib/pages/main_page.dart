@@ -24,12 +24,14 @@ class _MainPageState extends State<MainPage> {
     final screen_w = MediaQuery.of(context).size.width;
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ElevatedButton(
             onPressed: () {
               Auth().signOut();
             },
-            child: null)
+            child: Text('Sign Ouyt')),
       ],
     );
   }

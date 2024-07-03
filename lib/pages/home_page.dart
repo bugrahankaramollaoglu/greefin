@@ -56,6 +56,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.brown,
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         child: _buildBody(),
       ),
       bottomNavigationBar: CrystalNavigationBar(
