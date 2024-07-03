@@ -33,7 +33,6 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           children: [
             // _profileRow(),
-            
           ],
         ),
       ),
