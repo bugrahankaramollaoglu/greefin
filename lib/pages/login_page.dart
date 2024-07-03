@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:auth_button_kit/auth_button_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -92,6 +94,9 @@ class _LoginPageState extends State<LoginPage> {
     return AuthButton(
       onPressed: (method) => _signInWithEmailAndPassword(),
       brand: Method.custom,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5),
+      ),
       customImage: Image.asset('assets/signin.png'),
       text: 'Login',
       backgroundColor: Colors.green,
@@ -102,6 +107,9 @@ class _LoginPageState extends State<LoginPage> {
     return AuthButton(
       onPressed: (method) => _createUserWithEmailAndPassword(),
       brand: Method.custom,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5),
+      ),
       customImage: Image.asset('assets/signup.png'),
       text: 'Register',
       backgroundColor: Colors.blue,
@@ -114,6 +122,9 @@ class _LoginPageState extends State<LoginPage> {
         context,
         MaterialPageRoute(builder: (context) => const HomePage()),
         (route) => false,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5),
       ),
       brand: Method.custom,
       text: 'Continue as Guest',
@@ -161,10 +172,11 @@ class _LoginPageState extends State<LoginPage> {
         onPressed: () {
           // Add forgot password functionality here
         },
-        child: const Text(
+        child: Text(
           'Forgot Password?',
           style: TextStyle(
-            fontSize: 15,
+            color: Colors.black.withOpacity(0.6),
+            fontSize: 16,
           ),
         ),
       ),
@@ -228,18 +240,17 @@ class _LoginPageState extends State<LoginPage> {
           // Background image
           Positioned.fill(
             child: Image.asset(
-              'assets/leaf.png',
+              'assets/leaf2.png',
               fit: BoxFit.cover,
             ),
           ),
-          // Gradient overlay
           Positioned.fill(
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
                     Colors.black.withOpacity(0.1),
-                    Colors.black.withOpacity(0.8)
+                    Colors.black.withOpacity(0.5)
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -247,41 +258,55 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          // Login form
           Container(
-            height: double.infinity,
-            width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(20, 150, 20, 20),
-            child: Center(
-              child: Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                surfaceTintColor: Colors.black,
-                shadowColor: Colors.black,
-                elevation: 35,
-                child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const SizedBox(height: 20),
-                      _entryField(
-                          'Email', _emailController, Icons.email, false),
-                      const SizedBox(height: 20),
-                      _entryField(
-                          'Password', _passwordController, Icons.lock, true),
-                      _forgotPassword(),
-                      errorMessageWidget(),
-                      const SizedBox(height: 20),
-                      _loginButton(),
-                      _registerButton(),
-                      _guestButton(),
-                      const SizedBox(height: 30),
-                      _divider(),
-                      const SizedBox(height: 10),
-                      _oauthRow(),
-                    ],
+            alignment: Alignment.center,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(25),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                child: Container(
+                  height: 700,
+                  width: 350,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.white60, Colors.white10],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(
+                      width: 2,
+                      color: Colors.black87.withOpacity(0.4),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'GREEFIN',
+                          style: TextStyle(
+                              fontSize: 30, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 20),
+                        _entryField(
+                            'Email', _emailController, Icons.email, false),
+                        const SizedBox(height: 20),
+                        _entryField(
+                            'Password', _passwordController, Icons.lock, true),
+                        _forgotPassword(),
+                        errorMessageWidget(),
+                        const SizedBox(height: 20),
+                        _loginButton(),
+                        _registerButton(),
+                        _guestButton(),
+                        const SizedBox(height: 30),
+                        _divider(),
+                        const SizedBox(height: 10),
+                        _oauthRow(),
+                      ],
+                    ),
                   ),
                 ),
               ),
