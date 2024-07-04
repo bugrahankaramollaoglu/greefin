@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:glass/glass.dart';
 import 'package:glassmorphism_ui/glassmorphism_ui.dart';
@@ -31,7 +30,7 @@ class _MainPageState extends State<MainPage> {
             onPressed: () {
               Auth().signOut();
             },
-            child: Text('Sign Ouyt')),
+            child: Text('Sign Out')),
       ],
     );
   }

@@ -55,6 +55,7 @@ dependencies:
   neumorphic_button: ^0.0.1+2
   auth_button_kit: ^1.1.6
   flutter_iconpicker: ^3.4.5
+  google_ml_kit: ^0.18.0
 
 dev_dependencies:
   flutter_test:

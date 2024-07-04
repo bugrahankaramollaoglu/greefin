@@ -5,7 +5,7 @@ import 'package:greefin/firebase/firebase_router.dart';
 import 'package:greefin/pages/login_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-const Color kDarkBlueColor = Color(0xFF053149);
+const Color kDarkBlueColor = Color(0xFFB6C8D2);
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -26,7 +26,7 @@ class OnboardingPage extends StatelessWidget {
     return OnBoardingSlider(
       finishButtonText: 'Start',
       finishButtonTextStyle: const TextStyle(
-        color: Colors.black,
+        color: Colors.white70,
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
       ),
@@ -52,7 +52,7 @@ class OnboardingPage extends StatelessWidget {
       controllerColor: kDarkBlueColor,
       totalPage: 6,
       headerBackgroundColor: const Color.fromARGB(255, 24, 24, 26),
-      pageBackgroundColor: const Color.fromARGB(255, 24, 24, 26),
+      pageBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
       background: [
         Image.asset(
           'assets/greefin.png',
@@ -83,7 +83,7 @@ class OnboardingPage extends StatelessWidget {
       pageBodies: [
         OnboardingPageTemplate(
           context,
-          'Welcome to Greefin',
+          'Welcome to ',
           'Greefin is a platform that helps you to manage your finances and investments.',
         ),
         OnboardingPageTemplate(

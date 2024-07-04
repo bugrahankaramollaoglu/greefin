@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
       ),
       customImage: Image.asset('assets/signup.png'),
       text: 'Register',
-      backgroundColor: Colors.blue,
+      backgroundColor: Color.fromARGB(255, 200, 200, 31),
       textColor: Colors.black54,
     );
   }
@@ -243,11 +243,16 @@ class _LoginPageState extends State<LoginPage> {
           // Background image
           Positioned.fill(
             child: Image.asset(
-              'assets/leaf2.png',
+              'assets/3.jpeg',
               fit: BoxFit.cover,
             ),
           ),
-          Positioned.fill(
+          /*  Positioned.fill(
+            child: Container(
+              color: Colors.brown,
+            ),
+          ), */
+          /* Positioned.fill(
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -260,7 +265,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-          ),
+          ), */
           SingleChildScrollView(
             child: Container(
               width: double.maxFinite,

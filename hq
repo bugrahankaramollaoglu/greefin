@@ -1,0 +1,173 @@
+[33mcommit d14579ef2b58935d3831e156e187326aa14b419a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/branche[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Wed Jul 3 19:58:19 2024 +0300
+
+    ok. will try to implement mlkit
+
+[33mcommit 12ecd082f3caff8c7b50437ea60135a66b243209[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Wed Jul 3 18:07:15 2024 +0300
+
+    ok. will try to add glass morphism to bottomNav
+
+[33mcommit b8ec8550529ce823f7648cf79b13490f582ddaa8[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Wed Jul 3 18:01:42 2024 +0300
+
+    ok. glass morphism done. will now try to play with ui
+
+[33mcommit 6ee09e4d86593c300e33604c5f147aabbee4456e[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Wed Jul 3 17:38:15 2024 +0300
+
+    ok. will try glass morphism on login
+
+[33mcommit 1743230ea4971403e5de06430fc6c2a5881c305c[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Tue Jul 2 10:31:15 2024 +0300
+
+    asd
+
+[33mcommit b0e841c2c8f40811b5f2277e7a5342e7076adf0a[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 23:22:23 2024 +0300
+
+    ok. login page ui %80 done. needs some configurations. will continue ui designs later. got to sleep.
+
+[33mcommit d2aa0f00307900359c71eaa968883b13e3f136e1[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 20:25:27 2024 +0300
+
+    ok. will try button
+
+[33mcommit 15f602fbdcd41b8bbdc8f58302161764e711d3f3[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 20:07:05 2024 +0300
+
+    will try divider
+
+[33mcommit f98520e03df6513d74b1ce889cd38b62466fd15c[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 15:40:56 2024 +0300
+
+    found new glass package. will try that one
+
+[33mcommit 223968e0cf8e6845cfe39bd9c9db4fa1e121a1d5[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 15:00:57 2024 +0300
+
+    ok. will try glass package
+
+[33mcommit 27dca3b907a26dfc7e8c974ceda3a1624ea471e6[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 12:27:37 2024 +0300
+
+    bottomNav done. will work on putting relevant pages when items clicked
+
+[33mcommit 3877ccd35731f905b158731a8ec90afd9026783a[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 09:49:44 2024 +0300
+
+    will try pages routing in bottomNav
+
+[33mcommit b7ed025a4d12e6a8ddce58b66bc18c59d73703ed[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 08:51:17 2024 +0300
+
+    bottomNav done. minor configurations left for future.
+
+[33mcommit 43e2cdd879593f705c7028235ff202bfd63cc772[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sun Jun 30 08:42:07 2024 +0300
+
+    ok. custom bottomNav ui done. will now try to move scaffolds
+
+[33mcommit 10a51a0b997d5799c6a04a259b24590fe43b6cd5[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 23:52:11 2024 +0300
+
+    custom bottomNav attempts v2. will continue tomorrow
+
+[33mcommit ab8aee7d4377743f4b837f750e01c1a4ba6c8a5b[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 23:05:35 2024 +0300
+
+    onboarding ui done. will work on sharedPref of onb
+
+[33mcommit b8f00780c81829702c9f59f2c114fe314e567a74[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 19:13:14 2024 +0300
+
+    ok. onboarding done. will work on riverpod
+
+[33mcommit e4a1824b909be618e50a5a627e854051993ad28e[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 18:40:16 2024 +0300
+
+    will try moving image.assets to the template
+
+[33mcommit 11b5f5fb2d4ac634c093c6765adfdc79d7810d5e[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 18:09:07 2024 +0300
+
+    ok. onboarding done. will now change UI
+
+[33mcommit e0b037331d84f6cdf5dc9ef5cbcc96d04b65c311[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 17:48:50 2024 +0300
+
+    ok. will now try onboarding again
+
+[33mcommit dbaa30e3d7ad95cf64365975f642f3cca034ca22[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 10:59:16 2024 +0300
+
+    ok. things got complicated. starting anew
+
+[33mcommit 565dcf9904992a9d1f3a9ff99bd98d8ca04583b1[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Sat Jun 29 10:39:00 2024 +0300
+
+    ok. sharedPref half done. will continue on onboarding
+
+[33mcommit 268af34a50aee723ca7b441cdc5d6c1312ca2704[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Fri Jun 28 21:35:57 2024 +0300
+
+    ok. will try onboarding
+
+[33mcommit b3a4586b522146dd58aa76158f2be20f41b6418a[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Thu Jun 27 23:04:30 2024 +0300
+
+    ok. will try custom bottomNav
+
+[33mcommit d997c39e943cb30bdf5cce0e14e31a61b2ac927e[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Thu Jun 27 10:57:06 2024 +0300
+
+    ok. will now work on onboarding
+
+[33mcommit 7fc44cf6988366521baf9886d99d78e810a7de18[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Thu Jun 27 09:48:16 2024 +0300
+
+    google sign-in bitti gibi ama emin degilim. kontrol edilecek
+
+[33mcommit 8cd9a228d6589c5b6e20933c85b2664f2adb1947[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Thu Jun 27 09:04:23 2024 +0300
+
+    will try google sign-in
+
+[33mcommit 80a8dc1b94df4c86cdb30796e84c3bdf8502dca7[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Wed Jun 26 20:16:12 2024 +0300
+
+    firebase authentication added
+
+[33mcommit 731f072a92a0aaabde78766b58b437fb84ee8989[m
+Author: bugra <bugrahankaramollaoglu@gmail.com>
+Date:   Wed Jun 26 17:53:33 2024 +0300
+
+    flutter app initialized
