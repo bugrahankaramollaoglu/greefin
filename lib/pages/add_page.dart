@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 class AddPage extends StatelessWidget {
   const AddPage({super.key});
 
-
-  void _openScanner() {
-    
-  }
+  void _openScanner() {}
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +18,7 @@ class AddPage extends StatelessWidget {
             'Add Page',
             style: TextStyle(fontSize: 36),
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 130),
           IconButton(
             onPressed: _openScanner,
             iconSize: 90,
