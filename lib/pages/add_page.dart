@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greefin/text_detector_view.dart';
 
 class AddPage extends StatelessWidget {
   const AddPage({super.key});
@@ -14,10 +15,7 @@ class AddPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            'Add Page',
-            style: TextStyle(fontSize: 36),
-          ),
+          TextRecognizerView(),
           SizedBox(height: 130),
           IconButton(
             onPressed: _openScanner,
