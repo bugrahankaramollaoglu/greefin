@@ -8,7 +8,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/home_page.dart';
-import 'package:neumorphic_button/neumorphic_button.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
