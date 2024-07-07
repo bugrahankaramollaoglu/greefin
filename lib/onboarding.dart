@@ -59,29 +59,47 @@ class OnboardingPage extends StatelessWidget {
       headerBackgroundColor: const Color.fromARGB(255, 242, 242, 242),
       pageBackgroundColor: const Color.fromARGB(255, 242, 242, 242),
       background: [
-        Image.asset(
-          'assets/onb_1.png',
-          height: 400,
+        Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Image.asset(
+            'assets/onb_1.png',
+            height: 400,
+          ),
         ),
-        Image.asset(
-          'assets/onb_2.png',
-          height: 400,
+        Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Image.asset(
+            'assets/onb_2.png',
+            height: 400,
+          ),
         ),
-        Image.asset(
-          'assets/onb_3.png',
-          height: 400,
+        Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Image.asset(
+            'assets/onb_3.png',
+            height: 400,
+          ),
         ),
-        Image.asset(
-          'assets/onb_4.png',
-          height: 400,
+        Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Image.asset(
+            'assets/onb_4.png',
+            height: 400,
+          ),
         ),
-        Image.asset(
-          'assets/onb_5.png',
-          height: 400,
+        Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Image.asset(
+            'assets/onb_5.png',
+            height: 400,
+          ),
         ),
-        Image.asset(
-          'assets/greefin.png',
-          height: 400,
+        Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Image.asset(
+            'assets/greefin.png',
+            height: 400,
+          ),
         ),
       ],
       speed: 1.4,

@@ -68,7 +68,7 @@ class _GreefinAppState extends State<GreefinApp> {
       home: Scaffold(
         backgroundColor: my_colors.color6,
         body: _isOnboardingCompleted
-            ? const FirebaseRouter()
+            ? const OnboardingPage()
             : const OnboardingPage(),
       ),
     );
