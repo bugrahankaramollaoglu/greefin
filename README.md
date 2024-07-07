@@ -16,6 +16,11 @@ TAKIM İSMİ:  F07 FLUTTER TAKIMI
 |BURAK GÜNGÖR | DEVELOPER |
 |BEYZA DİŞLİ | DEVELOPER |
 
+#### ÜRÜN İSMİ 
+Greefin 
+
+#### PRODUCT BACKLOG :
+
  #### ÜRÜN İSMİ ÇIKIŞ NOKTASI 
 
  Geliştirdiğimiz ürün,  BM Sürdürülebilir Kalkınma Amaçlarına hizmet eden ve daha yeşil, daha temiz bir dünya oluşturmayı amaçlayan küresel çapta bir uygulamadır. Bu nedenle, ürün adını İngilizce olarak tercih ettik. İsmimizdeki "gree" kökü, "green" kelimesinden; "fin" ise uygulamamızın içeriğini belirten "finans" kelimesinin kısaltmasından gelmektedir.
@@ -95,6 +100,46 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 	Sürdürülebilirlik projeleri yürüten ve toplumu bu konuda bilinçlendirmek isteyen STK'lar ve organizasyonlar.
 
 Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir hedef kitlesine sahiptir.
+
+
+# SPRINT 1 
+
+#### SPRINT NOTLARI 
+
+Takım üyeleri arası iletişimi Whatsapp üzerinden sağladık.
+görev dağılımları ve iş bölümleri için Trello'yu kullandık.
+Uygulamanın gerekleri ve fonksiyonları gibi lsteler için google docs kullandık.
+
+#### SPRINT PUANI VE DEĞERLENDİRMESİ 
+
+Proje boyunca tamamlanmaı gereken backlog   puanı 265 olarak belirlenmiştir.1. sprint sonucunda  bitirilmesi gereken puan 65 olarak belirlenmiştir.
+
+#### PUAN TAMAMLAMA MANTIĞI 
+İlk sprint projenin genel hatlarını dizayn ettiğimiz ve fonksiyonlar ve ürünün temel işlevleri üzerinde çalıştığımız için sprintler arasında daha uygun bir puan belirlenmiştir.Yapılması gereken görevler tamamlanmış ve belirlenen  puana ulaşılmıştır.Diğer sprintlerde projenin genel hatlarını projenin teknik kısmına odaklanacağımız ve daha fazla görevi yerine getireceğimizden dolayı 2. ve 3. sprint 100 puan olarak belirlenmiştir.
+
+#### DAILY SCRUM
+Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirdik.Toplantının sıklığını görevlerin yapılıp yapılmamasına yetişip yetişmeyeceğine göre kararlaştırıp ayarladık.Toplantı sonuçlarımızı aşağıdaki dosyadan inceleyebilirsiniz.
+
+TOPLANTI DOSYALARI EKLENECEK.
+
+#### SPRINT WHATSAPP EKRAN GÖRÜNTÜLERİ
+
+WHATSAP EKRAN GÖRÜNTÜLERİ EKLENECEK...
+
+ #### ÜRÜN DURUMU EKRAN GÖRÜNTÜLERİ 
+
+
+ ####SPRİNT REVİEW 
+
+ Sprint 1 öncesinde tüm takım iyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünüün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştıtmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.Sonrasında.....
+
+
+
+
+
+
+
+
 
 
 
