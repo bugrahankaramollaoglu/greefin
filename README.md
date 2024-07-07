@@ -118,9 +118,17 @@ Proje boyunca tamamlanmaı gereken backlog   puanı 265 olarak belirlenmiştir.1
 İlk sprint projenin genel hatlarını dizayn ettiğimiz ve fonksiyonlar ve ürünün temel işlevleri üzerinde çalıştığımız için sprintler arasında daha uygun bir puan belirlenmiştir.Yapılması gereken görevler tamamlanmış ve belirlenen  puana ulaşılmıştır.Diğer sprintlerde projenin genel hatlarını projenin teknik kısmına odaklanacağımız ve daha fazla görevi yerine getireceğimizden dolayı 2. ve 3. sprint 100 puan olarak belirlenmiştir.
 
 #### DAILY SCRUM
-Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirdik.Toplantının sıklığını görevlerin yapılıp yapılmamasına yetişip yetişmeyeceğine göre kararlaştırıp ayarladık.Toplantı sonuçlarımızı aşağıdaki dosyadan inceleyebilirsiniz.
+Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirdik.Toplantının sıklığını görevlerin yapılıp yapılmamasına yetişip yetişmeyeceğine göre kararlaştırıp ayarladık.
 
-<img src=""  width="600" height="400">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400" height="700">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ae506941-3d69-41b8-96a3-1dfbb4ff42be"  width="400" height="700">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/eb955ca1-b968-4738-a892-f95bdd1ffcf0"  width="400" height="700">
+
+
 
 TOPLANTI DOSYALARI EKLENECEK.
 
