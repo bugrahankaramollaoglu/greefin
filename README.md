@@ -69,6 +69,12 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 -  Motive Edici Push Bildirimleri
 	Kullanıcılara, hedeflerine ulaşmaları için motive edici push bildirimleri gönderir.
 
+
+#### ÜRÜNÜN VİZYONU 
+
+ Kullanıcıların günlük finansal işlemlerini yönetirken, her işlemde ürettikleri karbon emisyonlarını otomatik olarak hesaplayan bir dijital cüzdan. Bu uygulama, harcamalarından kaynaklanan çevresel etkileri görselleştirir ve daha sürdürülebilir seçenekler sunar. Kullanıcılar, karbon emisyonlarını azaltma hedefleri belirleyebilir ve bu hedeflere ulaşmak için finansal ve çevresel danışmanlık alabilir.
+
+
 #### HEDEF KİTLE
 
 - Çevre Bilincine Sahip Bireyler
@@ -145,7 +151,7 @@ Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir 
 - Takım üyeleri arası iletişimi **Whatsapp** üzerinden sağladık.
 - Görev dağılımları ve iş bölümleri için **Trello** kullandık.
 - Uygulamanın gerekleri ve fonksiyonları gibi listeler için **Google Docs** kullandık.
-- UI tassarımları için **Figma** kullandık.
+- UI tassarımları için **Figma**  ve  **Canva** kullandık.
 
 
 
@@ -175,17 +181,32 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  #### ÜRÜN DURUMU EKRAN GÖRÜNTÜLERİ 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9"  width= "400 " height="700">
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/19dff7b7-55a6-4c0a-94f2-d54bd88b905d"  width= "400 " height="700">
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ff208cd0-ea19-4a46-aa69-8b529e0aa455"  width= "400 " height="700">
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/18ee974c-71be-4698-a8ed-8aba4ee1b485"  width= "400 " height="700">
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b"  width= "400 " height="700">
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81"  width= "400 " height="700">
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091"  width= "400 " height="700">
-
-
-
  
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9"  width= "350 " height="600">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/19dff7b7-55a6-4c0a-94f2-d54bd88b905d"  width= "350 " height="600">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ff208cd0-ea19-4a46-aa69-8b529e0aa455"  width= "350 " height="600">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/18ee974c-71be-4698-a8ed-8aba4ee1b485"  width= "350 " height="600">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6dd19d41-e8e1-45a4-9fdb-64f85997dba3"  width= "350 " height="600">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b"  width= "350 " height="600">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81"  width= "350 " height="600">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091"  width= "350 " height="600">
+
+
 
  #### SPRİNT BOARD SCREENSHOOT 
  
