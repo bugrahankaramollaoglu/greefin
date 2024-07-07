@@ -152,7 +152,9 @@ Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir 
 - Görev dağılımları ve iş bölümleri için **Trello** kullandık.
 - Uygulamanın gerekleri ve fonksiyonları gibi listeler için **Google Docs** kullandık.
 - UI tassarımları için **Figma**  ve  **Canva** kullandık.
-- Kullanılan kütüphaneler 
+-  Ürünü oluştururken kullandığımız kütüphaneler
+- <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/7680f54f-c797-4521-b4d1-4b755849a40b"  width="400 " height="600">
+
 
 
 
