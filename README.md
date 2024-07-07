@@ -134,13 +134,13 @@ Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir 
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6e48cb5e-76e6-4ed1-8b9c-19a4059aa9bd"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="900 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/fba96398-5815-4575-b580-91aa1dd5cbdc"  width="900 " height="700">
 
 
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/31e515ed-8fc8-484c-8d64-8e3c2393ff50"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/fba96398-5815-4575-b580-91aa1dd5cbdc"  width="900 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="900 " height="700">
 
 ---
 
