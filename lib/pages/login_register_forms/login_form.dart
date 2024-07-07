@@ -6,6 +6,62 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/home_page.dart';
+import 'package:greefin/utilities/my_colors.dart';
+
+/* class LoginForm extends StatefulWidget {
+  const LoginForm({super.key});
+
+  @override
+  State<LoginForm> createState() => _LoginFormState();
+}
+
+class _LoginFormState extends State<LoginForm> {
+  String? errorMessage;
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      key: const ValueKey('loginPage'),
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const Text(
+          'GREEFIN',
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 20),
+        _entryField(
+          'Email',
+          _emailController,
+          Icons.email,
+          false,
+        ),
+        const SizedBox(height: 20),
+        _entryField(
+          'Password',
+          _passwordController,
+          Icons.lock,
+          true,
+        ),
+        _forgotPassword(), // Forgot password button
+        errorMessageWidget(),
+        const SizedBox(height: 20),
+        _loginButton(),
+        _registerButton(),
+        _guestButton(),
+        const SizedBox(height: 30),
+        _divider(),
+        const SizedBox(height: 10),
+        _oauthRow(),
+      ],
+    );
+  }
+} */
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -55,17 +111,16 @@ class _LoginFormState extends State<LoginForm> {
     }
   }
 
-  Widget _entryField(
-    String title,
-    TextEditingController controller,
+  Widget emailField(
+    String hintText,
+    TextEditingController e_controller,
     IconData icon,
     bool isPassword,
   ) {
-    return TextField(
-      style: TextStyle(color: Colors.black54),
-      cursorColor: Colors.black54,
-      controller: controller,
-      obscureText: isPassword,
+    return TextFormField(
+      keyboardType: TextInputType.emailAddress,
+      autocorrect: false,
+      controller: e_controller,
       decoration: InputDecoration(
         filled: true,
         fillColor: Colors.white.withOpacity(0.3),
@@ -78,12 +133,50 @@ class _LoginFormState extends State<LoginForm> {
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.black), // Focused border color
         ),
-        labelText: title,
-        border: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.white),
-          borderRadius: BorderRadius.circular(15),
-        ),
+        labelText: hintText,
       ),
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return "Please enter your password";
+        }
+        // Add your own password strength validation logic here (e.g., check for length and complexity)
+        return null;
+      },
+    );
+  }
+
+  Widget passwordField(
+    String hintText,
+    TextEditingController p_controller,
+    IconData icon,
+    bool isPassword,
+  ) {
+    return TextFormField(
+      obscureText: isPassword,
+      controller: p_controller,
+      cursorColor: Colors.black54,
+      style: TextStyle(color: Colors.black54),
+      decoration: InputDecoration(
+        filled: true,
+        fillColor: Colors.white.withOpacity(0.3),
+        prefixIcon: Icon(icon),
+        hintText: 'Enter',
+        hintStyle: TextStyle(color: Colors.grey),
+        enabledBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.black), // Unfocused border color
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.black), // Focused border color
+        ),
+        labelText: hintText,
+      ),
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return "Please enter your password";
+        }
+        // Add your own password strength validation logic here (e.g., check for length and complexity)
+        return null;
+      },
     );
   }
 
@@ -114,7 +207,7 @@ class _LoginFormState extends State<LoginForm> {
 
   Widget _registerButton() {
     return AuthButton(
-      onPressed: (asd){},
+      onPressed: (asd) {},
       // onPressed: (method) => setState(() => showLoginPage = false),
       brand: Method.custom,
       shape: RoundedRectangleBorder(
@@ -178,7 +271,7 @@ class _LoginFormState extends State<LoginForm> {
           Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(builder: (context) => const HomePage()),
-                (route) => false,
+            (route) => false,
           );
         }
       } else {
@@ -192,15 +285,17 @@ class _LoginFormState extends State<LoginForm> {
   // Forgot Password Functionality
   Widget _forgotPassword() {
     return Align(
-      alignment: Alignment.centerLeft,
+      alignment: Alignment.centerRight,
       child: TextButton(
         onPressed: () => _showForgotPasswordDialog(context),
         // Use a method to show the dialog
         child: Text(
           'Forgot Password?',
           style: TextStyle(
-            color: Colors.black.withOpacity(0.7),
+            color: MyColors().color9,
             fontSize: 16,
+            decoration: TextDecoration.underline,
+            decorationColor: MyColors().color9,
           ),
         ),
       ),
@@ -319,42 +414,46 @@ class _LoginFormState extends State<LoginForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      key: const ValueKey('loginPage'),
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        const Text(
-          'GREEFIN',
-          style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.all(38.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: Colors.grey, // Choose your stroke color here
+                width: 2, // Adjust the width of the border
+              ),
+            ),
+            child: CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('assets/avatar6.png'),
+              // Add onTap to allow user to change profile picture
+            ),
           ),
-        ),
-        const SizedBox(height: 20),
-        _entryField(
-          'Email',
-          _emailController,
-          Icons.email,
-          false,
-        ),
-        const SizedBox(height: 20),
-        _entryField(
-          'Password',
-          _passwordController,
-          Icons.lock,
-          true,
-        ),
-        _forgotPassword(), // Forgot password button
-        errorMessageWidget(),
-        const SizedBox(height: 20),
-        _loginButton(),
-        _registerButton(),
-        _guestButton(),
-        const SizedBox(height: 30),
-        _divider(),
-        const SizedBox(height: 10),
-        _oauthRow(),
-      ],
+          SizedBox(height: 20),
+          emailField('Email', _emailController, Icons.email, false),
+          SizedBox(height: 20),
+          passwordField('password', _passwordController, Icons.lock, true),
+          SizedBox(height: 20),
+          _forgotPassword(), // Forgot password button
+          /* errorMessageWidget(),
+          const SizedBox(height: 20),
+          _loginButton(),
+          _registerButton(),
+          _guestButton(),
+          const SizedBox(height: 30),
+          _divider(),
+          const SizedBox(height: 10),
+          _oauthRow(), */
+        ],
+      ),
     );
   }
 }
+
+
+/* */

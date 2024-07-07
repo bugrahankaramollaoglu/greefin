@@ -9,4 +9,5 @@ class MyColors {
   Color color6 = const Color(0xF2F2F2F2);
   Color color7 = const Color(0xF25CCC60);
   Color color8 = const Color(0xF23D3F3D);
+  Color color9 = const Color(0xF255A603);
 }
