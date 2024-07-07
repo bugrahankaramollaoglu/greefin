@@ -92,7 +92,7 @@ class _ProfilePageState extends State<ProfilePage> {
             },
             child: Text('Save'),
             style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: myColors.color1, padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+              foregroundColor: Colors.white, backgroundColor: myColors.color7, padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
