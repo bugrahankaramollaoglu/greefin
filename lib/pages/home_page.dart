@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
             unselectedIcon: IconlyLight.plus,
           ),
           CrystalNavigationBarItem(
-            icon: IconlyBold.plus,
+            icon: IconlyBold.chart,
             selectedColor: Colors.white,
             unselectedIcon: IconlyLight.chart,
           ),

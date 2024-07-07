@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:greefin/main.dart';
 import 'package:greefin/my_colors.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -35,10 +36,19 @@ class _ProfilePageState extends State<ProfilePage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: 20),
-          CircleAvatar(
-            radius: 75,
-            backgroundImage: AssetImage('assets/avatar6.png'),
-            // Add onTap to allow user to change profile picture
+          Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: MyColors().color8, // Choose your stroke color here
+                width: 4, // Adjust the width of the border
+              ),
+            ),
+            child: CircleAvatar(
+              radius: 75,
+              backgroundImage: AssetImage('assets/avatar6.png'),
+              // Add onTap to allow user to change profile picture
+            ),
           ),
           SizedBox(height: 16),
           Text(
