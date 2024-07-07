@@ -161,7 +161,7 @@ Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir 
 
 #### SPRINT PUANI VE DEĞERLENDİRMESİ 
 
-Proje boyunca tamamlanmaı gereken backlog  puanı 265 olarak belirlenmiştir. 1. sprint sonucunda  bitirilmesi gereken puan 65 olarak belirlenmiştir.
+Proje boyunca tamamlanması gereken backlog  puanı 265 olarak belirlenmiştir. 1. sprint sonucunda  bitirilmesi gereken puan 65 olarak belirlenmiştir.
 
 #### PUAN TAMAMLAMA MANTIĞI 
 İlk sprint projenin genel hatlarını dizayn ettiğimiz ve fonksiyonlar ve ürünün temel işlevleri üzerinde çalıştığımız için sprintler arasında daha uygun bir puan belirlenmiştir.Yapılması gereken görevler tamamlanmış ve belirlenen  puana ulaşılmıştır.Diğer sprintlerde projenin genel hatlarını projenin teknik kısmına odaklanacağımız ve daha fazla görev üstleneceğimizden  dolayı 2. ve 3. sprint genel görev değerlendirmesi 100 puan olarak belirlenmiştir.
