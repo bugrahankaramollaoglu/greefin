@@ -22,7 +22,7 @@ greefin
 
  #### ÜRÜN İSMİ ÇIKIŞ NOKTASI 
 
- Geliştirdiğimiz ürün,  BM Sürdürülebilir Kalkınma Amaçlarına hizmet eden ve daha yeşil, daha temiz bir dünya oluşturmayı amaçlayan küresel çapta bir uygulamadır. Bu nedenle, ürün adını İngilizce olarak tercih ettik. İsmimizdeki "gree" kökü, "green" kelimesinden; "fin" ise uygulamamızın içeriğini belirten "finans" kelimesinin kısaltmasından gelmektedir.
+ Geliştirdiğimiz ürün,  BM Sürdürülebilir Kalkınma Amaçlarına hizmet eden ve daha yeşil, daha temiz bir dünya oluşturmayı amaçlayan küresel çapta bir uygulamadır. Bu nedenle, ürün adını İngilizce olarak tercih ettik. İsmimizdeki "gree" kökü, "green" kelimesinden; "fin" ise uygulamamızın içeriğini belirten "finance" kelimesinin kısaltmasından gelmektedir.
 
 #### PROJE AÇIKLAMASI 
  
@@ -182,7 +182,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/267f84f1-e206-438e-ae60-efe91a8a335c"  width= "400 " height="700">
 
 
- #### ÜRÜN DURUMU EKRAN GÖRÜNTÜLERİ 
+ #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
  
 
@@ -214,6 +214,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
  #### SPRİNT BOARD SCREENSHOOT 
  
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="600" height="400">
+
 
  #### SPRİNT REVİEW 
 
