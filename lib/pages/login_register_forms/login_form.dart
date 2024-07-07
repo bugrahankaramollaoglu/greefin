@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:auth_button_kit/auth_button_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -192,16 +193,20 @@ class _LoginFormState extends State<LoginForm> {
   }
 
   Widget _loginButton() {
-    return AuthButton(
-      onPressed: (method) => _signInWithEmailAndPassword(),
-      brand: Method.custom,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(45),
+    return ElevatedButton(
+      onPressed: () {},
+      child: Text(
+        'Login',
       ),
-      text: 'Login',
-      customImage: Image.asset('assets/signin.png'),
-      backgroundColor: Colors.green,
-      textColor: Colors.black54,
+      style: ElevatedButton.styleFrom(
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.green,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(5),
+        ),
+        padding: EdgeInsets.symmetric(
+            horizontal: 110), // Adjust the horizontal padding
+      ),
     );
   }
 
@@ -234,17 +239,25 @@ class _LoginFormState extends State<LoginForm> {
   }
 
   Widget _guestButton() {
-    return AuthButton(
-      onPressed: (method) => Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
-        (route) => false,
+    return ElevatedButton(
+      onPressed: () {},
+      child: Text(
+        'Guest',
       ),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(45),
+      style: ElevatedButton.styleFrom(
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(5),
+          side: BorderSide(
+            color: Colors.black87.withOpacity(0.6),
+            width: 1,
+          ),
+        ),
+        padding: EdgeInsets.symmetric(
+          horizontal: 110,
+        ), // Adjust the horizontal padding
       ),
-      brand: Method.custom,
-      text: 'Continue as Guest',
     );
   }
 
@@ -298,6 +311,34 @@ class _LoginFormState extends State<LoginForm> {
             decorationColor: MyColors().color9,
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _registerText() {
+    return RichText(
+      text: TextSpan(
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 16,
+        ),
+        children: <TextSpan>[
+          TextSpan(
+            text: 'Don\'t have an account? ',
+          ),
+          TextSpan(
+            text: 'Sign up',
+            style: TextStyle(
+              color: MyColors().color9, // Set your desired color here
+              fontWeight: FontWeight.bold,
+            ),
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                // Navigate to your sign-up screen or handle the tap event
+                print('Sign up tapped');
+              },
+          ),
+        ],
       ),
     );
   }
@@ -438,22 +479,17 @@ class _LoginFormState extends State<LoginForm> {
           emailField('Email', _emailController, Icons.email, false),
           SizedBox(height: 20),
           passwordField('password', _passwordController, Icons.lock, true),
-          SizedBox(height: 20),
           _forgotPassword(), // Forgot password button
-          /* errorMessageWidget(),
           const SizedBox(height: 20),
           _loginButton(),
-          _registerButton(),
           _guestButton(),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           _divider(),
-          const SizedBox(height: 10),
-          _oauthRow(), */
+          _oauthRow(), SizedBox(height: 10),
+
+          _registerText(),
         ],
       ),
     );
   }
 }
-
-
-/* */
