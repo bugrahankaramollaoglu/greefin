@@ -61,10 +61,10 @@ packages:
     dependency: transitive
     description:
       name: camera_android_camerax
-      sha256: "7abb0faddbf103c59365e805ad9a30ab4d602b2eb7a8de469697945fd4a69daa"
+      sha256: c6b6a637fc72471dc82c72d06b1a7edd8390477d8dbe026fed6c2f34f04f6d06
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.5+6"
+    version: "0.6.6"
   camera_avfoundation:
     dependency: transitive
     description:
@@ -197,26 +197,26 @@ packages:
     dependency: transitive
     description:
       name: dcli_common
-      sha256: "77848b8440a9e6cdcb69b18131fd75cc0cf54e92208cbadabcf9242dc897fe81"
+      sha256: fa90efc6f5105de865db51fed4204b41e13f5113425d5704e46e56889f1cc46a
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.2"
+    version: "4.0.3"
   dcli_core:
     dependency: transitive
     description:
       name: dcli_core
-      sha256: "845adc302fb8e816e93b52cb24a3a49e8d857c87e9c8719b2de8ff370b4aa986"
+      sha256: e055c7e953e6fa95800f0c7fa7f02f99efcd75a84b7acd5f07936854d859adc4
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.2"
+    version: "4.0.3"
   dcli_terminal:
     dependency: transitive
     description:
       name: dcli_terminal
-      sha256: "4b92dcb7e5058a0b17f6a171f24f34954bf0edfbb058067080f070c2726cd7d8"
+      sha256: fc289acb2e03f20c0d9b97ad5f19bcfa0d9dd8323028fee182fa7249b7687891
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.2"
+    version: "4.0.3"
   dots_indicator:
     dependency: transitive
     description:
@@ -1197,6 +1197,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.2"
+  stroke_text:
+    dependency: "direct main"
+    description:
+      name: stroke_text
+      sha256: "783fee071e3a3c5d3fe24011d7d776ce3cd64792e01b650c6b727ac3f38cb37b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.3"
   sum_types:
     dependency: transitive
     description:
