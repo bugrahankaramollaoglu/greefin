@@ -1,8 +1,8 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mlkit_commons/google_mlkit_commons.dart';
-import 'package:greefin/camera_view.dart';
-import 'package:greefin/gallery_view.dart';
+import 'package:greefin/text_recognition/camera_view.dart';
+import 'package:greefin/text_recognition/gallery_view.dart';
 
 enum DetectorViewMode { liveFeed, gallery }
 

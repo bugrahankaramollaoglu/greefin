@@ -1,9 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:greefin/pages/register_form.dart';
+import 'package:greefin/pages/login_register_forms/register_form.dart';
 
-import 'login_form.dart';
+import '../utilities/my_colors.dart';
+import 'login_register_forms/login_form.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -14,65 +15,45 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String? errorMessage;
-  bool showLoginPage = true; // Control state for page transition
+  bool showLoginPage = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
-      body: Stack(
-        children: [
-          // Background image
-          Positioned.fill(
-            child: Image.asset(
-              'assets/1.jpeg',
-              fit: BoxFit.cover,
+      resizeToAvoidBottomInset: true,
+      body: Center(
+        child: Container(
+          width: 350,
+          height: 700,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.bottomCenter,
+              end: Alignment.topCenter,
+              colors: [Colors.grey.withOpacity(0.7), Colors.white],
             ),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
           ),
-          SingleChildScrollView(
-            child: Container(
-              width: double.maxFinite,
-              height: 1000,
-              alignment: Alignment.center,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(25),
-                child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                  child: Container(
-                    height: 700,
-                    width: 375,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [Colors.white60, Colors.white10],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                      borderRadius: BorderRadius.circular(25),
-                      border: Border.all(
-                        width: 2,
-                        color: Colors.black87.withOpacity(0.4),
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-                      child: AnimatedSwitcher(
-                        duration: const Duration(milliseconds: 500),
-                        transitionBuilder:
-                            (Widget child, Animation<double> animation) {
-                          return FadeTransition(
-                            opacity: animation,
-                            child: child,
-                          );
-                        },
-                        child: showLoginPage ? LoginForm() : RegisterForm(),
-                      ),
-                    ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.grey, // Choose your stroke color here
+                    width: 2, // Adjust the width of the border
                   ),
                 ),
+                child: CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage('assets/avatar6.png'),
+                  // Add onTap to allow user to change profile picture
+                ),
               ),
-            ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

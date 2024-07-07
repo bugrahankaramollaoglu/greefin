@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_mlkit_commons/google_mlkit_commons.dart';
-import 'package:greefin/utils.dart';
+import 'package:greefin/text_recognition/utils.dart';
 import 'package:image_picker/image_picker.dart';
 
 

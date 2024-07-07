@@ -1,28 +1,17 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/firebase/firebase_options.dart';
 import 'package:greefin/firebase/firebase_router.dart';
-import 'package:greefin/onboarding.dart';
+import 'package:greefin/pages/onboarding_pages.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'my_colors.dart';
+import 'utilities/my_colors.dart';
 
 MyColors my_colors = MyColors();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: Colors.white,
-    // Replace with your desired status bar color
-    statusBarBrightness: Brightness.light,
-    // Adjust brightness based on your AppBar color
-    statusBarIconBrightness:
-        Brightness.light, // Adjust icon color based on your AppBar color
-  ));
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -47,7 +36,6 @@ final firebaseAuthProvider = Provider<FirebaseAuth>((ref) {
 
 class _GreefinAppState extends State<GreefinApp> {
   bool _isOnboardingCompleted = false;
-  bool _isLoading = true;
 
   @override
   void initState() {
@@ -59,18 +47,18 @@ class _GreefinAppState extends State<GreefinApp> {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       _isOnboardingCompleted = prefs.getBool('onboardingCompleted') ?? false;
-      _isLoading = false;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+     /* theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-      ),
+      ),*/
       home: _isOnboardingCompleted
           ? const FirebaseRouter()
           : const OnboardingPage(),

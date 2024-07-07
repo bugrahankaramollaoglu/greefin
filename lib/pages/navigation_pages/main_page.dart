@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:glass/glass.dart';
 import 'package:glassmorphism_ui/glassmorphism_ui.dart';
 import 'package:greefin/firebase/auth.dart';
-import 'package:greefin/my_colors.dart';
+import 'package:greefin/utilities/my_colors.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});

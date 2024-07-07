@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:greefin/main.dart';
-import 'package:greefin/my_colors.dart';
+import 'package:greefin/utilities/my_colors.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -118,14 +118,14 @@ class _ProfilePageState extends State<ProfilePage> {
             size: 24,
             color: myColors.color4,
           ),
-          SizedBox(width: 12),
+          const SizedBox(width: 12),
           Expanded(
             child: TextFormField(
               controller: controller,
-              style: TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16),
               decoration: InputDecoration(
                 labelText: label,
-                labelStyle: TextStyle(fontSize: 16),
+                labelStyle: const TextStyle(fontSize: 16),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),

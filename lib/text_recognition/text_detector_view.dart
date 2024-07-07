@@ -1,8 +1,8 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
-import 'package:greefin/detector_view.dart';
-import 'painters/text_detector_painter.dart';
+import 'package:greefin/text_recognition/detector_view.dart';
+import '../painters/text_detector_painter.dart';
 
 class TextRecognizerView extends StatefulWidget {
   @override
