@@ -120,7 +120,12 @@ Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir 
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/299e0af1-176e-4e55-bd3c-1f96d5bc934b"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9629bc32-492f-446b-8b7b-c3320ce7bbf1"  width="900 " height="700">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/c87f54b7-fb46-43dc-b96c-b302cba1d79a"  width="900 " height="700">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6e48cb5e-76e6-4ed1-8b9c-19a4059aa9bd"  width="900 " height="700">
 
 
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="900 " height="700">
