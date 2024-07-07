@@ -175,15 +175,13 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  #### ÜRÜN DURUMU EKRAN GÖRÜNTÜLERİ 
 
-<img src=""  width= "400 " height="700">
-<img src=""  width= "400 " height="700">
-<img src=""  width= "400 " height="700">
-<img src=""  width= "400 " height="700">
-<img src=""  width= "400 " height="700">
-<img src=""  width= "400 " height="700">
-<img src=""  width= "400 " height="700">
-<img src=""  width= "400 " height="700">
-
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9"  width= "400 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/19dff7b7-55a6-4c0a-94f2-d54bd88b905d"  width= "400 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ff208cd0-ea19-4a46-aa69-8b529e0aa455"  width= "400 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/18ee974c-71be-4698-a8ed-8aba4ee1b485"  width= "400 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b"  width= "400 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81"  width= "400 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091"  width= "400 " height="700">
 
 
 
