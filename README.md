@@ -152,6 +152,7 @@ Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir 
 - Görev dağılımları ve iş bölümleri için **Trello** kullandık.
 - Uygulamanın gerekleri ve fonksiyonları gibi listeler için **Google Docs** kullandık.
 - UI tassarımları için **Figma**  ve  **Canva** kullandık.
+- Kullanılan kütüphaneler 
 
 
 
