@@ -175,6 +175,20 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  #### ÜRÜN DURUMU EKRAN GÖRÜNTÜLERİ 
 
+<img src=""  width= "400 " height="700">
+<img src=""  width= "400 " height="700">
+<img src=""  width= "400 " height="700">
+<img src=""  width= "400 " height="700">
+<img src=""  width= "400 " height="700">
+<img src=""  width= "400 " height="700">
+<img src=""  width= "400 " height="700">
+<img src=""  width= "400 " height="700">
+
+
+
+
+ 
+
  #### SPRİNT BOARD SCREENSHOOT 
  
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="600" height="400">
