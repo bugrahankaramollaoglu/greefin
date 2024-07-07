@@ -15,10 +15,10 @@ class AddPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          TextRecognizerView(),
+          // TextRecognizerView(),
           SizedBox(height: 130),
           IconButton(
-            onPressed: _openScanner,
+            onPressed: null,
             iconSize: 90,
             color: Colors.white,
             icon: Icon(Icons.qr_code_scanner_rounded),

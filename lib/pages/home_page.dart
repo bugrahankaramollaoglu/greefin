@@ -1,7 +1,6 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:greefin/deneme.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/my_colors.dart';
 import 'package:greefin/pages/add_page.dart';
@@ -82,6 +81,11 @@ class _HomePageState extends State<HomePage> {
             unselectedIcon: IconlyLight.home,
           ),
           CrystalNavigationBarItem(
+            icon: IconlyBold.search,
+            selectedColor: Colors.white,
+            unselectedIcon: IconlyLight.search,
+          ),
+          CrystalNavigationBarItem(
             icon: IconlyBold.heart,
             selectedColor: Colors.white,
             unselectedIcon: IconlyLight.heart,
@@ -90,11 +94,6 @@ class _HomePageState extends State<HomePage> {
             icon: IconlyBold.plus,
             selectedColor: Colors.white,
             unselectedIcon: IconlyLight.plus,
-          ),
-          CrystalNavigationBarItem(
-            icon: IconlyBold.search,
-            selectedColor: Colors.white,
-            unselectedIcon: IconlyLight.search,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.profile,
