@@ -120,6 +120,8 @@ Proje boyunca tamamlanmaı gereken backlog   puanı 265 olarak belirlenmiştir.1
 #### DAILY SCRUM
 Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirdik.Toplantının sıklığını görevlerin yapılıp yapılmamasına yetişip yetişmeyeceğine göre kararlaştırıp ayarladık.Toplantı sonuçlarımızı aşağıdaki dosyadan inceleyebilirsiniz.
 
+<img src=""  width="600" height="400">
+
 TOPLANTI DOSYALARI EKLENECEK.
 
 #### SPRINT WHATSAPP EKRAN GÖRÜNTÜLERİ
@@ -130,7 +132,7 @@ WHATSAP EKRAN GÖRÜNTÜLERİ EKLENECEK...
 
  #### SPRİNT BOARD SCREENSHOOT 
  
-<img src=""  width="600" height="480">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="600" height="400">
 
  #### SPRİNT REVİEW 
 
