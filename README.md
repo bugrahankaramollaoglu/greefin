@@ -32,10 +32,10 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 
 ####  ÜRÜN ÖZELLİKLERİ 
 
--  Gelir - Gider Ekleme
+-  Gelir - Gider Ekleme :
 	Kullanıcılar harcamalarını manuel olarak veya metin tanıma (text recognition) teknolojisiyle kolayca ekleyebilirler.
 
-- Aylık Harcama Raporları
+- Aylık Harcama Raporları :
 •	Kullanıcılar, aylık bazda hangi kategoride ne kadar harcama yaptıklarını senkronize grafiklerle görebilirler.
 
 -	Kategoriler
@@ -43,30 +43,30 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 	Enerji: Elektrik, su ve diğer enerji harcamaları.
 	Ulaşım: Toplu taşıma ve kişisel araç kullanımı. Her biri için ayrı sürdürülebilirlik hesapları yapılır.
 
-- Sürdürülebilirlik Kapsamı
+- Sürdürülebilirlik Kapsamı :
 	Kullanıcıların alışverişlerinin ne kadarının sürdürülebilir olduğunu gösterir (yeşil bütçe).
 	Aldıkları ürünlerin sürdürülebilirlik endeksine göre kullanıcıların sürdürülebilirlik puanı hesaplanır. Düşük puanlı kullanıcılara tavsiyelerde bulunur.
 
--  Sürdürülebilirlik Puanı ve Rozetler
+-  Sürdürülebilirlik Puanı ve Rozetler :
 	Kullanıcılar, sürdürülebilirlik puanlarına göre rozetler kazanabilirler, bu da sürdürülebilir davranışlarını teşvik eder.
 
--  Sürdürülebilir Ürün Teşviki
+-  Sürdürülebilir Ürün Teşviki :
 	Uygulama, kullanıcıları sürdürülebilir ürünler satın almaya teşvik eder.
 
--  Gün/Hafta/Ay Bazlı Harcama Özetleri
+-  Gün/Hafta/Ay Bazlı Harcama Özetleri :
 	Kullanıcılara, belirli dönemlerde yaptıkları harcamaların özetlerini sunar. Örneğin:
 	Haziran ayında gıdaya ne kadar harcandı.
 	Eğlenceye ne kadar harcandı.
 	Netflix ve Spotify gibi abonelik hizmetlerine ne kadar harcandı.
 
--  Obje Tanıma ve Takip
+-  Obje Tanıma ve Takip :
 	Uygulama, obje tanıma ve takip özellikleri sunar.
 
 
--  Hedef Belirleme
+-  Hedef Belirleme : 
 	Kullanıcılar, sürdürülebilirlik hedefleri belirleyebilirler. Örneğin, "Bu ay karbon ayak izimi %x azaltacağım."
 
--  Motive Edici Push Bildirimleri
+-  Motive Edici Push Bildirimleri :
 	Kullanıcılara, hedeflerine ulaşmaları için motive edici push bildirimleri gönderir.
 
 
@@ -77,31 +77,31 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 
 #### HEDEF KİTLE
 
-- Çevre Bilincine Sahip Bireyler
-	Karbon ayak izlerini azaltmak ve sürdürülebilir bir yaşam tarzı benimsemek isteyenler.
+- Çevre Bilincine Sahip Bireyler :
+	 Karbon ayak izlerini azaltmak ve sürdürülebilir bir yaşam tarzı benimsemek isteyenler.
 
--  Finansal Bilinç Sahipleri
+-  Finansal Bilinç Sahipleri :
 	Harcamalarını ve bütçelerini etkin bir şekilde yönetmek isteyen bireyler.
 
--  Genç Profesyoneller
+-  Genç Profesyoneller :
 	Gelir ve giderlerini izlemek ve sürdürülebilir seçimler yapmak isteyen genç çalışanlar.
 
--  Aileler
+-  Aileler :
 	Aile bütçesini yönetmek ve çocuklarına çevre bilinci aşılamak isteyen ebeveynler.
 
--  Üniversite Öğrencileri
+-  Üniversite Öğrencileri :
 	Hem bütçelerini kontrol altında tutmak hem de sürdürülebilir alışkanlıklar geliştirmek isteyen öğrenciler.
 
--  Çevre Dostu İşletmeler
+-  Çevre Dostu İşletmeler :
    alışanlarına çevre dostu yaşam tarzını teşvik etmek isteyen şirketler ve kurumlar.
    
--  Finansal Danışmanlar ve Koçlar
+-  Finansal Danışmanlar ve Koçlar :
   	Müşterilerine sürdürülebilir finansal çözümler sunmak isteyen profesyoneller.
    
--  Teknoloji ve Uygulama Meraklıları
+-  Teknoloji ve Uygulama Meraklıları :
 	Yenilikçi finansal yönetim ve sürdürülebilirlik uygulamalarını denemek isteyen teknoloji meraklıları.
 
--  Sosyal Sorumluluk ve Sürdürülebilirlik Organizasyonları
+-  Sosyal Sorumluluk ve Sürdürülebilirlik Organizasyonları :
 	Sürdürülebilirlik projeleri yürüten ve toplumu bu konuda bilinçlendirmek isteyen STK'lar ve organizasyonlar.
 
 Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir hedef kitlesine sahiptir.
@@ -218,7 +218,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  #### SPRİNT REVİEW 
 
- Sprint 1 öncesinde tüm takım iyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştırmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.İsim belirlendikten sonra uygulamamızın logosu Bircan Aladinli tarafından tasarlandı.Bu süreçte Burak Güngör uygulamanın UI tasarımları ile ilgilendi.1. sprint süreci doğrultusundaki ilk toplantımızda UI tassarımları incelendi ve onboarding kısımları üzerinde konuşuldu.UI tasarımları üzerinde yapılan konuşmalarımız sonucu tasarımın beklentilerimizi karşılamadığı ve görsel açıdan daha şık tasarlayabileceğimiz konusunda karara vardık.Bunun sonucunda Bircan Aladinli UI tasarımlarını yaptı.Ürünün teknik kod kısmıyla ilgili kullanıcı girişi,firebase ,onboarding,firebase gibi kısımları ile  Buğrahan Karamollaoğlu ilgilendi.Beyza Dişli araştırma kısmında yardımcı olmaya çalıştı  sınav haftası olması sebebiyle ilk sprinte aktif katılım sağlayamadı.Takım ve asistan arası iletişim ,sprint raporları hazırlanması ve toplantı raporlarının hazırlanması ile Beyza Nur Taşkesen ilgilendi.Ulaşamadığımız arkadaşlar arasında iletişimi önemli ölçüde aktif kılmaya çalışıp, projenin gidişatını sekteye uğratmadan ilk sprintte geliştireceğimiz ürüne genel bir çerçeve çizmiş ve teknik zemine yer hazırlamış olduk.İlk sprinti takım olarak başarılı bir şekilde yönettik.
+ Sprint 1 öncesinde tüm takım üyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştırmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.İsim belirlendikten sonra uygulamamızın logosu Bircan Aladinli tarafından tasarlandı.Bu süreçte Burak Güngör uygulamanın UI tasarımları ile ilgilendi.1. sprint süreci doğrultusundaki ilk toplantımızda UI tasarımları incelendi ve onboarding kısımları üzerinde konuşuldu.UI tasarımları üzerinde yapılan konuşmalarımız sonucu tasarımın beklentilerimizi karşılamadığı ve görsel açıdan daha şık tasarlayabileceğimiz konusunda karara vardık.Bunun sonucunda Bircan Aladinli UI tasarımlarını yaptı.Ürünün teknik kod kısmıyla ilgili kullanıcı girişi,firebase ,onboarding, gibi kısımları ile  Buğrahan Karamollaoğlu ilgilendi.Beyza Dişli araştırma kısmında yardımcı olmaya çalıştı  sınav haftası olması sebebiyle ilk sprinte aktif katılım sağlayamadı.Takım ve asistan arası iletişim ,sprint raporları hazırlanması ve toplantı raporlarının hazırlanması ile Beyza Nur Taşkesen ilgilendi.Ulaşamadığımız arkadaşlar arasında iletişimi önemli ölçüde aktif kılmaya çalışıp, projenin gidişatını sekteye uğratmadan ilk sprintte geliştireceğimiz ürüne genel bir çerçeve çizmiş ve teknik zemine yer hazırlamış olduk.İlk sprinti takım olarak başarılı bir şekilde yönettik.
 
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
