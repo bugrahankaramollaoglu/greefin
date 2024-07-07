@@ -3,9 +3,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/firebase/firebase_options.dart';
-import 'package:greefin/onboarding.dart';
 import 'package:greefin/firebase/firebase_router.dart';
+import 'package:greefin/onboarding.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'my_colors.dart';
+
+MyColors my_colors = MyColors();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -51,10 +55,10 @@ class _GreefinAppState extends State<GreefinApp> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return const MaterialApp(
+      return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.brown,
+          backgroundColor: my_colors.color6,
           body: Center(child: CircularProgressIndicator()),
         ),
       );
@@ -62,9 +66,9 @@ class _GreefinAppState extends State<GreefinApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.brown,
+        backgroundColor: my_colors.color6,
         body: _isOnboardingCompleted
-            ? const OnboardingPage()
+            ? const FirebaseRouter()
             : const OnboardingPage(),
       ),
     );

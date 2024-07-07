@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greefin/my_colors.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -13,26 +14,31 @@ Widget _profileRow() {
     children: const [
       Icon(
         Icons.arrow_back_ios_new_rounded,
-        size: 30,
+        size: 20,
       ),
-      Text('Settings', style: TextStyle(fontSize: 33)),
+      Text('Profile', style: TextStyle(fontSize: 33)),
       Icon(
         Icons.notifications,
-        size: 30,
+        size: 20,
       ),
     ],
   );
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+
+  MyColors colors = MyColors();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            // _profileRow(),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+              child: _profileRow(),
+            ),
           ],
         ),
       ),

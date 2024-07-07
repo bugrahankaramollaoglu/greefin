@@ -180,14 +180,14 @@ class _LoginFormState extends State<LoginForm> {
           Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(builder: (context) => const HomePage()),
-            (route) => false,
+                (route) => false,
           );
         }
       } else {
-        // _showToast('Google Sign-In canceled.');
+        print('aa: not worked');
       }
     } catch (e) {
-      print('Error: $e');
+      print('aa: Error: $e');
     }
   }
 

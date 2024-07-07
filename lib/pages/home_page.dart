@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/deneme.dart';
 import 'package:greefin/firebase/auth.dart';
+import 'package:greefin/my_colors.dart';
 import 'package:greefin/pages/add_page.dart';
 import 'package:greefin/pages/green_page.dart';
 import 'package:greefin/pages/login_page.dart';
@@ -12,6 +13,8 @@ import 'package:greefin/pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
 
 enum _SelectedTab { main, stats, add, green, profile }
+
+MyColors my_colors = MyColors();
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -53,7 +56,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      backgroundColor: Colors.brown,
+      backgroundColor: my_colors.color6,
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
