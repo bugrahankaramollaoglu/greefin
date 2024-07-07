@@ -1,4 +1,4 @@
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/08aef891-c713-4dd3-849c-1691051045f9)"  width="500" height="380">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/08aef891-c713-4dd3-849c-1691051045f9)"  width="600" height="480">
 
 
 ### TAKIM VE ÜRÜN HAKKINDA BİLGİLER
@@ -128,10 +128,24 @@ WHATSAP EKRAN GÖRÜNTÜLERİ EKLENECEK...
 
  #### ÜRÜN DURUMU EKRAN GÖRÜNTÜLERİ 
 
+ #### SPRİNT BOARD SCREENSHOOT 
+ 
+<img src=""  width="600" height="480">
 
- ####SPRİNT REVİEW 
+ #### SPRİNT REVİEW 
 
- Sprint 1 öncesinde tüm takım iyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünüün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştıtmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.Sonrasında.....
+ Sprint 1 öncesinde tüm takım iyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştırmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.İsim belirlendikten sonra uygulamamızın logosu Bircan Aladinli tarafından tasarlandı.Bu süreçte Burak Güngör uygulamanın UI tasarımları ile ilgilendi.1. sprint süreci doğrultusundaki ilk toplantımızda UI tassarımları incelendi ve onboarding kısımları üzerinde konuşuldu.UI tasarımları üzerinde yapılan konuşmalarımız sonucu tasarımın beklentilerimizi karşılamadığı ve görsel açıdan daha şık tasarlayabileceğimiz konusunda karara vardık.Bunun sonucunda Bircan Aladinli UI tasarımlarını yaptı.Ürünün teknik kod kısmıyla ilgili kullanıcı girişi,firebase ,onboarding gibi kısımları ile  Buğrahan Karamollaoğlu ilgilendi.Beyza Dişli araştırma kısmında yardımcı olmaya çalıştı  sınav haftası olması sebebiyle ilk sprinte aktif katılım sağlayamadı.Takım ve asistanlar arası iletişim ,sprint raporları hazırlanması ve toplantı raporlarının hazırlanması ile Beyza Nur Taşkesen ilgilendi.Ulaşamadığımız arkadaşlar arasında iletişimi önemli ölçüde aktif kılmaya çalışıp, projenin gidişatını sekteye uğratmadan ilk sprintte geliştireceğimiz ürüne genel bir çerçeve çizmiş ve teknik zemine yer hazırlamış olduk.İlk sprinti takım olarak başarılı bir şekilde yönettik.
+
+ Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
+
+ #### Sprint Retrospektif
+ Product Owner rolünü Beyza Dişli'nin yapmasına karar vermiştik ama sınav haftasından dolayı aktif katılım sağlayamayacağını belirtmesi sonucu bu görevi Bircan Aladinli'ye verdik.
+ UI Tasarımlarının yeniden tasarlanmasına karar verildi.
+ Bir sonraki toplantı tarihi  09.07.2024 saat 23.30 olarak belirlendi
+ Toplantılara aktif olarak katılımın altı çizildi.
+ Bir sonraki toplantıya kadar yapılaması gerekenler görev dağılımları  belirlendi  ve bu projeyi başarılı bir şekilde yöneteceğimiz ve ortaya güzel bir proje çıkaracağımız konusunda motivasyonlar verildi
+
+ 
 
 
 
