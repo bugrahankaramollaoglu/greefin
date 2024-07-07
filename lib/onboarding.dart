@@ -31,7 +31,7 @@ class OnboardingPage extends StatelessWidget {
         fontWeight: FontWeight.w600,
       ),
       onFinish: () => _completeOnboarding(context),
-        trailing: Container(
+      trailing: Container(
         color: const Color.fromARGB(255, 242, 242, 242),
       ),
       centerBackground: true,
@@ -41,15 +41,7 @@ class OnboardingPage extends StatelessWidget {
         splashColor: Colors.white,
         foregroundColor: Colors.black,
       ),
-      skipTextButton:/* const Text(
-        'Skip',
-        style: TextStyle(
-          fontSize: 16,
-          color: Color.fromARGB(255, 38, 37, 37),
-          fontWeight: FontWeight.w600,
-        ),
-      ),*/
-      StrokeText(
+      skipTextButton: StrokeText(
         text: 'Skip',
         textStyle: TextStyle(
           fontSize: 20,
@@ -68,7 +60,7 @@ class OnboardingPage extends StatelessWidget {
       pageBackgroundColor: const Color.fromARGB(255, 242, 242, 242),
       background: [
         Image.asset(
-          'assets/greefin.png',
+          'assets/onb_1.png',
           height: 400,
         ),
         Image.asset(
@@ -88,7 +80,7 @@ class OnboardingPage extends StatelessWidget {
           height: 400,
         ),
         Image.asset(
-          'assets/onb_5.png',
+          'assets/greefin.png',
           height: 400,
         ),
       ],
@@ -96,8 +88,8 @@ class OnboardingPage extends StatelessWidget {
       pageBodies: [
         OnboardingPageTemplate(
           context,
-          'Welcome to ',
-          'Greefin is a platform that helps you to manage your finances and investments.',
+          'Welcome to Greefin!',
+          'Ours is a platform that helps you with managing your finances with sustainability in mind.',
         ),
         OnboardingPageTemplate(
           context,
@@ -121,8 +113,8 @@ class OnboardingPage extends StatelessWidget {
         ),
         OnboardingPageTemplate(
           context,
-          'Financial Goals',
-          'Set financial goals and track your progress.',
+          'Start the Journey!\n',
+          '',
         ),
       ],
     );
@@ -134,46 +126,35 @@ Widget OnboardingPageTemplate(
   return Container(
     alignment: Alignment.center,
     width: MediaQuery.of(context).size.width,
-    padding: const EdgeInsets.symmetric(horizontal: 40),
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
-        const SizedBox(
-          height: 280,
-        ),
-        /*Text(
-            title,
+    height: MediaQuery.of(context).size.height,
+    padding: const EdgeInsets.symmetric(horizontal: 20),
+    child: Padding(
+      padding: const EdgeInsets.fromLTRB(20,0,20,75),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end, // Align content to the bottom
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          StrokeText(
+            text: title,
+            textStyle: TextStyle(
+              fontSize: 30,
+              color: Color.fromARGB(255, 132, 191, 90),
+            ),
+            strokeColor: Colors.black87,
+            strokeWidth: 0.6,
+          ),
+          const SizedBox(height: 20),
+          Text(
+            description,
             textAlign: TextAlign.center,
             style: const TextStyle(
-              color: Color.fromARGB(255,132, 191, 90),
-              fontSize: 24.0,
+              color: Color.fromARGB(255, 38, 37, 37),
+              fontSize: 18.0,
               fontWeight: FontWeight.w600,
             ),
-          ),*/
-
-        StrokeText(
-          text: title,
-          textStyle: TextStyle(
-            fontSize: 30,
-            color: Color.fromARGB(255, 132, 191, 90),
           ),
-          strokeColor: Colors.black87,
-          strokeWidth: 0.6,
-        ),
-        const SizedBox(
-          height: 20,
-        ),
-        Text(
-          description,
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            color: Color.fromARGB(255, 38, 37, 37),
-            fontSize: 18.0,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ],
+        ],
+      ),
     ),
   );
 }
