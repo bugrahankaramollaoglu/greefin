@@ -7,12 +7,22 @@ import 'package:greefin/firebase/firebase_options.dart';
 import 'package:greefin/firebase/firebase_router.dart';
 import 'package:greefin/onboarding.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import 'my_colors.dart';
 
 MyColors my_colors = MyColors();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.white,
+    // Replace with your desired status bar color
+    statusBarBrightness: Brightness.light,
+    // Adjust brightness based on your AppBar color
+    statusBarIconBrightness:
+        Brightness.light, // Adjust icon color based on your AppBar color
+  ));
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -62,8 +72,8 @@ class _GreefinAppState extends State<GreefinApp> {
         useMaterial3: true,
       ),
       home: _isOnboardingCompleted
-            ? const FirebaseRouter()
-            : const OnboardingPage(),
-      );
+          ? const FirebaseRouter()
+          : const OnboardingPage(),
+    );
   }
 }

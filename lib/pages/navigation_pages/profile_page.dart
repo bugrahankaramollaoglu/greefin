@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:greefin/my_colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:greefin/my_colors.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -35,20 +35,26 @@ class _ProfilePageState extends State<ProfilePage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: 20),
-          Center(
-            child: CircleAvatar(
-              radius: 75,
-              backgroundImage: AssetImage('assets/avatar6.png'),
-              // Add onTap to allow user to change profile picture
-
-            ),
+          CircleAvatar(
+            radius: 75,
+            backgroundImage: AssetImage('assets/avatar6.png'),
+            // Add onTap to allow user to change profile picture
           ),
           SizedBox(height: 16),
           Text(
-            _user?.email ?? '',
+            'Logged in as:',
             style: TextStyle(
               fontSize: 18,
-              color: myColors.color6, // Email text color
+              color: myColors.color6,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 8),
+          Text(
+            _user?.email ?? 'error',
+            style: TextStyle(
+              fontSize: 16,
+              color: myColors.color1,
             ),
           ),
           SizedBox(height: 32),
@@ -76,7 +82,10 @@ class _ProfilePageState extends State<ProfilePage> {
             },
             child: Text('Save'),
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16), backgroundColor: myColors.color1, // Customize button color
+              foregroundColor: Colors.white, backgroundColor: myColors.color1, padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
             ),
           ),
         ],
@@ -89,24 +98,32 @@ class _ProfilePageState extends State<ProfilePage> {
     required String label,
     required TextEditingController controller,
   }) {
-    return Row(
-      children: [
-        Icon(
-          icon,
-          size: 24,
-          color: myColors.color4, // Icon color
-        ),
-        SizedBox(width: 12),
-        Expanded(
-          child: TextFormField(
-            controller: controller,
-            decoration: InputDecoration(
-              labelText: label,
-              border: OutlineInputBorder(),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Icon(
+            icon,
+            size: 24,
+            color: myColors.color4,
+          ),
+          SizedBox(width: 12),
+          Expanded(
+            child: TextFormField(
+              controller: controller,
+              style: TextStyle(fontSize: 16),
+              decoration: InputDecoration(
+                labelText: label,
+                labelStyle: TextStyle(fontSize: 16),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
