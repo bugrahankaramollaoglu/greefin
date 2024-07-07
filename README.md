@@ -19,7 +19,7 @@ TAKIM İSMİ:  F07 FLUTTER TAKIMI
 #### ÜRÜN İSMİ 
 Greefin 
 
-#### PRODUCT BACKLOG :
+#### PRODUCT BACKLOG : https://trello.com/b/51iisxFx/f07-bootcamp-spt-1
 
  #### ÜRÜN İSMİ ÇIKIŞ NOKTASI 
 
@@ -101,40 +101,43 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 
 Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir hedef kitlesine sahiptir.
 
+---
 
 # SPRINT 1 
 
 #### SPRINT NOTLARI 
 
 Takım üyeleri arası iletişimi Whatsapp üzerinden sağladık.
-görev dağılımları ve iş bölümleri için Trello'yu kullandık.
+Görev dağılımları ve iş bölümleri için Trello'yu kullandık.
 Uygulamanın gerekleri ve fonksiyonları gibi lsteler için google docs kullandık.
+Ürünün teknolojik altyapılarını belirlemek ve not etmek  için NOTION kullandık.
+UI tassarımları için FİGMA kullandık.
+
+
+
 
 #### SPRINT PUANI VE DEĞERLENDİRMESİ 
 
-Proje boyunca tamamlanmaı gereken backlog   puanı 265 olarak belirlenmiştir.1. sprint sonucunda  bitirilmesi gereken puan 65 olarak belirlenmiştir.
+Proje boyunca tamamlanmaı gereken backlog  puanı 265 olarak belirlenmiştir. 1. sprint sonucunda  bitirilmesi gereken puan 65 olarak belirlenmiştir.
 
 #### PUAN TAMAMLAMA MANTIĞI 
-İlk sprint projenin genel hatlarını dizayn ettiğimiz ve fonksiyonlar ve ürünün temel işlevleri üzerinde çalıştığımız için sprintler arasında daha uygun bir puan belirlenmiştir.Yapılması gereken görevler tamamlanmış ve belirlenen  puana ulaşılmıştır.Diğer sprintlerde projenin genel hatlarını projenin teknik kısmına odaklanacağımız ve daha fazla görevi yerine getireceğimizden dolayı 2. ve 3. sprint 100 puan olarak belirlenmiştir.
+İlk sprint projenin genel hatlarını dizayn ettiğimiz ve fonksiyonlar ve ürünün temel işlevleri üzerinde çalıştığımız için sprintler arasında daha uygun bir puan belirlenmiştir.Yapılması gereken görevler tamamlanmış ve belirlenen  puana ulaşılmıştır.Diğer sprintlerde projenin genel hatlarını projenin teknik kısmına odaklanacağımız ve daha fazla görev üstleneceğimizden  dolayı 2. ve 3. sprint genel görev değerlendirmesi 100 puan olarak belirlenmiştir.
 
 #### DAILY SCRUM
-Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirdik.Toplantının sıklığını görevlerin yapılıp yapılmamasına yetişip yetişmeyeceğine göre kararlaştırıp ayarladık.
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400" height="700">
+Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirdik.Toplantının sıklığını görevleri yetişip yetişmeyeceğine, planın gidişatına ve takım üyelerinin müsaitlik durumlarına göre kararlaştırıp ayarladık.
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ae506941-3d69-41b8-96a3-1dfbb4ff42be"  width="400" height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/eb955ca1-b968-4738-a892-f95bdd1ffcf0"  width="400" height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ae506941-3d69-41b8-96a3-1dfbb4ff42be"  width= "400 " height="700">
 
 
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/eb955ca1-b968-4738-a892-f95bdd1ffcf0"  width= "400 "  height="700">
 
-TOPLANTI DOSYALARI EKLENECEK.
 
-#### SPRINT WHATSAPP EKRAN GÖRÜNTÜLERİ
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/267f84f1-e206-438e-ae60-efe91a8a335c"  width= "400 " height="700">
 
-WHATSAP EKRAN GÖRÜNTÜLERİ EKLENECEK...
 
  #### ÜRÜN DURUMU EKRAN GÖRÜNTÜLERİ 
 
@@ -144,7 +147,7 @@ WHATSAP EKRAN GÖRÜNTÜLERİ EKLENECEK...
 
  #### SPRİNT REVİEW 
 
- Sprint 1 öncesinde tüm takım iyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştırmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.İsim belirlendikten sonra uygulamamızın logosu Bircan Aladinli tarafından tasarlandı.Bu süreçte Burak Güngör uygulamanın UI tasarımları ile ilgilendi.1. sprint süreci doğrultusundaki ilk toplantımızda UI tassarımları incelendi ve onboarding kısımları üzerinde konuşuldu.UI tasarımları üzerinde yapılan konuşmalarımız sonucu tasarımın beklentilerimizi karşılamadığı ve görsel açıdan daha şık tasarlayabileceğimiz konusunda karara vardık.Bunun sonucunda Bircan Aladinli UI tasarımlarını yaptı.Ürünün teknik kod kısmıyla ilgili kullanıcı girişi,firebase ,onboarding gibi kısımları ile  Buğrahan Karamollaoğlu ilgilendi.Beyza Dişli araştırma kısmında yardımcı olmaya çalıştı  sınav haftası olması sebebiyle ilk sprinte aktif katılım sağlayamadı.Takım ve asistanlar arası iletişim ,sprint raporları hazırlanması ve toplantı raporlarının hazırlanması ile Beyza Nur Taşkesen ilgilendi.Ulaşamadığımız arkadaşlar arasında iletişimi önemli ölçüde aktif kılmaya çalışıp, projenin gidişatını sekteye uğratmadan ilk sprintte geliştireceğimiz ürüne genel bir çerçeve çizmiş ve teknik zemine yer hazırlamış olduk.İlk sprinti takım olarak başarılı bir şekilde yönettik.
+ Sprint 1 öncesinde tüm takım iyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştırmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.İsim belirlendikten sonra uygulamamızın logosu Bircan Aladinli tarafından tasarlandı.Bu süreçte Burak Güngör uygulamanın UI tasarımları ile ilgilendi.1. sprint süreci doğrultusundaki ilk toplantımızda UI tassarımları incelendi ve onboarding kısımları üzerinde konuşuldu.UI tasarımları üzerinde yapılan konuşmalarımız sonucu tasarımın beklentilerimizi karşılamadığı ve görsel açıdan daha şık tasarlayabileceğimiz konusunda karara vardık.Bunun sonucunda Bircan Aladinli UI tasarımlarını yaptı.Ürünün teknik kod kısmıyla ilgili kullanıcı girişi,firebase ,onboarding,firebase gibi kısımları ile  Buğrahan Karamollaoğlu ilgilendi.Beyza Dişli araştırma kısmında yardımcı olmaya çalıştı  sınav haftası olması sebebiyle ilk sprinte aktif katılım sağlayamadı.Takım ve asistan arası iletişim ,sprint raporları hazırlanması ve toplantı raporlarının hazırlanması ile Beyza Nur Taşkesen ilgilendi.Ulaşamadığımız arkadaşlar arasında iletişimi önemli ölçüde aktif kılmaya çalışıp, projenin gidişatını sekteye uğratmadan ilk sprintte geliştireceğimiz ürüne genel bir çerçeve çizmiş ve teknik zemine yer hazırlamış olduk.İlk sprinti takım olarak başarılı bir şekilde yönettik.
 
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
