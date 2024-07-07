@@ -101,37 +101,30 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir hedef kitlesine sahiptir.
 
 ### ÜRÜN UI TASARIMI 
-https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2c9490a8-460e-416d-8be1-720a30c60159
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/93393cf6-9600-4d49-bf5f-aab5d0176084"  width="800 " height="600">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/c2e192a8-d316-4d16-ad57-00f012958788"  width="800 " height="600">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/93393cf6-9600-4d49-bf5f-aab5d0176084"  width="950 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/deb8f066-a1bf-4e33-bcb1-68f3736a7aa3"  width="800 " height="600">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/c2e192a8-d316-4d16-ad57-00f012958788"  width="950 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2c9490a8-460e-416d-8be1-720a30c60159"  width="1000 " height="600">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/deb8f066-a1bf-4e33-bcb1-68f3736a7aa3"  width="950 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9629bc32-492f-446b-8b7b-c3320ce7bbf1"  width="800 " height="600">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2c9490a8-460e-416d-8be1-720a30c60159"  width="950 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="800 " height="600">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9629bc32-492f-446b-8b7b-c3320ce7bbf1"  width="950 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/31e515ed-8fc8-484c-8d64-8e3c2393ff50"  width="800 " height="600">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="950 " height="700">
 
 
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/31e515ed-8fc8-484c-8d64-8e3c2393ff50"  width="950 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/fba96398-5815-4575-b580-91aa1dd5cbdc"  width="800 " height="600">
-
-
-
-
-https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2c9490a8-460e-416d-8be1-720a30c60159
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/fba96398-5815-4575-b580-91aa1dd5cbdc"  width="950 " height="700">
 
 ---
 
@@ -139,11 +132,10 @@ https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2c9490a8-460e-
 
 #### SPRINT NOTLARI 
 
-Takım üyeleri arası iletişimi Whatsapp üzerinden sağladık.
-Görev dağılımları ve iş bölümleri için Trello'yu kullandık.
-Uygulamanın gerekleri ve fonksiyonları gibi lsteler için google docs kullandık.
-Ürünün teknolojik altyapılarını belirlemek ve not etmek  için NOTION kullandık.
-UI tassarımları için FİGMA kullandık.
+- Takım üyeleri arası iletişimi **Whatsapp** üzerinden sağladık.
+- Görev dağılımları ve iş bölümleri için **Trello** kullandık.
+- Uygulamanın gerekleri ve fonksiyonları gibi listeler için **Google Docs** kullandık.
+- UI tassarımları için **Figma** kullandık.
 
 
 
