@@ -13,7 +13,6 @@ MyColors my_colors = MyColors();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -56,33 +55,15 @@ class _GreefinAppState extends State<GreefinApp> {
 
   @override
   Widget build(BuildContext context) {
-    if (_isLoading) {
-      return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          backgroundColor: my_colors.color6,
-          body: Center(child: CircularProgressIndicator()),
-        ),
-      );
-    }
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
       home: _isOnboardingCompleted
             ? const FirebaseRouter()
             : const OnboardingPage(),
       );
   }
 }
-
-/*    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: my_colors.color6,
-        body: _isOnboardingCompleted
-            ? const FirebaseRouter()
-            : const OnboardingPage(),
-      ),
-    );
-  }
-}
-*/

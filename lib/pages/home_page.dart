@@ -3,10 +3,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/my_colors.dart';
-import 'package:greefin/pages/navigation_pages/profile_page.dart';
-import 'package:greefin/pages/navigation_pages/search_page.dart';
 import 'package:greefin/pages/login_page.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
+import 'package:greefin/pages/navigation_pages/profile_page.dart';
+import 'package:greefin/pages/navigation_pages/search_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
 
@@ -55,6 +55,34 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('page Name'),
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ElevatedButton(
+            onPressed: () {},
+            child: Icon(
+              Icons.arrow_back,
+              color: my_colors.color6,
+            ),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: my_colors.color7,
+              // Background color
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+                // side: BorderSide(color: my_colors.color5,width: 1),
+              ),
+              elevation: 50,
+
+              padding: EdgeInsets.zero,
+              // Remove default padding
+              // Remove minimum size constraints
+              alignment: Alignment.center, // Center the content
+            ),
+          ),
+        ),
+      ),
       extendBody: true,
       backgroundColor: my_colors.color6,
       body: SizedBox(
@@ -70,8 +98,7 @@ class _HomePageState extends State<HomePage> {
         splashBorderRadius: 15,
         outlineBorderColor: Colors.white,
         indicatorColor: Colors.transparent,
-
-        backgroundColor: Colors.black.withOpacity(0.6),
+        backgroundColor: my_colors.color5.withOpacity(0.9),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
         onTap: _handleIndexChanged,
