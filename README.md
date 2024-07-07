@@ -103,30 +103,33 @@ Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir 
 ### ÜRÜN UI TASARIMI 
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/93393cf6-9600-4d49-bf5f-aab5d0176084"  width="950 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/93393cf6-9600-4d49-bf5f-aab5d0176084"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/c2e192a8-d316-4d16-ad57-00f012958788"  width="950 " height="800">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/c2e192a8-d316-4d16-ad57-00f012958788"  width="900 " height="700">
 
 
-<img src=" "  width="1250 " height="800">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/aa9d9912-76af-48b6-8766-3f87c4da258e"  width="900 " height="700">
 
-<img src=" "  width="1250 " height="800">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2c9490a8-460e-416d-8be1-720a30c60159"  width="1250 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a2533ed9-0d80-4436-8753-1f0a245b8a4c"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9629bc32-492f-446b-8b7b-c3320ce7bbf1"  width="950 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/87cdd5c1-86c5-4135-80fb-de7f640f1617"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="950 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/299e0af1-176e-4e55-bd3c-1f96d5bc934b"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/31e515ed-8fc8-484c-8d64-8e3c2393ff50"  width="950 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9629bc32-492f-446b-8b7b-c3320ce7bbf1"  width="900 " height="700">
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/fba96398-5815-4575-b580-91aa1dd5cbdc"  width="950 " height="700">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="900 " height="700">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/31e515ed-8fc8-484c-8d64-8e3c2393ff50"  width="900 " height="700">
+
+
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/fba96398-5815-4575-b580-91aa1dd5cbdc"  width="900 " height="700">
 
 ---
 
