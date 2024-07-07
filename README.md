@@ -17,7 +17,7 @@ TAKIM İSMİ:  F07 FLUTTER TAKIMI
 |BEYZA DİŞLİ | DEVELOPER |
 
 #### ÜRÜN İSMİ 
-Greefin 
+greefin 
 
 #### PRODUCT BACKLOG : https://trello.com/b/51iisxFx/f07-bootcamp-spt-1
 
