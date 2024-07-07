@@ -3,15 +3,16 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/my_colors.dart';
-import 'package:greefin/pages/add_page.dart';
-import 'package:greefin/pages/green_page.dart';
+import 'package:greefin/pages/navigation_pages/profile_page.dart';
+import 'package:greefin/pages/navigation_pages/search_page.dart';
 import 'package:greefin/pages/login_page.dart';
-import 'package:greefin/pages/main_page.dart';
-import 'package:greefin/pages/profile_page.dart';
-import 'package:greefin/pages/stats_page.dart';
+import 'package:greefin/pages/navigation_pages/main_page.dart';
+import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
 
-enum _SelectedTab { main, stats, add, green, profile }
+import 'navigation_pages/add_page.dart';
+
+enum _SelectedTab { main, search, add, stats, profile }
 
 MyColors my_colors = MyColors();
 
@@ -69,7 +70,8 @@ class _HomePageState extends State<HomePage> {
         splashBorderRadius: 15,
         outlineBorderColor: Colors.white,
         indicatorColor: Colors.transparent,
-        backgroundColor: Colors.black.withOpacity(0.9),
+
+        backgroundColor: Colors.black.withOpacity(0.6),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
         onTap: _handleIndexChanged,
@@ -86,14 +88,14 @@ class _HomePageState extends State<HomePage> {
             unselectedIcon: IconlyLight.search,
           ),
           CrystalNavigationBarItem(
-            icon: IconlyBold.heart,
+            icon: IconlyBold.plus,
             selectedColor: Colors.white,
-            unselectedIcon: IconlyLight.heart,
+            unselectedIcon: IconlyLight.plus,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.plus,
             selectedColor: Colors.white,
-            unselectedIcon: IconlyLight.plus,
+            unselectedIcon: IconlyLight.chart,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.profile,
@@ -109,12 +111,12 @@ class _HomePageState extends State<HomePage> {
     switch (_selectedTab) {
       case _SelectedTab.main:
         return MainPage();
-      case _SelectedTab.stats:
-        return StatsPage();
+      case _SelectedTab.search:
+        return SearchPage();
       case _SelectedTab.add:
         return AddPage();
-      case _SelectedTab.green:
-        return GreenPage();
+      case _SelectedTab.stats:
+        return StatsPage();
       case _SelectedTab.profile:
         return ProfilePage();
     }
