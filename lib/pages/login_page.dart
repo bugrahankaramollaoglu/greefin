@@ -90,7 +90,7 @@ class GradientBorderContainer extends StatelessWidget {
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
-        child: showRegisterPage ? LoginForm() : LoginForm(),
+        child: showRegisterPage ? RegisterForm() : LoginForm(),
       ),
     );
   }

@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/utilities/my_colors.dart';
@@ -274,7 +275,7 @@ class _RegisterFormState extends State<RegisterForm> {
             text: 'Already have an account? ',
           ),
           TextSpan(
-            text: 'Sign In',
+            text: 'Sign In\n',
             style: TextStyle(
               color: MyColors().color9, // Set your desired color her6
               fontWeight: FontWeight.bold,
@@ -297,7 +298,7 @@ class _RegisterFormState extends State<RegisterForm> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text('Sign Up', style: TextStyle(fontSize: 30)),
-        SizedBox(height: 50),
+        SizedBox(height: 20),
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
@@ -313,7 +314,7 @@ class _RegisterFormState extends State<RegisterForm> {
             // Add onTap to allow user to change profile picture
           ),
         ),
-        SizedBox(height: 50),
+        SizedBox(height: 30),
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           child: nameField('Full Name', _nameController, Icons.person_outline),
@@ -329,20 +330,22 @@ class _RegisterFormState extends State<RegisterForm> {
           child: passwordField('Password', _passwordController,
               Icons.lock_outline_rounded, true),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 30),
         _signupButton(),
-        SizedBox(height: 20),
+        SizedBox(height: 30),
         TextDivider.horizontal(
-          text: const Text('OR'),
+          text: const Text(
+            'OR',
+            style: TextStyle(),
+          ),
           color: Colors.black87,
           thickness: 1,
-          size: 0.20,
           indent: 20,
           endIndent: 20,
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 20),
         oauthRow(),
-        SizedBox(height: 10),
+        SizedBox(height: 20),
         _loginText(),
       ],
     );
