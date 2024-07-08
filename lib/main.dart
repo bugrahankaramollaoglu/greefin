@@ -53,12 +53,7 @@ class _GreefinAppState extends State<GreefinApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       debugShowCheckedModeBanner: false,
-     /* theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),*/
       home: _isOnboardingCompleted
           ? const FirebaseRouter()
           : const OnboardingPage(),

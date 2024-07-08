@@ -147,7 +147,7 @@ Widget OnboardingPageTemplate(
     height: MediaQuery.of(context).size.height,
     padding: const EdgeInsets.symmetric(horizontal: 20),
     child: Padding(
-      padding: const EdgeInsets.fromLTRB(20,0,20,75),
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 75),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end, // Align content to the bottom
         crossAxisAlignment: CrossAxisAlignment.center,

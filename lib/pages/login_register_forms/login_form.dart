@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
 import 'package:auth_button_kit/auth_button_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
@@ -121,6 +120,7 @@ class _LoginFormState extends State<LoginForm> {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
       autocorrect: false,
+      cursorColor: Colors.grey,
       controller: e_controller,
       decoration: InputDecoration(
         filled: true,
@@ -129,7 +129,7 @@ class _LoginFormState extends State<LoginForm> {
         hintText: 'Enter',
         hintStyle: TextStyle(color: Colors.grey),
         enabledBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black), // Unfocused border color
+          borderSide: BorderSide(color: Colors.grey), // Unfocused border color
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.black), // Focused border color
@@ -145,18 +145,19 @@ class _LoginFormState extends State<LoginForm> {
       },
     );
   }
-
   Widget passwordField(
-    String hintText,
-    TextEditingController p_controller,
-    IconData icon,
-    bool isPassword,
-  ) {
+      String hintText,
+      TextEditingController p_controller,
+      IconData icon,
+      bool isPassword,
+      ) {
+    bool _obscureText = isPassword;
+
     return TextFormField(
-      obscureText: isPassword,
+      obscureText: _obscureText,
       controller: p_controller,
-      cursorColor: Colors.black54,
-      style: TextStyle(color: Colors.black54),
+      cursorColor: Colors.grey,
+      style: TextStyle(color: Colors.grey),
       decoration: InputDecoration(
         filled: true,
         fillColor: Colors.white.withOpacity(0.3),
@@ -164,12 +165,23 @@ class _LoginFormState extends State<LoginForm> {
         hintText: 'Enter',
         hintStyle: TextStyle(color: Colors.grey),
         enabledBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black), // Unfocused border color
+          borderSide: BorderSide(color: Colors.grey), // Unfocused border color
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.black), // Focused border color
         ),
         labelText: hintText,
+        suffixIcon: IconButton(
+          icon: Icon(
+            _obscureText ? Icons.visibility : Icons.visibility_off,
+            color: Colors.black87.withOpacity(0.75),
+          ),
+          onPressed: () {
+            setState(() {
+              _obscureText = !_obscureText;
+            });
+          },
+        ),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -319,7 +331,7 @@ class _LoginFormState extends State<LoginForm> {
     return RichText(
       text: TextSpan(
         style: TextStyle(
-          color: Colors.black,
+          color: Colors.black87.withOpacity(0.7),
           fontSize: 16,
         ),
         children: <TextSpan>[
@@ -329,7 +341,7 @@ class _LoginFormState extends State<LoginForm> {
           TextSpan(
             text: 'Sign up',
             style: TextStyle(
-              color: MyColors().color9, // Set your desired color here
+              color: MyColors().color9, // Set your desired color her6
               fontWeight: FontWeight.bold,
             ),
             recognizer: TapGestureRecognizer()
@@ -412,9 +424,9 @@ class _LoginFormState extends State<LoginForm> {
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
             onPressed: _signInWithGoogle,
-            icon: const Icon(
+            icon:  Icon(
               FontAwesomeIcons.google,
-              color: Colors.black87,
+              color: MyColors().color8,
               size: 30,
             ),
           ),
@@ -423,9 +435,9 @@ class _LoginFormState extends State<LoginForm> {
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
             onPressed: _signInWithGoogle,
-            icon: const Icon(
+            icon:  Icon(
               FontAwesomeIcons.microsoft,
-              color: Colors.black87,
+              color: MyColors().color8,
               size: 35,
             ),
           ),
@@ -434,9 +446,9 @@ class _LoginFormState extends State<LoginForm> {
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
             onPressed: _signInWithGoogle,
-            icon: const Icon(
+            icon:  Icon(
               FontAwesomeIcons.apple,
-              color: Colors.black87,
+              color: MyColors().color8,
               size: 35,
             ),
           ),
@@ -465,8 +477,9 @@ class _LoginFormState extends State<LoginForm> {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(
-                color: Colors.grey, // Choose your stroke color here
-                width: 2, // Adjust the width of the border
+                color: Colors.grey
+                    .withOpacity(0.4), // Choose your stroke color here
+                width: 7, // Adjust the width of the border
               ),
             ),
             child: CircleAvatar(
