@@ -8,61 +8,6 @@ import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/utilities/my_colors.dart';
 
-/* class LoginForm extends StatefulWidget {
-  const LoginForm({super.key});
-
-  @override
-  State<LoginForm> createState() => _LoginFormState();
-}
-
-class _LoginFormState extends State<LoginForm> {
-  String? errorMessage;
-  final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
-
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      key: const ValueKey('loginPage'),
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        const Text(
-          'GREEFIN',
-          style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        const SizedBox(height: 20),
-        _entryField(
-          'Email',
-          _emailController,
-          Icons.email,
-          false,
-        ),
-        const SizedBox(height: 20),
-        _entryField(
-          'Password',
-          _passwordController,
-          Icons.lock,
-          true,
-        ),
-        _forgotPassword(), // Forgot password button
-        errorMessageWidget(),
-        const SizedBox(height: 20),
-        _loginButton(),
-        _registerButton(),
-        _guestButton(),
-        const SizedBox(height: 30),
-        _divider(),
-        const SizedBox(height: 10),
-        _oauthRow(),
-      ],
-    );
-  }
-} */
-
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
 
@@ -128,8 +73,9 @@ class _LoginFormState extends State<LoginForm> {
         prefixIcon: Icon(icon),
         hintText: 'Enter',
         hintStyle: TextStyle(color: Colors.grey),
-        enabledBorder: const OutlineInputBorder(
+        enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.grey), // Unfocused border color
+          borderRadius: BorderRadius.circular(10),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.black), // Focused border color
@@ -165,7 +111,8 @@ class _LoginFormState extends State<LoginForm> {
         prefixIcon: Icon(icon),
         hintText: 'Enter',
         hintStyle: TextStyle(color: Colors.grey),
-        enabledBorder: const OutlineInputBorder(
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide(color: Colors.grey), // Unfocused border color
         ),
         focusedBorder: OutlineInputBorder(
@@ -215,39 +162,11 @@ class _LoginFormState extends State<LoginForm> {
         foregroundColor: Colors.white,
         backgroundColor: Colors.green,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(10),
         ),
         padding: EdgeInsets.symmetric(
             horizontal: 110), // Adjust the horizontal padding
       ),
-    );
-  }
-
-  Widget _registerButton() {
-    return AuthButton(
-      onPressed: (asd) {},
-      // onPressed: (method) => setState(() => showLoginPage = false),
-      brand: Method.custom,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(45),
-      ),
-      text: 'Register',
-      customImage: Image.asset('assets/signup.png'),
-      backgroundColor: const Color.fromARGB(255, 200, 200, 31),
-      textColor: Colors.black54,
-    );
-  }
-
-  Widget _registerUserButton() {
-    return AuthButton(
-      onPressed: (method) => _createUserWithEmailAndPassword(),
-      brand: Method.custom,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(45),
-      ),
-      text: 'Create User',
-      backgroundColor: Colors.white,
-      textColor: Colors.black,
     );
   }
 
@@ -261,7 +180,7 @@ class _LoginFormState extends State<LoginForm> {
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(10),
           side: BorderSide(
             color: Colors.black87.withOpacity(0.6),
             width: 1,
@@ -274,7 +193,7 @@ class _LoginFormState extends State<LoginForm> {
     );
   }
 
-  Future<void> _signInWithGoogle() async {
+  Future<void> signInWithGoogle() async {
     final GoogleSignIn googleSignIn = GoogleSignIn();
 
     try {
@@ -417,14 +336,14 @@ class _LoginFormState extends State<LoginForm> {
     );
   }
 
-  Widget _oauthRow() {
+  Widget oauthRow() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
-            onPressed: _signInWithGoogle,
+            onPressed: signInWithGoogle,
             icon: Icon(
               FontAwesomeIcons.google,
               color: MyColors().color8,
@@ -435,7 +354,7 @@ class _LoginFormState extends State<LoginForm> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
-            onPressed: _signInWithGoogle,
+            onPressed: signInWithGoogle,
             icon: Icon(
               FontAwesomeIcons.microsoft,
               color: MyColors().color8,
@@ -446,7 +365,7 @@ class _LoginFormState extends State<LoginForm> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
-            onPressed: _signInWithGoogle,
+            onPressed: signInWithGoogle,
             icon: Icon(
               FontAwesomeIcons.apple,
               color: MyColors().color8,
@@ -506,7 +425,7 @@ class _LoginFormState extends State<LoginForm> {
             const SizedBox(height: 30),
             _divider(),
             SizedBox(height: 10),
-            _oauthRow(),
+            oauthRow(),
             SizedBox(height: 20),
             _registerText(),
           ],

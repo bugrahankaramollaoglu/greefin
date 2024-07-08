@@ -59,6 +59,7 @@ dependencies:
   camera: ^0.11.0+1
   image_picker: ^1.1.2
   stroke_text: ^0.0.3
+  text_divider: ^1.0.0
 
 dev_dependencies:
   flutter_test:

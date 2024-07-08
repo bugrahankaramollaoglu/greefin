@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       body: Center(
-        child: GradientBorderContainer(showLoginPage: true),
+        child: GradientBorderContainer(showRegisterPage: true),
       ),
     );
   }
@@ -65,9 +65,9 @@ class GradientBorderPainter extends CustomPainter {
 }
 
 class GradientBorderContainer extends StatelessWidget {
-  final bool showLoginPage;
+  final bool showRegisterPage;
 
-  GradientBorderContainer({required this.showLoginPage});
+  GradientBorderContainer({required this.showRegisterPage});
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +90,7 @@ class GradientBorderContainer extends StatelessWidget {
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
-        child: showLoginPage ? LoginForm() : RegisterForm(),
+        child: showRegisterPage ? LoginForm() : LoginForm(),
       ),
     );
   }
