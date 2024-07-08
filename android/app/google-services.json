@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "840668605334-deam726jfna05afkk0rv7s5hfke0c20t.apps.googleusercontent.com",
+          "client_id": "840668605334-ffej5ud0opnadac9n06a1ji4ntffigoe.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.oua.greefin",
-            "certificate_hash": "8116f967498ffd0b0be312b672708e6a8ed27504"
+            "certificate_hash": "e74315f70249e9e38c00bcf26e7e261c64a5feeb"
           }
         },
         {

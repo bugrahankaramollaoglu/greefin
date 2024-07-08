@@ -468,42 +468,49 @@ class _LoginFormState extends State<LoginForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(30.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(
-                color: Colors.grey
-                    .withOpacity(0.3), // Choose your stroke color here
-                width: 6, // Adjust the width of the border
-              ),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.fromLTRB(
+            30.0, 30.0, 30.0, MediaQuery.of(context).viewInsets.bottom),
+        child: Column(
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.grey
+                          .withOpacity(0.3), // Choose your stroke color here
+                      width: 6, // Adjust the width of the border
+                    ),
+                  ),
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: AssetImage('assets/avatar6.png'),
+                    // Add onTap to allow user to change profile picture
+                  ),
+                ),
+              ],
             ),
-            child: CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage('assets/avatar6.png'),
-              // Add onTap to allow user to change profile picture
-            ),
-          ),
-          SizedBox(height: 20),
-          emailField('Email', _emailController, Icons.email, false),
-          SizedBox(height: 20),
-          passwordField('password', _passwordController, Icons.lock, true),
-          _forgotPassword(), // Forgot password button
-          const SizedBox(height: 20),
-          _loginButton(),
-          _guestButton(),
-          const SizedBox(height: 30),
-          _divider(),
-          SizedBox(height: 10),
-          _oauthRow(),
-          SizedBox(height: 20),
-          _registerText(),
-        ],
+            SizedBox(height: 20),
+            emailField('Email', _emailController, Icons.email, false),
+            SizedBox(height: 20),
+            passwordField('password', _passwordController, Icons.lock, true),
+            _forgotPassword(), // Forgot password button
+            const SizedBox(height: 20),
+            _loginButton(),
+            _guestButton(),
+            const SizedBox(height: 30),
+            _divider(),
+            SizedBox(height: 10),
+            _oauthRow(),
+            SizedBox(height: 20),
+            _registerText(),
+          ],
+        ),
       ),
     );
   }

@@ -52,7 +52,7 @@ class GradientBorderPainter extends CustomPainter {
     final Path path = Path()
       ..addRRect(RRect.fromRectAndRadius(
         Rect.fromLTWH(0, 0, size.width, size.height),
-        Radius.circular(20),
+        const Radius.circular(20),
       ));
 
     canvas.drawPath(path, paint);
