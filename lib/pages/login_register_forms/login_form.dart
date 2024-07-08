@@ -145,12 +145,13 @@ class _LoginFormState extends State<LoginForm> {
       },
     );
   }
+
   Widget passwordField(
-      String hintText,
-      TextEditingController p_controller,
-      IconData icon,
-      bool isPassword,
-      ) {
+    String hintText,
+    TextEditingController p_controller,
+    IconData icon,
+    bool isPassword,
+  ) {
     bool _obscureText = isPassword;
 
     return TextFormField(
@@ -332,7 +333,7 @@ class _LoginFormState extends State<LoginForm> {
       text: TextSpan(
         style: TextStyle(
           color: Colors.black87.withOpacity(0.7),
-          fontSize: 16,
+          fontSize: 18,
         ),
         children: <TextSpan>[
           TextSpan(
@@ -424,7 +425,7 @@ class _LoginFormState extends State<LoginForm> {
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
             onPressed: _signInWithGoogle,
-            icon:  Icon(
+            icon: Icon(
               FontAwesomeIcons.google,
               color: MyColors().color8,
               size: 30,
@@ -435,7 +436,7 @@ class _LoginFormState extends State<LoginForm> {
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
             onPressed: _signInWithGoogle,
-            icon:  Icon(
+            icon: Icon(
               FontAwesomeIcons.microsoft,
               color: MyColors().color8,
               size: 35,
@@ -446,7 +447,7 @@ class _LoginFormState extends State<LoginForm> {
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
             onPressed: _signInWithGoogle,
-            icon:  Icon(
+            icon: Icon(
               FontAwesomeIcons.apple,
               color: MyColors().color8,
               size: 35,
@@ -468,7 +469,7 @@ class _LoginFormState extends State<LoginForm> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(38.0),
+      padding: const EdgeInsets.all(30.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -478,8 +479,8 @@ class _LoginFormState extends State<LoginForm> {
               shape: BoxShape.circle,
               border: Border.all(
                 color: Colors.grey
-                    .withOpacity(0.4), // Choose your stroke color here
-                width: 7, // Adjust the width of the border
+                    .withOpacity(0.3), // Choose your stroke color here
+                width: 6, // Adjust the width of the border
               ),
             ),
             child: CircleAvatar(
@@ -496,10 +497,11 @@ class _LoginFormState extends State<LoginForm> {
           const SizedBox(height: 20),
           _loginButton(),
           _guestButton(),
-          const SizedBox(height: 20),
+          const SizedBox(height: 30),
           _divider(),
-          _oauthRow(), SizedBox(height: 10),
-
+          SizedBox(height: 10),
+          _oauthRow(),
+          SizedBox(height: 20),
           _registerText(),
         ],
       ),

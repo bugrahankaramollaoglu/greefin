@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:greefin/main.dart';
 import 'package:greefin/pages/login_register_forms/register_form.dart';
 
 import '../utilities/my_colors.dart';
@@ -70,19 +71,22 @@ class GradientBorderContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+
     return CustomPaint(
       painter: GradientBorderPainter(
         color: MyColors().color9, // Set your desired color here
-        width: 3,
+        width: 2,
       ),
       child: Container(
-        width: 350,
-        height: 700,
+        width: width * 0.9,
+        height: height * 0.8,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
-            colors: [Colors.grey.withOpacity(0.4), Colors.white],
+            colors: [my_colors.color2.withOpacity(0.1), Colors.white],
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),

@@ -55,17 +55,10 @@ class OnboardingPage extends StatelessWidget {
         color: Color.fromARGB(255, 242, 242, 242),
       ),
       controllerColor: Color.fromARGB(255, 38, 37, 37),
-      totalPage: 6,
+      totalPage: 5,
       headerBackgroundColor: const Color.fromARGB(255, 242, 242, 242),
       pageBackgroundColor: const Color.fromARGB(255, 242, 242, 242),
       background: [
-        Padding(
-          padding: const EdgeInsets.all(18.0),
-          child: Image.asset(
-            'assets/onb_1.png',
-            height: 400,
-          ),
-        ),
         Padding(
           padding: const EdgeInsets.all(18.0),
           child: Image.asset(
@@ -104,11 +97,6 @@ class OnboardingPage extends StatelessWidget {
       ],
       speed: 1.4,
       pageBodies: [
-        OnboardingPageTemplate(
-          context,
-          'Welcome to Greefin!',
-          'Ours is a platform that helps you with managing your finances with sustainability in mind.',
-        ),
         OnboardingPageTemplate(
           context,
           'Investment',
