@@ -55,34 +55,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text('page Name'),
-        leading: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ElevatedButton(
-            onPressed: () {},
-            child: Icon(
-              Icons.arrow_back,
-              color: my_colors.color6,
-            ),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: my_colors.color7,
-              // Background color
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-                // side: BorderSide(color: my_colors.color5,width: 1),
-              ),
-              elevation: 50,
-
-              padding: EdgeInsets.zero,
-              // Remove default padding
-              // Remove minimum size constraints
-              alignment: Alignment.center, // Center the content
-            ),
-          ),
-        ),
-      ),
       extendBody: true,
       backgroundColor: my_colors.color6,
       body: SizedBox(
@@ -96,37 +68,32 @@ class _HomePageState extends State<HomePage> {
         height: 50,
         borderRadius: 15,
         splashBorderRadius: 15,
-        outlineBorderColor: Colors.white,
+        // outlineBorderColor: Colors.white,
         indicatorColor: Colors.transparent,
-        backgroundColor: my_colors.color5.withOpacity(0.9),
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white70,
+        backgroundColor: MyColors().color6,
+        selectedItemColor: MyColors().color9,
+        unselectedItemColor: Colors.grey,
         onTap: _handleIndexChanged,
-        enablePaddingAnimation: true,
+        enablePaddingAnimation: false,
         items: [
           CrystalNavigationBarItem(
             icon: IconlyBold.home,
-            selectedColor: Colors.white,
             unselectedIcon: IconlyLight.home,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.search,
-            selectedColor: Colors.white,
             unselectedIcon: IconlyLight.search,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.plus,
-            selectedColor: Colors.white,
             unselectedIcon: IconlyLight.plus,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.chart,
-            selectedColor: Colors.white,
             unselectedIcon: IconlyLight.chart,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.profile,
-            selectedColor: Colors.white,
             unselectedIcon: IconlyLight.profile,
           ),
         ],
