@@ -114,9 +114,11 @@ class LoginForm extends ConsumerWidget {
     }
   }
 
-  Widget _loginButton() {
+  Widget _loginButton(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        _signInWithEmailAndPassword(context);
+      },
       child: Text(
         'Login',
       ),
@@ -266,14 +268,16 @@ class LoginForm extends ConsumerWidget {
     );
   }
 
-  Widget oauthRow() {
+  Widget oauthRow(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
-            onPressed: null,
+            onPressed: () {
+              signInWithGoogle(context);
+            },
             icon: Icon(
               FontAwesomeIcons.google,
               color: MyColors().color8,
@@ -295,7 +299,6 @@ class LoginForm extends ConsumerWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: IconButton(
-            // onPressed: signInWithGoogle,
             onPressed: null,
             icon: Icon(
               FontAwesomeIcons.apple,
@@ -306,6 +309,58 @@ class LoginForm extends ConsumerWidget {
         ),
       ],
     );
+  }
+
+  Future<void> signInWithGoogle(BuildContext context) async {
+    final GoogleSignIn googleSignIn = GoogleSignIn();
+
+    try {
+      final GoogleSignInAccount? googleSignInAccount =
+          await googleSignIn.signIn();
+
+      if (googleSignInAccount != null) {
+        final GoogleSignInAuthentication googleAuth =
+            await googleSignInAccount.authentication;
+
+        final credential = GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken,
+          idToken: googleAuth.idToken,
+        );
+
+        final UserCredential userCredential =
+            await FirebaseAuth.instance.signInWithCredential(credential);
+
+        if (userCredential.user != null) {
+          Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (context) => const HomePage()),
+            (route) => false,
+          );
+        }
+      } else {
+        print('aa: not worked');
+      }
+    } catch (e) {
+      print('aa: Error: $e');
+    }
+  }
+
+  Future<void> _signInWithEmailAndPassword(BuildContext context) async {
+    try {
+      await Auth().signInWithEmailAndPassword(
+        email: _emailController.text.trim(),
+        password: _passwordController.text.trim(),
+      );
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+        (route) => false,
+      );
+    } on FirebaseAuthException catch (e) {
+      /*  setState(() {
+        errorMessage = e.message;
+      }); */
+    }
   }
 
   Widget _divider() {
@@ -351,7 +406,7 @@ class LoginForm extends ConsumerWidget {
             passwordField('password', _passwordController, Icons.lock, true),
             _forgotPassword(), // Forgot password button
             const SizedBox(height: 20),
-            _loginButton(),
+            _loginButton(context),
             _guestButton(),
             const SizedBox(height: 30),
             // _divider(),
@@ -366,7 +421,7 @@ class LoginForm extends ConsumerWidget {
               endIndent: 20,
             ),
             SizedBox(height: 10),
-            oauthRow(),
+            oauthRow(context),
             SizedBox(height: 20),
             _registerText(ref),
           ],
@@ -386,41 +441,8 @@ class LoginForm extends ConsumerWidget {
 
 class _LoginFormState extends State<LoginForm> {
 
-  Future<void> _signInWithEmailAndPassword() async {
-    try {
-      await Auth().signInWithEmailAndPassword(
-        email: _emailController.text,
-        password: _passwordController.text,
-      );
-      Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
-        (route) => false,
-      );
-    } on FirebaseAuthException catch (e) {
-      setState(() {
-        errorMessage = e.message;
-      });
-    }
-  }
 
-  Future<void> _createUserWithEmailAndPassword() async {
-    try {
-      await Auth().createUserWithEmailAndPassword(
-        email: _emailController.text,
-        password: _passwordController.text,
-      );
-      Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
-        (route) => false,
-      );
-    } on FirebaseAuthException catch (e) {
-      setState(() {
-        errorMessage = e.message;
-      });
-    }
-  }
+
   Future<void> signInWithGoogle() async {
     final GoogleSignIn googleSignIn = GoogleSignIn();
 
