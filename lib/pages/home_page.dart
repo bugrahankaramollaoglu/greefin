@@ -17,7 +17,7 @@ enum _SelectedTab { main, search, add, stats, profile }
 MyColors my_colors = MyColors();
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
         this.user = user;
       });
       if (user == null) {
-        WidgetsBinding.instance!.addPostFrameCallback((_) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(builder: (context) => const LoginPage()),
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
         child: _buildBody(),
       ),
       bottomNavigationBar: CrystalNavigationBar(
-        duration: Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 500),
         currentIndex: _SelectedTab.values.indexOf(_selectedTab),
         height: 50,
         borderRadius: 15,
@@ -104,15 +104,15 @@ class _HomePageState extends State<HomePage> {
   Widget _buildBody() {
     switch (_selectedTab) {
       case _SelectedTab.main:
-        return MainPage();
+        return const MainPage();
       case _SelectedTab.search:
-        return SearchPage();
+        return const SearchPage();
       case _SelectedTab.add:
-        return AddPage();
+        return const AddPage();
       case _SelectedTab.stats:
-        return StatsPage();
+        return const StatsPage();
       case _SelectedTab.profile:
-        return ProfilePage();
+        return const ProfilePage();
     }
   }
 }

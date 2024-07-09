@@ -1,7 +1,4 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:glass/glass.dart';
-import 'package:glassmorphism_ui/glassmorphism_ui.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/utilities/my_colors.dart';
 
@@ -19,8 +16,8 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     // build() metodu her rebuiltta tekrar çalışıyor
 
-    final screen_h = MediaQuery.of(context).size.height;
-    final screen_w = MediaQuery.of(context).size.width;
+    final screenH = MediaQuery.of(context).size.height;
+    final screenW = MediaQuery.of(context).size.width;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -30,7 +27,7 @@ class _MainPageState extends State<MainPage> {
             onPressed: () {
               Auth().signOut();
             },
-            child: Text('Sign Out')),
+            child: const Text('Sign Out')),
       ],
     );
   }

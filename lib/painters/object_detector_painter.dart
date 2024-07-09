@@ -28,7 +28,7 @@ class ObjectDetectorPainter extends CustomPainter {
       ..strokeWidth = 3.0
       ..color = Colors.lightGreenAccent;
 
-    final Paint background = Paint()..color = Color(0x99000000);
+    final Paint background = Paint()..color = const Color(0x99000000);
 
     for (final DetectedObject detectedObject in _objects) {
       final ParagraphBuilder builder = ParagraphBuilder(

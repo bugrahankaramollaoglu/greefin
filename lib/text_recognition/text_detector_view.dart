@@ -5,6 +5,8 @@ import 'package:greefin/text_recognition/detector_view.dart';
 import '../painters/text_detector_painter.dart';
 
 class TextRecognizerView extends StatefulWidget {
+  const TextRecognizerView({super.key});
+
   @override
   State<TextRecognizerView> createState() => _TextRecognizerViewState();
 }
@@ -43,7 +45,7 @@ class _TextRecognizerViewState extends State<TextRecognizerView> {
             right: 100,
             child: Row(
               children: [
-                Spacer(),
+                const Spacer(),
                 Container(
                     decoration: BoxDecoration(
                       color: Colors.black54,
@@ -53,7 +55,7 @@ class _TextRecognizerViewState extends State<TextRecognizerView> {
                       padding: const EdgeInsets.all(4.0),
                       child: _buildDropdown(),
                     )),
-                Spacer(),
+                const Spacer(),
               ],
             )),
       ]),

@@ -1,6 +1,5 @@
 import 'package:auth_button_kit/auth_button_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -32,16 +31,16 @@ class RegisterForm extends ConsumerWidget {
         prefixIcon: Icon(icon),
         labelText: hintText,
         hintText: 'Enter',
-        hintStyle: TextStyle(color: Colors.grey),
-        labelStyle: TextStyle(color: Colors.grey),
+        hintStyle: const TextStyle(color: Colors.grey),
+        labelStyle: const TextStyle(color: Colors.grey),
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+        contentPadding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
+          borderSide: const BorderSide(color: Colors.grey),
           borderRadius: BorderRadius.circular(10.0),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.black),
           borderRadius: BorderRadius.circular(10.0),
         ),
       ),
@@ -80,16 +79,16 @@ class RegisterForm extends ConsumerWidget {
         prefixIcon: Icon(icon),
         labelText: hintText,
         hintText: 'Enter',
-        hintStyle: TextStyle(color: Colors.grey),
-        labelStyle: TextStyle(color: Colors.grey),
+        hintStyle: const TextStyle(color: Colors.grey),
+        labelStyle: const TextStyle(color: Colors.grey),
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+        contentPadding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
+          borderSide: const BorderSide(color: Colors.grey),
           borderRadius: BorderRadius.circular(10.0),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.black),
           borderRadius: BorderRadius.circular(10.0),
         ),
       ),
@@ -116,7 +115,7 @@ class RegisterForm extends ConsumerWidget {
             (route) => false,
           );
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Sign Up Successful!')),
+            const SnackBar(content: Text('Sign Up Successful!')),
           );
         } catch (e) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -124,7 +123,6 @@ class RegisterForm extends ConsumerWidget {
           );
         }
       },
-      child: Text('Sign Up'),
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: MyColors().color9,
@@ -133,48 +131,49 @@ class RegisterForm extends ConsumerWidget {
         ),
         padding: const EdgeInsets.symmetric(horizontal: 110),
       ),
+      child: const Text('Sign Up'),
     );
   }
 
   Widget passwordField(String hintText, TextEditingController controller,
       IconData icon, bool isPassword) {
-    bool _obscureText = isPassword;
+    bool obscureText = isPassword;
 
     return StatefulBuilder(
       builder: (BuildContext context, StateSetter setState) {
         return TextFormField(
-          obscureText: _obscureText,
+          obscureText: obscureText,
           controller: controller,
           cursorColor: Colors.grey,
-          style: TextStyle(color: Colors.grey),
+          style: const TextStyle(color: Colors.grey),
           decoration: InputDecoration(
             filled: true,
             fillColor: Colors.white.withOpacity(0.3),
             prefixIcon: Icon(icon),
             hintText: 'Enter',
-            hintStyle: TextStyle(color: Colors.grey),
+            hintStyle: const TextStyle(color: Colors.grey),
             labelText: hintText,
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: const TextStyle(color: Colors.grey),
             floatingLabelBehavior: FloatingLabelBehavior.always,
             contentPadding:
-                EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+                const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
             enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.grey),
+              borderSide: const BorderSide(color: Colors.grey),
               borderRadius: BorderRadius.circular(10.0),
             ),
             suffixIcon: IconButton(
               icon: Icon(
-                _obscureText ? Icons.visibility : Icons.visibility_off,
+                obscureText ? Icons.visibility : Icons.visibility_off,
                 color: Colors.black87.withOpacity(0.75),
               ),
               onPressed: () {
                 setState(() {
-                  _obscureText = !_obscureText;
+                  obscureText = !obscureText;
                 });
               },
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.black),
+              borderSide: const BorderSide(color: Colors.black),
               borderRadius: BorderRadius.circular(10.0),
             ),
           ),
@@ -272,7 +271,7 @@ class RegisterForm extends ConsumerWidget {
           fontSize: 18,
         ),
         children: <TextSpan>[
-          TextSpan(
+          const TextSpan(
             text: 'Already have an account? ',
           ),
           TextSpan(
@@ -295,34 +294,34 @@ class RegisterForm extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
-      key: ValueKey('registerPage'),
+      key: const ValueKey('registerPage'),
       mainAxisSize: MainAxisSize.min,
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         CircleAvatar(
           radius: 50,
           backgroundColor: MyColors().color6,
-          backgroundImage: AssetImage('assets/avatar.png'),
+          backgroundImage: const AssetImage('assets/avatar.png'),
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           child: nameField('Full Name', _nameController, Icons.person_outline),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           child: emailField('Email', _emailController, Icons.email_outlined),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           child: passwordField('Password', _passwordController,
               Icons.lock_outline_rounded, true),
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         _signupButton(context),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         TextDivider.horizontal(
           text: const Text(
             'OR',
@@ -333,9 +332,9 @@ class RegisterForm extends ConsumerWidget {
          indent: 20,
           endIndent: 20,
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         oauthRow(),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         _loginText(ref),
       ],
     );

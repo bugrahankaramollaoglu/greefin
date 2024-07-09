@@ -50,11 +50,11 @@ class OnboardingPage extends StatelessWidget {
         strokeColor: Colors.greenAccent,
         strokeWidth: 0.5,
       ),
-      skipIcon: Icon(
+      skipIcon: const Icon(
         Icons.arrow_forward_ios_rounded,
         color: Color.fromARGB(255, 242, 242, 242),
       ),
-      controllerColor: Color.fromARGB(255, 38, 37, 37),
+      controllerColor: const Color.fromARGB(255, 38, 37, 37),
       totalPage: 5,
       headerBackgroundColor: const Color.fromARGB(255, 242, 242, 242),
       pageBackgroundColor: const Color.fromARGB(255, 242, 242, 242),
@@ -142,7 +142,7 @@ Widget OnboardingPageTemplate(
         children: <Widget>[
           StrokeText(
             text: title,
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
               fontSize: 30,
               color: Color.fromARGB(255, 132, 191, 90),
             ),

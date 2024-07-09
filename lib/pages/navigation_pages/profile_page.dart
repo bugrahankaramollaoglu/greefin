@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:greefin/main.dart';
 import 'package:greefin/utilities/my_colors.dart';
 
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({Key? key}) : super(key: key);
+  const ProfilePage({super.key});
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
@@ -12,12 +11,12 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   MyColors myColors = MyColors();
-  FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   User? _user;
 
-  TextEditingController _nameController = TextEditingController();
-  TextEditingController _phoneController = TextEditingController();
-  TextEditingController _locationController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _phoneController = TextEditingController();
+  final TextEditingController _locationController = TextEditingController();
 
   @override
   void initState() {
@@ -31,11 +30,11 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Container(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
@@ -44,13 +43,13 @@ class _ProfilePageState extends State<ProfilePage> {
                 width: 4, // Adjust the width of the border
               ),
             ),
-            child: CircleAvatar(
+            child: const CircleAvatar(
               radius: 75,
               backgroundImage: AssetImage('assets/avatar6.png'),
               // Add onTap to allow user to change profile picture
             ),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Text(
             'Logged in as:',
             style: TextStyle(
@@ -59,7 +58,7 @@ class _ProfilePageState extends State<ProfilePage> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(
             _user?.email ?? 'error',
             style: TextStyle(
@@ -67,36 +66,36 @@ class _ProfilePageState extends State<ProfilePage> {
               color: myColors.color1,
             ),
           ),
-          SizedBox(height: 32),
+          const SizedBox(height: 32),
           _buildProfileInfoItem(
             icon: Icons.person,
             label: 'Name',
             controller: _nameController,
           ),
-          SizedBox(height: 12),
+          const SizedBox(height: 12),
           _buildProfileInfoItem(
             icon: Icons.phone,
             label: 'Phone',
             controller: _phoneController,
           ),
-          SizedBox(height: 12),
+          const SizedBox(height: 12),
           _buildProfileInfoItem(
             icon: Icons.location_on,
             label: 'Location',
             controller: _locationController,
           ),
-          SizedBox(height: 32),
+          const SizedBox(height: 32),
           ElevatedButton(
             onPressed: () {
               // Implement save profile logic here
             },
-            child: Text('Save'),
             style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: myColors.color7, padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+              foregroundColor: Colors.white, backgroundColor: myColors.color7, padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
+            child: const Text('Save'),
           ),
         ],
       ),

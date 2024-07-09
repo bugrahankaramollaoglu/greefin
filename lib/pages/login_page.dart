@@ -1,14 +1,12 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:greefin/main.dart';
 import 'package:greefin/pages/login_register_forms/register_form.dart';
 import 'package:greefin/pages/riverpod_providers.dart';
 import '../utilities/my_colors.dart';
 import 'login_register_forms/login_form.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -18,8 +16,8 @@ class _LoginPageState extends State<LoginPage> {
   String? errorMessage;
   bool showLoginPage = true;
 
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +86,7 @@ class GradientBorderContainer extends ConsumerWidget {
             end: Alignment.topCenter,
             colors: [MyColors().color2.withOpacity(0.1), Colors.white],
           ),
-          borderRadius: BorderRadius.all(Radius.circular(20)),
+          borderRadius: const BorderRadius.all(Radius.circular(20)),
         ),
         child: AnimatedSwitcher(
           duration: const Duration(milliseconds: 500),
@@ -108,8 +106,8 @@ class GradientBorderContainer extends ConsumerWidget {
             return scaleTransition;
           },
           child: isShowRegister
-              ? RegisterForm(key: ValueKey(1))
-              : LoginForm(key: ValueKey(2)),
+              ? RegisterForm(key: const ValueKey(1))
+              : LoginForm(key: const ValueKey(2)),
         ),
       ),
     );

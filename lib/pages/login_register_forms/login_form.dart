@@ -379,27 +379,6 @@ class LoginForm extends ConsumerWidget {
             30.0, 30.0, 30.0, MediaQuery.of(context).viewInsets.bottom),
         child: Column(
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.grey
-                          .withOpacity(0.3), // Choose your stroke color here
-                      width: 6, // Adjust the width of the border
-                    ),
-                  ),
-                  child: CircleAvatar(
-                    radius: 50,
-                    backgroundImage: AssetImage('assets/avatar6.png'),
-                    // Add onTap to allow user to change profile picture
-                  ),
-                ),
-              ],
-            ),
             SizedBox(height: 20),
             emailField('Email', _emailController, Icons.email, false),
             SizedBox(height: 20),
@@ -409,17 +388,7 @@ class LoginForm extends ConsumerWidget {
             _loginButton(context),
             _guestButton(),
             const SizedBox(height: 30),
-            // _divider(),
-            TextDivider.horizontal(
-              text: const Text(
-                'OR',
-                style: TextStyle(),
-              ),
-              color: Colors.black87,
-              thickness: 1,
-              indent: 10,
-              endIndent: 10,
-            ),
+            _divider(),
             SizedBox(height: 10),
             oauthRow(context),
             SizedBox(height: 20),
