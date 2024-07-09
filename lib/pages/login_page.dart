@@ -1,8 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/main.dart';
 import 'package:greefin/pages/login_register_forms/register_form.dart';
+import 'package:greefin/pages/riverpod_providers.dart';
 
 import '../utilities/my_colors.dart';
 import 'login_register_forms/login_form.dart';
@@ -26,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       body: Center(
-        child: GradientBorderContainer(showRegisterPage: true),
+        child: GradientBorderContainer(),
       ),
     );
   }
@@ -64,6 +66,40 @@ class GradientBorderPainter extends CustomPainter {
   }
 }
 
+class GradientBorderContainer extends ConsumerWidget {
+  const GradientBorderContainer({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+
+    var isShowRegister = ref.watch(showRegisterProvider);
+
+    return CustomPaint(
+      painter: GradientBorderPainter(
+        color: MyColors().color9, // Set your desired color here
+        width: 2,
+      ),
+      child: Container(
+        width: width * 0.9,
+        height: height * 0.8,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.bottomCenter,
+            end: Alignment.topCenter,
+            colors: [my_colors.color2.withOpacity(0.1), Colors.white],
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+        ),
+        child: isShowRegister ? LoginForm() : RegisterForm(),
+      ),
+    );
+  }
+}
+
+
+/*
 class GradientBorderContainer extends StatelessWidget {
   final bool showRegisterPage;
 
@@ -90,8 +126,9 @@ class GradientBorderContainer extends StatelessWidget {
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
-        child: showRegisterPage ? LoginForm() : RegisterForm(),
+        child: showRegisterPage ? RegisterForm() : LoginForm(),
       ),
     );
   }
 }
+ */

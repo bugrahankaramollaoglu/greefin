@@ -3,21 +3,18 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/pages/home_page.dart';
+import 'package:greefin/pages/riverpod_providers.dart';
 import 'package:greefin/utilities/my_colors.dart';
 import 'package:text_divider/text_divider.dart';
 
-class RegisterForm extends StatefulWidget {
-  const RegisterForm({super.key});
+class RegisterForm extends ConsumerWidget {
+  RegisterForm({super.key});
 
-  @override
-  State<RegisterForm> createState() => _RegisterFormState();
-}
-
-class _RegisterFormState extends State<RegisterForm> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
@@ -150,9 +147,9 @@ class _RegisterFormState extends State<RegisterForm> {
             color: Colors.black87.withOpacity(0.75),
           ),
           onPressed: () {
-            setState(() {
+            /*  setState(() {
               _obscureText = !_obscureText;
-            });
+            }); */
           },
         ),
         focusedBorder: OutlineInputBorder(
@@ -208,11 +205,11 @@ class _RegisterFormState extends State<RegisterForm> {
             await FirebaseAuth.instance.signInWithCredential(credential);
 
         if (userCredential.user != null) {
-          Navigator.pushAndRemoveUntil(
+          /*  Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(builder: (context) => const HomePage()),
             (route) => false,
-          );
+          ); */
         }
       } else {
         print('aa: not worked');
@@ -263,7 +260,7 @@ class _RegisterFormState extends State<RegisterForm> {
     );
   }
 
-  Widget _loginText() {
+  Widget _loginText(WidgetRef ref) {
     return RichText(
       text: TextSpan(
         style: TextStyle(
@@ -282,14 +279,90 @@ class _RegisterFormState extends State<RegisterForm> {
             ),
             recognizer: TapGestureRecognizer()
               ..onTap = () {
+                ref.read(showRegisterProvider.state).state =
+                    !ref.read(showRegisterProvider.state).state;
                 // Navigate to your sign-up screen or handle the tap event
-                print('Sign up tapped');
               },
           ),
         ],
       ),
     );
   }
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Column(
+      key: ValueKey('registerPage'),
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(height: 20),
+        Container(
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.all(
+              color: Colors.black
+                  .withOpacity(0.8), // Choose your stroke color here
+              width: 2, // Adjust the width of the border
+            ),
+          ),
+          child: CircleAvatar(
+            radius: 50,
+            backgroundImage: AssetImage('assets/avatar6.png'),
+            // Add onTap to allow user to change profile picture
+          ),
+        ),
+        SizedBox(height: 30),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+          child: nameField('Full Name', _nameController, Icons.person_outline),
+        ),
+        SizedBox(height: 20),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+          child: emailField('Email', _emailController, Icons.email_outlined),
+        ),
+        SizedBox(height: 20),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+          child: passwordField('Password', _passwordController,
+              Icons.lock_outline_rounded, true),
+        ),
+        SizedBox(height: 30),
+        _signupButton(),
+        SizedBox(height: 30),
+        TextDivider.horizontal(
+          text: const Text(
+            'OR',
+            style: TextStyle(),
+          ),
+          color: Colors.black87,
+          thickness: 1,
+          indent: 20,
+          endIndent: 20,
+        ),
+        SizedBox(height: 20),
+        oauthRow(),
+        SizedBox(height: 20),
+        _loginText(ref),
+      ],
+    );
+  }
+}
+
+
+/*
+class RegisterForm extends StatefulWidget {
+  const RegisterForm({super.key});
+
+  @override
+  State<RegisterForm> createState() => _RegisterFormState();
+}
+
+class _RegisterFormState extends State<RegisterForm> {
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -350,3 +423,4 @@ class _RegisterFormState extends State<RegisterForm> {
     );
   }
 }
+ */

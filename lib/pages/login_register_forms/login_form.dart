@@ -2,14 +2,42 @@ import 'package:auth_button_kit/auth_button_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/home_page.dart';
+import 'package:greefin/pages/riverpod_providers.dart';
 import 'package:greefin/utilities/my_colors.dart';
 import 'package:text_divider/text_divider.dart';
 
-class LoginForm extends StatefulWidget {
+class LoginForm extends ConsumerWidget {
+  LoginForm({super.key});
+
+  String? errorMessage;
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Column(
+      children: [
+        ElevatedButton(
+          onPressed: () {
+            print('Login button pressed');
+            ref.read(showRegisterProvider.state).state =
+                !ref.read(showRegisterProvider.state).state;
+          },
+          child: const Text('registera dön'),
+        ),
+      ],
+    );
+  }
+}
+
+
+/*
+class LoginForm extends ConsumerWidget {
   const LoginForm({super.key});
 
   @override
@@ -248,7 +276,7 @@ class _LoginFormState extends State<LoginForm> {
     );
   }
 
-  Widget _registerText() {
+  Widget _registerText(WidgetRef ref) {
     return RichText(
       text: TextSpan(
         style: TextStyle(
@@ -268,6 +296,9 @@ class _LoginFormState extends State<LoginForm> {
             recognizer: TapGestureRecognizer()
               ..onTap = () {
                 // Navigate to your sign-up screen or handle the tap event
+                ref.read(showRegisterProvider.state).state =
+                    !ref.read(showRegisterProvider.state).state;
+
                 print('Sign up tapped');
               },
           ),
@@ -387,7 +418,7 @@ class _LoginFormState extends State<LoginForm> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,WidgetRef ref) {
     return SingleChildScrollView(
       child: Padding(
         padding: EdgeInsets.fromLTRB(
@@ -438,10 +469,11 @@ class _LoginFormState extends State<LoginForm> {
             SizedBox(height: 10),
             oauthRow(),
             SizedBox(height: 20),
-            _registerText(),
+            _registerText(ref),
           ],
         ),
       ),
     );
   }
 }
+ */
