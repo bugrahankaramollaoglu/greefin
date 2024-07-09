@@ -41,7 +41,7 @@ class OnboardingPage extends StatelessWidget {
         splashColor: Colors.white,
         foregroundColor: Colors.black,
       ),
-      skipTextButton: StrokeText(
+      skipTextButton: const StrokeText(
         text: 'Skip',
         textStyle: TextStyle(
           fontSize: 20,

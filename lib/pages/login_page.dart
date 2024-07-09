@@ -1,11 +1,9 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/main.dart';
 import 'package:greefin/pages/login_register_forms/register_form.dart';
 import 'package:greefin/pages/riverpod_providers.dart';
-
 import '../utilities/my_colors.dart';
 import 'login_register_forms/login_form.dart';
 
@@ -46,7 +44,7 @@ class GradientBorderPainter extends CustomPainter {
       ..shader = LinearGradient(
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
-        colors: [color, color.withOpacity(0)],
+        colors: [color, color.withOpacity(1)],
       ).createShader(Rect.fromLTWH(0, 0, size.width, size.height))
       ..style = PaintingStyle.stroke
       ..strokeWidth = width;
@@ -88,11 +86,31 @@ class GradientBorderContainer extends ConsumerWidget {
           gradient: LinearGradient(
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
-            colors: [my_colors.color2.withOpacity(0.1), Colors.white],
+            colors: [MyColors().color2.withOpacity(0.1), Colors.white],
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
-        child: isShowRegister ? RegisterForm() : LoginForm(),
+        child: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 500),
+          transitionBuilder: (Widget child, Animation<double> animation) {
+            final fadeTransition =
+                FadeTransition(opacity: animation, child: child);
+            final scaleTransition = ScaleTransition(
+              scale: Tween<double>(
+                begin: 0.8,
+                end: 1.0,
+              ).animate(CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeInOut,
+              )),
+              child: fadeTransition,
+            );
+            return scaleTransition;
+          },
+          child: isShowRegister
+              ? LoginForm(key: ValueKey(1))
+              : RegisterForm(key: ValueKey(2)),
+        ),
       ),
     );
   }

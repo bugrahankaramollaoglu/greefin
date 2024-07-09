@@ -122,7 +122,7 @@ class LoginForm extends ConsumerWidget {
       ),
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
-        backgroundColor: Colors.green,
+        backgroundColor: MyColors().color4,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -194,8 +194,8 @@ class LoginForm extends ConsumerWidget {
             recognizer: TapGestureRecognizer()
               ..onTap = () {
                 // Navigate to your sign-up screen or handle the tap event
-                ref.read(showRegisterProvider.state).state =
-                    !ref.read(showRegisterProvider.state).state;
+                ref.read(showRegisterProvider.notifier).state =
+                    !ref.read(showRegisterProvider.notifier).state;
 
                 print('Sign up tapped');
               },

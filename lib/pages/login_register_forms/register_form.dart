@@ -177,10 +177,9 @@ class RegisterForm extends ConsumerWidget {
         foregroundColor: Colors.white,
         backgroundColor: MyColors().color9,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(10),
         ),
-        padding: EdgeInsets.symmetric(
-            horizontal: 110), // Adjust the horizontal padding
+        padding: const EdgeInsets.symmetric(horizontal: 110),
       ),
     );
   }
@@ -279,8 +278,8 @@ class RegisterForm extends ConsumerWidget {
             ),
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                ref.read(showRegisterProvider.state).state =
-                    !ref.read(showRegisterProvider.state).state;
+                ref.read(showRegisterProvider.notifier).state =
+                    !ref.read(showRegisterProvider.notifier).state;
                 // Navigate to your sign-up screen or handle the tap event
               },
           ),
