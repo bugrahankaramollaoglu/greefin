@@ -297,7 +297,6 @@ class _RegisterFormState extends State<RegisterForm> {
       key: ValueKey('registerPage'),
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('Sign Up', style: TextStyle(fontSize: 30)),
         SizedBox(height: 20),
         Container(
           decoration: BoxDecoration(

@@ -11,18 +11,15 @@ class AddPage extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // TextRecognizerView(),
-          SizedBox(height: 130),
-          IconButton(
-            onPressed: null,
-            iconSize: 90,
-            color: Colors.white,
-            icon: Icon(Icons.qr_code_scanner_rounded),
-          ),
+          Container(
+            width: 400,
+            height: 400,
+            child: TextRecognizerView(),
+          )
         ],
       ),
     );

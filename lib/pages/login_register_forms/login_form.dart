@@ -7,6 +7,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/utilities/my_colors.dart';
+import 'package:text_divider/text_divider.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -423,7 +424,17 @@ class _LoginFormState extends State<LoginForm> {
             _loginButton(),
             _guestButton(),
             const SizedBox(height: 30),
-            _divider(),
+            // _divider(),
+            TextDivider.horizontal(
+              text: const Text(
+                'OR',
+                style: TextStyle(),
+              ),
+              color: Colors.black87,
+              thickness: 1,
+              indent: 20,
+              endIndent: 20,
+            ),
             SizedBox(height: 10),
             oauthRow(),
             SizedBox(height: 20),
