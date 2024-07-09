@@ -17,8 +17,8 @@ class Auth {
 
   Future<void> signOut() async {
     if (_googleSignIn.currentUser != null) {
-      await _googleSignIn.signOut(); // Use disconnect instead of signOut
-      await _googleSignIn.disconnect(); // Use disconnect instead of signOut
+      await _googleSignIn.signOut();
+      await _googleSignIn.disconnect();
     } else {
       await _firebaseAuth.signOut();
     }
