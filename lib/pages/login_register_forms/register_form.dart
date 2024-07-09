@@ -299,18 +299,10 @@ class RegisterForm extends ConsumerWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         SizedBox(height: 20),
-        Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(
-              color: Colors.black.withOpacity(0.8),
-              width: 2,
-            ),
-          ),
-          child: CircleAvatar(
-            radius: 50,
-            backgroundImage: AssetImage('assets/avatar6.png'),
-          ),
+        CircleAvatar(
+          radius: 50,
+          backgroundColor: MyColors().color6,
+          backgroundImage: AssetImage('assets/avatar.png'),
         ),
         SizedBox(height: 30),
         Padding(
@@ -338,7 +330,7 @@ class RegisterForm extends ConsumerWidget {
           ),
           color: Colors.black87,
           thickness: 1,
-          indent: 20,
+         indent: 20,
           endIndent: 20,
         ),
         SizedBox(height: 20),
