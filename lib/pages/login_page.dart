@@ -78,7 +78,7 @@ class GradientBorderContainer extends ConsumerWidget {
 
     return CustomPaint(
       painter: GradientBorderPainter(
-        color: MyColors().color9, // Set your desired color here
+        color: MyColors().color9,
         width: 2,
       ),
       child: Container(
@@ -92,43 +92,8 @@ class GradientBorderContainer extends ConsumerWidget {
           ),
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
-        child: isShowRegister ? LoginForm() : RegisterForm(),
+        child: isShowRegister ? RegisterForm() : LoginForm(),
       ),
     );
   }
 }
-
-
-/*
-class GradientBorderContainer extends StatelessWidget {
-  final bool showRegisterPage;
-
-  GradientBorderContainer({required this.showRegisterPage});
-
-  @override
-  Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
-
-    return CustomPaint(
-      painter: GradientBorderPainter(
-        color: MyColors().color9, // Set your desired color here
-        width: 2,
-      ),
-      child: Container(
-        width: width * 0.9,
-        height: height * 0.8,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.bottomCenter,
-            end: Alignment.topCenter,
-            colors: [my_colors.color2.withOpacity(0.1), Colors.white],
-          ),
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-        child: showRegisterPage ? RegisterForm() : LoginForm(),
-      ),
-    );
-  }
-}
- */
