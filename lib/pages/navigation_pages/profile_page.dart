@@ -33,7 +33,7 @@ class ProfilePage extends StatelessWidget {
       ), */
       body: Column(
         children: [
-          SizedBox(height: 30),
+          SizedBox(height: 100),
           Center(
             child: Text(
               'Please set up your profile',
@@ -51,8 +51,8 @@ class ProfilePage extends StatelessWidget {
               color: Colors.white,
               shape: BoxShape.circle,
               border: Border.all(
-                color: MyColors().color8.withOpacity(0.4),
-                width: 7,
+                color: MyColors().color8.withOpacity(0.2),
+                width: 8,
               ),
             ),
             child: const CircleAvatar(

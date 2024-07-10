@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:greefin/pages/login_forms/forgot_password.dart';
+import 'package:greefin/pages/login_forms/forgot_form.dart';
 import 'package:greefin/pages/login_forms/register_form.dart';
 import 'package:greefin/pages/riverpod_providers.dart';
 import '../utilities/my_colors.dart';
