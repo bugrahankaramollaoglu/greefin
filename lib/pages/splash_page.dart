@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:greefin/main.dart';
-import 'package:greefin/pages/login_register_forms/login_form.dart';
+import 'package:greefin/pages/login_forms/login_form.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);

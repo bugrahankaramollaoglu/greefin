@@ -5,3 +5,9 @@ final showRegisterProvider = StateProvider<bool>(
     return false;
   },
 );
+
+final showForgotPasswdProvider = StateProvider<bool>(
+  (ref) {
+    return false;
+  },
+);

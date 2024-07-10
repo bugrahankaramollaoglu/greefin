@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:greefin/pages/login_register_forms/register_form.dart';
+import 'package:greefin/pages/login_forms/forgot_password.dart';
+import 'package:greefin/pages/login_forms/register_form.dart';
 import 'package:greefin/pages/riverpod_providers.dart';
 import '../utilities/my_colors.dart';
-import 'login_register_forms/login_form.dart';
+import 'login_forms/login_form.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -33,6 +34,7 @@ class _LoginPageState extends State<LoginPage> {
 class GradientBorderPainter extends CustomPainter {
   final Color color;
   final double width;
+
 
   GradientBorderPainter({required this.color, required this.width});
 
@@ -71,6 +73,7 @@ class GradientBorderContainer extends ConsumerWidget {
     double height = MediaQuery.of(context).size.height;
 
     var isShowRegister = ref.watch(showRegisterProvider);
+    var isShowForgot = ref.watch(showForgotPasswdProvider);
 
     return CustomPaint(
       painter: GradientBorderPainter(
@@ -105,9 +108,11 @@ class GradientBorderContainer extends ConsumerWidget {
             );
             return scaleTransition;
           },
-          child: isShowRegister
-              ? RegisterForm(key: const ValueKey(1))
-              : LoginForm(key: const ValueKey(2)),
+          child: isShowForgot
+              ? ForgotPasswordForm(key: ValueKey(3))
+              : isShowRegister
+                  ? RegisterForm(key: ValueKey(1))
+                  : LoginForm(key: ValueKey(2)),
         ),
       ),
     );

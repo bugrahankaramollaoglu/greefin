@@ -158,12 +158,13 @@ class LoginForm extends ConsumerWidget {
   }
 
   // Forgot Password Functionality
-  Widget _forgotPassword(BuildContext context) {
+  Widget _forgotPassword(WidgetRef ref) {
     return Align(
       alignment: Alignment.centerRight,
       child: TextButton(
         onPressed: () {
-          _showForgotPasswordDialog(context);
+          ref.read(showForgotPasswdProvider.notifier).state =
+              !ref.read(showForgotPasswdProvider.notifier).state;
         },
         child: Text(
           'Forgot Password?',
@@ -385,7 +386,7 @@ class LoginForm extends ConsumerWidget {
             emailField('Email', _emailController, Icons.email, false),
             SizedBox(height: 20),
             passwordField('password', _passwordController, Icons.lock, true),
-            _forgotPassword(context), // Forgot password button
+            _forgotPassword(ref), // Forgot password button
             const SizedBox(height: 20),
             _loginButton(context),
             _guestButton(),
