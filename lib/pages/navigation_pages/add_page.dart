@@ -11,15 +11,16 @@ class AddPage extends StatelessWidget {
     return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
+      
+          /*  SizedBox(
             width: 400,
             height: 400,
             child: TextRecognizerView(),
-          )
+          ) */
         ],
       ),
     );

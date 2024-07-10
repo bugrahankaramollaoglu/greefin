@@ -23,11 +23,7 @@ class _MainPageState extends State<MainPage> {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ElevatedButton(
-            onPressed: () {
-              Auth().signOut();
-            },
-            child: const Text('Sign Out')),
+  
       ],
     );
   }

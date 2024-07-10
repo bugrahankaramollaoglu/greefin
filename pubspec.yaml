@@ -60,6 +60,7 @@ dependencies:
   image_picker: ^1.1.2
   stroke_text: ^0.0.3
   text_divider: ^1.0.0
+  splash: ^1.1.0
 
 dev_dependencies:
   flutter_test:

@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      backgroundColor: my_colors.color6,
+      backgroundColor: Colors.white,
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -69,8 +69,8 @@ class _HomePageState extends State<HomePage> {
         borderRadius: 15,
         splashBorderRadius: 15,
         // outlineBorderColor: Colors.white,
-        indicatorColor: Colors.transparent,
-        backgroundColor: MyColors().color6,
+        indicatorColor: MyColors().color9,
+        backgroundColor: Colors.white,
         selectedItemColor: MyColors().color9,
         unselectedItemColor: Colors.grey,
         onTap: _handleIndexChanged,

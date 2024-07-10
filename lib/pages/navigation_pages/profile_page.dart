@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/utilities/my_colors.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -31,73 +32,115 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const SizedBox(height: 20),
-          Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(
-                color: MyColors().color8, // Choose your stroke color here
-                width: 4, // Adjust the width of the border
+      child: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Stack(
+              children: [
+                // Arrow image at the start
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: GestureDetector(
+                    onTap: () {
+                      // Navigator.pop(context);
+                    },
+                    child: Image.asset(
+                      'assets/back.png',
+                      width: 40,
+                      height: 40,
+                    ),
+                  ),
+                ),
+                // Centered text
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Profile',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: MyColors().color8, // Choose your stroke color here
+                  width: 4, // Adjust the width of the border
+                ),
+              ),
+              child: const CircleAvatar(
+                radius: 45,
+                backgroundImage: AssetImage('assets/avatar6.png'),
+                // Add onTap to allow user to change profile picture
               ),
             ),
-            child: const CircleAvatar(
-              radius: 75,
-              backgroundImage: AssetImage('assets/avatar6.png'),
-              // Add onTap to allow user to change profile picture
-            ),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            'Logged in as:',
-            style: TextStyle(
-              fontSize: 18,
-              color: myColors.color6,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            _user?.email ?? 'error',
-            style: TextStyle(
-              fontSize: 16,
-              color: myColors.color1,
-            ),
-          ),
-          const SizedBox(height: 32),
-          _buildProfileInfoItem(
-            icon: Icons.person,
-            label: 'Name',
-            controller: _nameController,
-          ),
-          const SizedBox(height: 12),
-          _buildProfileInfoItem(
-            icon: Icons.phone,
-            label: 'Phone',
-            controller: _phoneController,
-          ),
-          const SizedBox(height: 12),
-          _buildProfileInfoItem(
-            icon: Icons.location_on,
-            label: 'Location',
-            controller: _locationController,
-          ),
-          const SizedBox(height: 32),
-          ElevatedButton(
-            onPressed: () {
-              // Implement save profile logic here
-            },
-            style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: myColors.color7, padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
+            const SizedBox(height: 16),
+            Text(
+              'Logged in as:',
+              style: TextStyle(
+                fontSize: 18,
+                color: myColors.color6,
+                fontWeight: FontWeight.bold,
               ),
             ),
-            child: const Text('Save'),
-          ),
-        ],
+            const SizedBox(height: 8),
+            Text(
+              _user?.email ?? 'error',
+              style: TextStyle(
+                fontSize: 16,
+                color: myColors.color1,
+              ),
+            ),
+            const SizedBox(height: 32),
+            _buildProfileInfoItem(
+              icon: Icons.person,
+              label: 'Name',
+              controller: _nameController,
+            ),
+            const SizedBox(height: 12),
+            _buildProfileInfoItem(
+              icon: Icons.phone,
+              label: 'Phone',
+              controller: _phoneController,
+            ),
+            const SizedBox(height: 12),
+            _buildProfileInfoItem(
+              icon: Icons.location_on,
+              label: 'Location',
+              controller: _locationController,
+            ),
+            const SizedBox(height: 32),
+            ElevatedButton(
+              onPressed: () {
+                // Implement save profile logic here
+              },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: myColors.color7,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              child: const Text('Save'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Auth().signOut();
+                },
+                child: const Text('Sign Out'),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
