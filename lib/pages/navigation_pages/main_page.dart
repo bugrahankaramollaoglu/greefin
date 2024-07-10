@@ -2,29 +2,32 @@ import 'package:flutter/material.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/utilities/my_colors.dart';
 
-class MainPage extends StatefulWidget {
+class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
   @override
-  State<MainPage> createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  final MyColors _myColors = MyColors();
-
-  @override
   Widget build(BuildContext context) {
-    // build() metodu her rebuiltta tekrar çalışıyor
-
-    final screenH = MediaQuery.of(context).size.height;
-    final screenW = MediaQuery.of(context).size.width;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-  
-      ],
+    return Scaffold(
+      /* appBar: AppBar(
+        centerTitle: true,
+        title: Text('Maın'),
+        leadingWidth: 100,
+        leading: Padding(
+          padding: const EdgeInsets.fromLTRB(15, 10, 15, 10),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: IconButton(
+              icon: Icon(Icons.arrow_back_rounded),
+              color: Colors.white,
+              onPressed: () {},
+            ),
+          ),
+        ),
+      ), */
+      body: Center(child: Text('Main page')),
     );
   }
 }

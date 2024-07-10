@@ -6,13 +6,13 @@ import 'package:greefin/utilities/my_colors.dart';
 import 'package:greefin/pages/login_page.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/pages/navigation_pages/profile_page.dart';
-import 'package:greefin/pages/navigation_pages/search_page.dart';
+import 'package:greefin/pages/navigation_pages/green_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
 
 import 'navigation_pages/add_page.dart';
 
-enum _SelectedTab { main, search, add, stats, profile }
+enum _SelectedTab { main, green, add, stats, profile }
 
 MyColors my_colors = MyColors();
 
@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
         splashBorderRadius: 15,
         // outlineBorderColor: Colors.white,
         indicatorColor: MyColors().color9,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         selectedItemColor: MyColors().color9,
         unselectedItemColor: Colors.grey,
         onTap: _handleIndexChanged,
@@ -81,8 +81,8 @@ class _HomePageState extends State<HomePage> {
             unselectedIcon: IconlyLight.home,
           ),
           CrystalNavigationBarItem(
-            icon: IconlyBold.search,
-            unselectedIcon: IconlyLight.search,
+            icon: Icons.energy_savings_leaf,
+            unselectedIcon: Icons.energy_savings_leaf_outlined,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.plus,
@@ -105,8 +105,8 @@ class _HomePageState extends State<HomePage> {
     switch (_selectedTab) {
       case _SelectedTab.main:
         return const MainPage();
-      case _SelectedTab.search:
-        return const SearchPage();
+      case _SelectedTab.green:
+        return const GreenPage();
       case _SelectedTab.add:
         return const AddPage();
       case _SelectedTab.stats:

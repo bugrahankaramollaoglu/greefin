@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:greefin/utilities/my_colors.dart';
 
-class StatsPage extends StatelessWidget {
-  const StatsPage({super.key});
+class GreenPage extends StatelessWidget {
+  const GreenPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     /*  appBar: AppBar(
+      /*  appBar:  AppBar(
         centerTitle: true,
-        title: Text('STATS'),
+        title: Text('Green'),
         leadingWidth: 100,
         leading: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+          padding: const EdgeInsets.fromLTRB(15, 10, 15, 10),
           child: Container(
             decoration: BoxDecoration(
-              color: MyColors().color10,
+              color: Colors.green,
               borderRadius: BorderRadius.circular(20),
             ),
             child: IconButton(
-              iconSize: 20,
               icon: Icon(Icons.arrow_back_rounded),
               color: Colors.white,
               onPressed: () {},
@@ -26,7 +25,7 @@ class StatsPage extends StatelessWidget {
           ),
         ),
       ), */
-      body: Center(child: Text('STATS page')),
+      body: Center(child: Text('GREEN page')),
     );
   }
 }

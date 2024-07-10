@@ -158,15 +158,17 @@ class LoginForm extends ConsumerWidget {
   }
 
   // Forgot Password Functionality
-  Widget _forgotPassword() {
+  Widget _forgotPassword(BuildContext context) {
     return Align(
       alignment: Alignment.centerRight,
       child: TextButton(
-        onPressed: null,
+        onPressed: () {
+          _showForgotPasswordDialog(context);
+        },
         child: Text(
           'Forgot Password?',
           style: TextStyle(
-            color: MyColors().color9,
+            color: MyColors().color4,
             fontSize: 16,
             decoration: TextDecoration.underline,
             decorationColor: MyColors().color9,
@@ -190,7 +192,7 @@ class LoginForm extends ConsumerWidget {
           TextSpan(
             text: 'Sign up',
             style: TextStyle(
-              color: MyColors().color9, // Set your desired color her6
+              color: MyColors().color4, // Set your desired color her6
               fontWeight: FontWeight.bold,
             ),
             recognizer: TapGestureRecognizer()
@@ -383,7 +385,7 @@ class LoginForm extends ConsumerWidget {
             emailField('Email', _emailController, Icons.email, false),
             SizedBox(height: 20),
             passwordField('password', _passwordController, Icons.lock, true),
-            _forgotPassword(), // Forgot password button
+            _forgotPassword(context), // Forgot password button
             const SizedBox(height: 20),
             _loginButton(context),
             _guestButton(),
@@ -421,7 +423,7 @@ class _LoginFormState extends State<LoginForm> {
 
       if (googleSignInAccount != null) {
         final GoogleSignInAuthentication googleAuth =
-            await googleSignInAccount.authentication;
+            await googleSignInAccount.au23thentication;
 
         final credential = GoogleAuthProvider.credential(
           accessToken: googleAuth.accessToken,

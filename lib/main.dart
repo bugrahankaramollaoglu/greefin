@@ -4,6 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/firebase/firebase_options.dart';
 import 'package:greefin/firebase/firebase_router.dart';
+import 'package:greefin/pages/home_page.dart';
+import 'package:greefin/pages/navigation_pages/add_page.dart';
+import 'package:greefin/pages/navigation_pages/main_page.dart';
+import 'package:greefin/pages/navigation_pages/profile_page.dart';
+import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:greefin/pages/onboarding_pages.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'utilities/my_colors.dart';
@@ -54,6 +59,14 @@ class _GreefinAppState extends State<GreefinApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/home': (context) => HomePage(),
+        '/main': (context) => MainPage(),
+        '/add': (context) => AddPage(),
+        '/stats': (context) => StatsPage(),
+        '/profile': (context) => ProfilePage(),
+      },
       home: _isOnboardingCompleted
           ? const FirebaseRouter()
           : const OnboardingPage(),

@@ -4,25 +4,29 @@ import 'package:greefin/text_recognition/text_detector_view.dart';
 class AddPage extends StatelessWidget {
   const AddPage({super.key});
 
-  void _openScanner() {}
-
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-      
-          /*  SizedBox(
-            width: 400,
-            height: 400,
-            child: TextRecognizerView(),
-          ) */
-        ],
-      ),
+    return Scaffold(
+      /* appBar: AppBar(
+        centerTitle: true,
+        title: Text('Add'),
+        leadingWidth: 100,
+        leading: Padding(
+          padding: const EdgeInsets.fromLTRB(15, 10, 15, 10),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: IconButton(
+              icon: Icon(Icons.arrow_back_rounded),
+              color: Colors.white,
+              onPressed: () {},
+            ),
+          ),
+        ),
+      ), */
+      body: Center(child: Text('ADD page')),
     );
   }
 }
