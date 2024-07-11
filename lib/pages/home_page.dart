@@ -6,7 +6,7 @@ import 'package:greefin/utilities/my_colors.dart';
 import 'package:greefin/pages/login_page.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/pages/navigation_pages/profile_page.dart';
-import 'package:greefin/pages/navigation_pages/green_page.dart';
+import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
 
@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildBody() {
     switch (_selectedTab) {
       case _SelectedTab.main:
-        return const MainPage();
+        return const GreenPage();
       case _SelectedTab.green:
         return const GreenPage();
       case _SelectedTab.add:

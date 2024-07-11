@@ -6,7 +6,9 @@ import 'package:greefin/firebase/firebase_options.dart';
 import 'package:greefin/firebase/firebase_router.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/pages/navigation_pages/add_page.dart';
-import 'package:greefin/pages/navigation_pages/green_page.dart';
+import 'package:greefin/pages/navigation_pages/green_page/carbon_footprint.dart';
+import 'package:greefin/pages/navigation_pages/green_page/green_map.dart';
+import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/pages/navigation_pages/profile_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
@@ -65,6 +67,8 @@ class _GreefinAppState extends State<GreefinApp> {
         '/add': (context) => AddPage(),
         '/stats': (context) => StatsPage(),
         '/profile': (context) => ProfilePage(),
+        '/green_map': (context) => GreenMap(),
+        '/carbon_footprint': (context) => CarbonFootprint(),
       },
       home: _isOnboardingCompleted
           ? const FirebaseRouter()
