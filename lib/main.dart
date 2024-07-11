@@ -6,14 +6,13 @@ import 'package:greefin/firebase/firebase_options.dart';
 import 'package:greefin/firebase/firebase_router.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/pages/navigation_pages/add_page.dart';
+import 'package:greefin/pages/navigation_pages/green_page.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/pages/navigation_pages/profile_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:greefin/pages/onboarding_pages.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'utilities/my_colors.dart';
 
-MyColors my_colors = MyColors();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -63,6 +62,7 @@ class _GreefinAppState extends State<GreefinApp> {
       routes: {
         '/home': (context) => HomePage(),
         '/main': (context) => MainPage(),
+        '/green': (context) => GreenPage(),
         '/add': (context) => AddPage(),
         '/stats': (context) => StatsPage(),
         '/profile': (context) => ProfilePage(),
