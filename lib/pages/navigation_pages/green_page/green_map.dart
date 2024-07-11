@@ -12,7 +12,7 @@ class _GreenMapState extends State<GreenMap> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Green Map'),
+        title: Text('Green map'),
       ),
       body: Center(
         child: Text('green map'),
