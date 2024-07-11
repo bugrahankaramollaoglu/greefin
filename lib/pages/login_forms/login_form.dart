@@ -366,6 +366,10 @@ class LoginForm extends ConsumerWidget {
     }
   }
 
+  Widget _logo() {
+    return Image.asset('assets/greefin.png');
+  }
+
   Widget _divider() {
     return SizedBox(
       child: Image.asset('assets/or.png'),
@@ -382,6 +386,7 @@ class LoginForm extends ConsumerWidget {
             30.0, 30.0, 30.0, MediaQuery.of(context).viewInsets.bottom),
         child: Column(
           children: [
+            _logo(),
             SizedBox(height: 20),
             emailField('Email', _emailController, Icons.email, false),
             SizedBox(height: 20),
@@ -390,9 +395,8 @@ class LoginForm extends ConsumerWidget {
             const SizedBox(height: 20),
             _loginButton(context),
             _guestButton(),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             _divider(),
-            SizedBox(height: 10),
             oauthRow(context),
             SizedBox(height: 20),
             _registerText(ref),
@@ -402,52 +406,3 @@ class LoginForm extends ConsumerWidget {
     );
   }
 }
-
-/*
-class LoginForm extends ConsumerWidget {
-  const LoginForm({super.key});
-
-  @override
-  State<LoginForm> createState() => _LoginFormState();
-}
-
-class _LoginFormState extends State<LoginForm> {
-
-
-
-  Future<void> signInWithGoogle() async {
-    final GoogleSignIn googleSignIn = GoogleSignIn();
-
-    try {
-      final GoogleSignInAccount? googleSignInAccount =
-          await googleSignIn.signIn();
-
-      if (googleSignInAccount != null) {
-        final GoogleSignInAuthentication googleAuth =
-            await googleSignInAccount.au23thentication;
-
-        final credential = GoogleAuthProvider.credential(
-          accessToken: googleAuth.accessToken,
-          idToken: googleAuth.idToken,
-        );
-
-        final UserCredential userCredential =
-            await FirebaseAuth.instance.signInWithCredential(credential);
-
-        if (userCredential.user != null) {
-          Navigator.pushAndRemoveUntil(
-            context,
-            MaterialPageRoute(builder: (context) => const HomePage()),
-            (route) => false,
-          );
-        }
-      } else {
-        print('aa: not worked');
-      }
-    } catch (e) {
-      print('aa: Error: $e');
-    }
-  }
-
-
- */

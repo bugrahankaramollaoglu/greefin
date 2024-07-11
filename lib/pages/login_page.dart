@@ -81,6 +81,7 @@ class GradientBorderContainer extends ConsumerWidget {
         width: 2,
       ),
       child: Container(
+        
         width: width * 0.9,
         height: height * 0.8,
         decoration: BoxDecoration(

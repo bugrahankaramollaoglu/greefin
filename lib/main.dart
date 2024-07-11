@@ -13,7 +13,6 @@ import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:greefin/pages/onboarding_pages.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
