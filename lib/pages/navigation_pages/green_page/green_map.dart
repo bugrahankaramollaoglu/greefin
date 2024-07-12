@@ -1,48 +1,22 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 
-class GreenMap extends StatefulWidget {
-  const GreenMap({super.key});
+class GoogleMapPage extends StatefulWidget {
+  const GoogleMapPage({super.key});
 
   @override
-  State<GreenMap> createState() => _GreenMapState();
+  State<GoogleMapPage> createState() => _GoogleMapPageState();
 }
 
-class _GreenMapState extends State<GreenMap> {
-
-  LatLng atakum = LatLng(41.32859, 36.2846729);
-  LatLng mountainView = LatLng(41.32059, 36.2946729);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: GoogleMap(
-        initialCameraPosition: CameraPosition(
-          target: atakum,
-          zoom: 13,
-        ),
-      ),
-    );
-  }
-}
-
-
-/*
-
-class GreenMap extends StatefulWidget {
-  const GreenMap({super.key});
-
-  @override
-  State<GreenMap> createState() => _GreenMapState();
-}
-
-class _GreenMapState extends State<GreenMap> {
+class _GoogleMapPageState extends State<GoogleMapPage> {
   final locationController = Location();
 
-  LatLng googlePlex = LatLng(41.32859, 36.2846729);
-  LatLng mountainView = LatLng(41.32059, 36.2946729);
+  static const googlePlex = LatLng(37.4223, -122.0848);
+  static const mountainView = LatLng(37.3861, -122.0839);
 
   LatLng? currentPosition;
   Map<PolylineId, Polyline> polylines = {};
@@ -62,30 +36,32 @@ class _GreenMapState extends State<GreenMap> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        body: GoogleMap(
-          initialCameraPosition: CameraPosition(
-            target: googlePlex,
-            zoom: 13,
-          ),
-          markers: {
-            Marker(
-              markerId: const MarkerId('currentLocation'),
-              icon: BitmapDescriptor.defaultMarker,
-              position: currentPosition!,
-            ),
-            Marker(
-              markerId: MarkerId('sourceLocation'),
-              icon: BitmapDescriptor.defaultMarker,
-              position: googlePlex,
-            ),
-            Marker(
-              markerId: MarkerId('destinationLocation'),
-              icon: BitmapDescriptor.defaultMarker,
-              position: mountainView,
-            )
-          },
-          // polylines: Set<Polyline>.of(polylines.values),
-        ),
+        body: currentPosition == null
+            ? const Center(child: CircularProgressIndicator())
+            : GoogleMap(
+                initialCameraPosition: const CameraPosition(
+                  target: googlePlex,
+                  zoom: 13,
+                ),
+                markers: {
+                  Marker(
+                    markerId: const MarkerId('currentLocation'),
+                    icon: BitmapDescriptor.defaultMarker,
+                    position: currentPosition!,
+                  ),
+                  const Marker(
+                    markerId: MarkerId('sourceLocation'),
+                    icon: BitmapDescriptor.defaultMarker,
+                    position: googlePlex,
+                  ),
+                  const Marker(
+                    markerId: MarkerId('destinationLocation'),
+                    icon: BitmapDescriptor.defaultMarker,
+                    position: mountainView,
+                  )
+                },
+                polylines: Set<Polyline>.of(polylines.values),
+              ),
       );
 
   Future<void> fetchLocationUpdates() async {
@@ -121,13 +97,10 @@ class _GreenMapState extends State<GreenMap> {
   }
 
   Future<List<LatLng>> fetchPolylinePoints() async {
-    return [];
-
-    */
-/*  final polylinePoints = PolylinePoints();
+    final polylinePoints = PolylinePoints();
 
     final result = await polylinePoints.getRouteBetweenCoordinates(
-        googleMapsApiKey,
+      googleMapsApiKey,
       PointLatLng(googlePlex.latitude, googlePlex.longitude),
       PointLatLng(mountainView.latitude, mountainView.longitude),
     );
@@ -139,8 +112,7 @@ class _GreenMapState extends State<GreenMap> {
     } else {
       debugPrint(result.errorMessage);
       return [];
-    }*//*
-
+    }
   }
 
   Future<void> generatePolyLineFromPoints(
@@ -157,4 +129,3 @@ class _GreenMapState extends State<GreenMap> {
     setState(() => polylines[id] = polyline);
   }
 }
-*/
