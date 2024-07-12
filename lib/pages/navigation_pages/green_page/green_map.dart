@@ -95,7 +95,9 @@ class _GreenMapState extends State<GreenMap> {
   }
 
   Future<List<LatLng>> fetchPolylinePoints() async {
-    final polylinePoints = PolylinePoints();
+    return [];
+
+  /*  final polylinePoints = PolylinePoints();
 
     final result = await polylinePoints.getRouteBetweenCoordinates(
         googleMapsApiKey,
@@ -110,7 +112,7 @@ class _GreenMapState extends State<GreenMap> {
     } else {
       debugPrint(result.errorMessage);
       return [];
-    }
+    }*/
   }
 
   Future<void> generatePolyLineFromPoints(
