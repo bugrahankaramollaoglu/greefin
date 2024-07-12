@@ -67,7 +67,7 @@ class _GreefinAppState extends State<GreefinApp> {
         '/add': (context) => const AddPage(),
         '/stats': (context) => const StatsPage(),
         '/profile': (context) => const ProfilePage(),
-        '/green_map': (context) => const GreenMap(),
+        '/green_map': (context) => GreenMap(),
         '/carbon_footprint': (context) => const CarbonFootprint(),
       },
       home: _isOnboardingCompleted

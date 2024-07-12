@@ -17,9 +17,7 @@ class _GreenMapState extends State<GreenMap> {
   LatLng atakum2 = LatLng(41.313949, 36.280303);
   LocationData? currentLocation;
   Location location = Location();
-  Completer<GoogleMapController> _controller = Completer();,
-
-
+  Completer<GoogleMapController> _controller = Completer();
 
   @override
   void initState() {
@@ -55,38 +53,44 @@ class _GreenMapState extends State<GreenMap> {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: 300,
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
-                  child: Container(
-                    width: 100, // Adjust the width as needed
-                    height: 5, // Adjust the height as needed
-                    decoration: BoxDecoration(
-                      color: MyColors().color8, // Adjust the color as needed
-                      borderRadius: BorderRadius.circular(
-                          5), // Adjust the border radius as needed
+          height: 500,
+          child: ClipRRect(
+            borderRadius: BorderRadius.vertical(top: Radius.circular(50.0)),
+            child: Container(
+              color: MyColors().color12,
+              padding: EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
+                      child: Container(
+                        width: 100, // Adjust the width as needed
+                        height: 5, // Adjust the height as needed
+                        decoration: BoxDecoration(
+                          color: MyColors().color8,
+
+                          // Adjust the color as needed
+                          borderRadius: BorderRadius.circular(
+                              25), // Adjust the border radius as needed
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
-              Center(
-                child: Text(
-                  'Calculate your carbon emission',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: MyColors().color8,
+                  Center(
+                    child: Text(
+                      'Calculate your carbon emission',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: MyColors().color8,
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
-
-
-            ],
+            ),
           ),
         );
       },
