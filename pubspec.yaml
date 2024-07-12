@@ -62,7 +62,6 @@ dependencies:
   text_divider: ^1.0.0
   splash: ^1.1.0
   google_maps_flutter: ^2.7.0
-  # location: ^7.0.0
 
   google_mlkit_barcode_scanning: any
   google_mlkit_commons: any
@@ -75,6 +74,13 @@ dependencies:
   google_mlkit_text_recognition: any
   path: any
   path_provider: any
+  location:
+    git:
+      url: https://github.com/781flyingdutchman/flutterlocation.git
+      ref: V4
+      path: packages/location
+  flutter_polyline_points: ^2.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
