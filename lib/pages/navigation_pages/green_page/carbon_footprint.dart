@@ -12,9 +12,9 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Carbon Footprint'),
+        title: const Text('Carbon Footprint'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Carbon Footprint'),
       ),
     );

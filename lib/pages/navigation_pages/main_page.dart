@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:greefin/firebase/auth.dart';
-import 'package:greefin/utilities/my_colors.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       /* appBar: AppBar(
         centerTitle: true,
         title: Text('Maın'),

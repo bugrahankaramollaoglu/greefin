@@ -15,11 +15,11 @@ class ForgotPasswordForm extends ConsumerWidget {
       await FirebaseAuth.instance
           .sendPasswordResetEmail(email: emailController.text.trim());
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Password reset email sent')),
+        const SnackBar(content: Text('Password reset email sent')),
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text('Error! Please check your email address.'),
         ),
       );
@@ -31,15 +31,15 @@ class ForgotPasswordForm extends ConsumerWidget {
       onPressed: () {
         _sendPasswordResetEmail(context);
       },
-      child: Text('Send Reset Email'),
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: MyColors().color4,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        padding: EdgeInsets.symmetric(horizontal: 80),
+        padding: const EdgeInsets.symmetric(horizontal: 80),
       ),
+      child: const Text('Send Reset Email'),
     );
   }
 
@@ -59,9 +59,9 @@ class ForgotPasswordForm extends ConsumerWidget {
             width: 1,
           ),
         ),
-        padding: EdgeInsets.symmetric(horizontal: 80),
+        padding: const EdgeInsets.symmetric(horizontal: 80),
       ),
-      child: Text('        Go Back        '),
+      child: const Text('        Go Back        '),
     );
   }
 
@@ -78,7 +78,7 @@ class ForgotPasswordForm extends ConsumerWidget {
             color: Colors.grey.withOpacity(0.9),
           ),
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30.0),
           child: TextField(
@@ -91,9 +91,9 @@ class ForgotPasswordForm extends ConsumerWidget {
             ),
           ),
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         _sendButton(context),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         _goBackButton(ref),
       ],
     );

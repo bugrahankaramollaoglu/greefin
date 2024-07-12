@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_utils/src/extensions/widget_extensions.dart';
 
 class GreenPage extends StatelessWidget {
   const GreenPage({super.key});
@@ -16,14 +15,14 @@ class GreenPage extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/green_map');
               },
-              child: Text('Map'),
+              child: const Text('Map'),
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/carbon_footprint');
               },
-              child: Text('Carbon footprint'),
+              child: const Text('Carbon footprint'),
             ),
           ],
         ),

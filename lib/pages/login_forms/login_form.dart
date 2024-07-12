@@ -1,4 +1,3 @@
-import 'package:auth_button_kit/auth_button_kit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +8,6 @@ import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/pages/home_page.dart';
 import 'package:greefin/pages/riverpod_providers.dart';
 import 'package:greefin/utilities/my_colors.dart';
-import 'package:text_divider/text_divider.dart';
 
 class LoginForm extends ConsumerWidget {
   LoginForm({super.key});
@@ -20,7 +18,7 @@ class LoginForm extends ConsumerWidget {
 
   Widget emailField(
     String hintText,
-    TextEditingController e_controller,
+    TextEditingController eController,
     IconData icon,
     bool isPassword,
   ) {
@@ -28,18 +26,18 @@ class LoginForm extends ConsumerWidget {
       keyboardType: TextInputType.emailAddress,
       autocorrect: false,
       cursorColor: Colors.grey,
-      controller: e_controller,
+      controller: eController,
       decoration: InputDecoration(
         filled: true,
         fillColor: Colors.white.withOpacity(0.3),
         prefixIcon: Icon(icon),
         hintText: 'Enter',
-        hintStyle: TextStyle(color: Colors.grey),
+        hintStyle: const TextStyle(color: Colors.grey),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey), // Unfocused border color
+          borderSide: const BorderSide(color: Colors.grey), // Unfocused border color
           borderRadius: BorderRadius.circular(10),
         ),
-        focusedBorder: OutlineInputBorder(
+        focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.black), // Focused border color
         ),
         labelText: hintText,
@@ -56,34 +54,34 @@ class LoginForm extends ConsumerWidget {
 
   Widget passwordField(
     String hintText,
-    TextEditingController p_controller,
+    TextEditingController pController,
     IconData icon,
     bool isPassword,
   ) {
-    bool _obscureText = isPassword;
+    bool obscureText = isPassword;
 
     return TextFormField(
-      obscureText: _obscureText,
-      controller: p_controller,
+      obscureText: obscureText,
+      controller: pController,
       cursorColor: Colors.grey,
-      style: TextStyle(color: Colors.grey),
+      style: const TextStyle(color: Colors.grey),
       decoration: InputDecoration(
         filled: true,
         fillColor: Colors.white.withOpacity(0.3),
         prefixIcon: Icon(icon),
         hintText: 'Enter',
-        hintStyle: TextStyle(color: Colors.grey),
+        hintStyle: const TextStyle(color: Colors.grey),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(color: Colors.grey), // Unfocused border color
+          borderSide: const BorderSide(color: Colors.grey), // Unfocused border color
         ),
-        focusedBorder: OutlineInputBorder(
+        focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.black), // Focused border color
         ),
         labelText: hintText,
         suffixIcon: IconButton(
           icon: Icon(
-            _obscureText ? Icons.visibility : Icons.visibility_off,
+            obscureText ? Icons.visibility : Icons.visibility_off,
             color: Colors.black87.withOpacity(0.75),
           ),
           onPressed: () {
@@ -119,17 +117,17 @@ class LoginForm extends ConsumerWidget {
       onPressed: () {
         _signInWithEmailAndPassword(context);
       },
-      child: Text(
-        'Login',
-      ),
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: MyColors().color4,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
             horizontal: 110), // Adjust the horizontal padding
+      ),
+      child: const Text(
+        'Login',
       ),
     );
   }
@@ -137,9 +135,6 @@ class LoginForm extends ConsumerWidget {
   Widget _guestButton() {
     return ElevatedButton(
       onPressed: () {},
-      child: Text(
-        'Guest',
-      ),
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
@@ -150,9 +145,12 @@ class LoginForm extends ConsumerWidget {
             width: 1,
           ),
         ),
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 110,
         ), // Adjust the horizontal padding
+      ),
+      child: const Text(
+        'Guest',
       ),
     );
   }
@@ -187,7 +185,7 @@ class LoginForm extends ConsumerWidget {
           fontSize: 18,
         ),
         children: <TextSpan>[
-          TextSpan(
+          const TextSpan(
             text: 'Don\'t have an account? ',
           ),
           TextSpan(
@@ -211,33 +209,33 @@ class LoginForm extends ConsumerWidget {
   }
 
   void _showForgotPasswordDialog(BuildContext context) {
-    TextEditingController _emailController = TextEditingController();
+    TextEditingController emailController = TextEditingController();
 
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Forgot Password?'),
+          title: const Text('Forgot Password?'),
           content: TextField(
-            controller: _emailController,
-            decoration: InputDecoration(
+            controller: emailController,
+            decoration: const InputDecoration(
               labelText: 'Enter your email',
             ),
           ),
           actions: <Widget>[
             TextButton(
-              child: Text('Reset Password'),
+              child: const Text('Reset Password'),
               onPressed: () async {
                 Navigator.pop(context); // Close the dialog
                 try {
                   await FirebaseAuth.instance.sendPasswordResetEmail(
-                    email: _emailController.text.trim(),
+                    email: emailController.text.trim(),
                   );
 
                   // Check if the context is still valid before showing SnackBar
                   if (ScaffoldMessenger.of(context).mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
+                      const SnackBar(
                         content: Text('Password reset email sent.'),
                         duration: Duration(seconds: 5),
                       ),
@@ -248,7 +246,7 @@ class LoginForm extends ConsumerWidget {
                   // Check if the context is still valid before showing SnackBar
                   if (ScaffoldMessenger.of(context).mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
+                      const SnackBar(
                         content: Text(
                           'Failed to send reset email. Please try again later.',
                         ),
@@ -260,7 +258,7 @@ class LoginForm extends ConsumerWidget {
               },
             ),
             TextButton(
-              child: Text('Cancel'),
+              child: const Text('Cancel'),
               onPressed: () {
                 Navigator.pop(context); // Close the dialog
               },
@@ -359,7 +357,7 @@ class LoginForm extends ConsumerWidget {
         MaterialPageRoute(builder: (context) => const HomePage()),
         (route) => false,
       );
-    } on FirebaseAuthException catch (e) {
+    } on FirebaseAuthException {
       /*  setState(() {
         errorMessage = e.message;
       }); */
@@ -372,9 +370,9 @@ class LoginForm extends ConsumerWidget {
 
   Widget _divider() {
     return SizedBox(
-      child: Image.asset('assets/or.png'),
       width: 300,
       height: 75,
+      child: Image.asset('assets/or.png'),
     );
   }
 
@@ -387,9 +385,9 @@ class LoginForm extends ConsumerWidget {
         child: Column(
           children: [
             _logo(),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             emailField('Email', _emailController, Icons.email, false),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             passwordField('password', _passwordController, Icons.lock, true),
             _forgotPassword(ref), // Forgot password button
             const SizedBox(height: 20),
@@ -398,7 +396,7 @@ class LoginForm extends ConsumerWidget {
             const SizedBox(height: 20),
             _divider(),
             oauthRow(context),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             _registerText(ref),
           ],
         ),

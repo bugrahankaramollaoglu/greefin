@@ -54,14 +54,27 @@ dependencies:
   glass: ^2.0.0+1
   neumorphic_button: ^0.0.1+2
   auth_button_kit: ^1.1.6
-  flutter_iconpicker: ^3.4.5
+  flutter_iconpicker: ^3.4.6
   google_ml_kit: ^0.18.0
   camera: ^0.11.0+1
   image_picker: ^1.1.2
   stroke_text: ^0.0.3
   text_divider: ^1.0.0
   splash: ^1.1.0
+  google_maps_flutter: ^2.7.0
+  # location: ^7.0.0
 
+  google_mlkit_barcode_scanning: any
+  google_mlkit_commons: any
+  google_mlkit_face_detection: any
+  google_mlkit_face_mesh_detection: any
+  google_mlkit_image_labeling: any
+  google_mlkit_object_detection: any
+  google_mlkit_pose_detection: any
+  google_mlkit_selfie_segmentation: any
+  google_mlkit_text_recognition: any
+  path: any
+  path_provider: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

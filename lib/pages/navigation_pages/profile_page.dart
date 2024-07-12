@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/utilities/my_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -33,7 +32,7 @@ class ProfilePage extends StatelessWidget {
       ), */
       body: Column(
         children: [
-          SizedBox(height: 100),
+          const SizedBox(height: 100),
           Center(
             child: Text(
               'Please set up your profile',
@@ -44,9 +43,9 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           Container(
-            padding: EdgeInsets.all(2),
+            padding: const EdgeInsets.all(2),
             decoration: BoxDecoration(
               color: Colors.white,
               shape: BoxShape.circle,
@@ -62,20 +61,20 @@ class ProfilePage extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           Padding(
-            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+            padding: const EdgeInsets.fromLTRB(50, 0, 0, 0),
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
                 'Name',
                 style: TextStyle(
                   fontSize: 18,
-                  color: Color.fromARGB(255, 111, 107, 107).withOpacity(1),
+                  color: const Color.fromARGB(255, 111, 107, 107).withOpacity(1),
                 ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(50, 0, 50, 0),
+            padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'John Doe',
@@ -85,20 +84,20 @@ class ProfilePage extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           Padding(
-            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+            padding: const EdgeInsets.fromLTRB(50, 0, 0, 0),
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
                 'Email',
                 style: TextStyle(
                   fontSize: 18,
-                  color: Color.fromARGB(255, 111, 107, 107).withOpacity(1),
+                  color: const Color.fromARGB(255, 111, 107, 107).withOpacity(1),
                 ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(50, 0, 50, 0),
+            padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'bugrakaramollaoglu@hotmail.com',

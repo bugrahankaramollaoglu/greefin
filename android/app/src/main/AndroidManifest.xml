@@ -6,6 +6,12 @@
         android:label="greefin"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD-3dAJgG3KuIWNRskIVhMo_wUzzS9v4Ag"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

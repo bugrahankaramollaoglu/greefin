@@ -61,14 +61,14 @@ class _GreefinAppState extends State<GreefinApp> {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/home': (context) => HomePage(),
-        '/main': (context) => MainPage(),
-        '/green': (context) => GreenPage(),
-        '/add': (context) => AddPage(),
-        '/stats': (context) => StatsPage(),
-        '/profile': (context) => ProfilePage(),
-        '/green_map': (context) => GreenMap(),
-        '/carbon_footprint': (context) => CarbonFootprint(),
+        '/home': (context) => const HomePage(),
+        '/main': (context) => const MainPage(),
+        '/green': (context) => const GreenPage(),
+        '/add': (context) => const AddPage(),
+        '/stats': (context) => const StatsPage(),
+        '/profile': (context) => const ProfilePage(),
+        '/green_map': (context) => const GreenMap(),
+        '/carbon_footprint': (context) => const CarbonFootprint(),
       },
       home: _isOnboardingCompleted
           ? const FirebaseRouter()

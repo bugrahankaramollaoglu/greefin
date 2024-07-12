@@ -110,10 +110,10 @@ class GradientBorderContainer extends ConsumerWidget {
             return scaleTransition;
           },
           child: isShowForgot
-              ? ForgotPasswordForm(key: ValueKey(3))
+              ? ForgotPasswordForm(key: const ValueKey(3))
               : isShowRegister
-                  ? RegisterForm(key: ValueKey(1))
-                  : LoginForm(key: ValueKey(2)),
+                  ? RegisterForm(key: const ValueKey(1))
+                  : LoginForm(key: const ValueKey(2)),
         ),
       ),
     );
