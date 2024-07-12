@@ -1,3 +1,6 @@
+./credentials.properties
+*credentials.properties
+
 # Miscellaneous
 *.class
 *.log
