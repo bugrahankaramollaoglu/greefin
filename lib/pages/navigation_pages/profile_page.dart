@@ -35,7 +35,7 @@ class ProfilePage extends StatelessWidget {
           const SizedBox(height: 100),
           Center(
             child: Text(
-              'Please set up your profile',
+              'please set up your profile',
               style: GoogleFonts.roboto(
                 fontSize: 20,
                 fontWeight: FontWeight.w400,
