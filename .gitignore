@@ -1,5 +1,4 @@
-./credentials.properties
-*credentials.properties
+/android/credentials.properties
 
 # Miscellaneous
 *.class

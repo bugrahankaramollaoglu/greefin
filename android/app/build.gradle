@@ -27,6 +27,8 @@ if (flutterVersionName == null) {
     flutterVersionName = "1.0"
 }
 
+
+
 android {
     namespace = "com.oua.greefin"
     compileSdk = flutter.compileSdkVersion
@@ -38,6 +40,14 @@ android {
     }
 
     defaultConfig {
+
+        // Load API key from credentials.properties
+        def keystorePropertiesFile = rootProject.file("credentials.properties")
+        def keystoreProperties = new Properties()
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+        resValue "string", "API_KEY", keystoreProperties['API_KEY']
+
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.oua.greefin"
         // You can update the following values to match your application needs.
