@@ -48,7 +48,7 @@ class _GreenMapState extends State<GreenMap> {
     }
   }
 
-  void _openBottomSheet() {
+ void _openBottomSheet() {
     showModalBottomSheet(
       context: context,
       builder: (BuildContext context) {
@@ -66,25 +66,58 @@ class _GreenMapState extends State<GreenMap> {
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
                       child: Container(
-                        width: 100, // Adjust the width as needed
-                        height: 5, // Adjust the height as needed
+                        width: 100,
+                        height: 5,
                         decoration: BoxDecoration(
                           color: MyColors().color8,
-
-                          // Adjust the color as needed
-                          borderRadius: BorderRadius.circular(
-                              25), // Adjust the border radius as needed
+                          borderRadius: BorderRadius.circular(25),
                         ),
                       ),
                     ),
                   ),
                   Center(
                     child: Text(
-                      'Calculate your carbon emission',
+                      'Calculate your karbon emission',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: MyColors().color8,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: 'Field 1',
+                      suffixIcon: Icon(Icons.location_pin),
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: 'Field 2',
+                      suffixIcon: Icon(Icons.location_pin),
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Add your calculate function here
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: MyColors().color10,
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                      ),
+                      child: Text(
+                        'Calculate',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: MyColors().color6,
+                        ),
                       ),
                     ),
                   ),
@@ -108,17 +141,6 @@ class _GreenMapState extends State<GreenMap> {
               target: atakum,
             ),
             markers: {
-              Marker(
-                markerId: MarkerId('sourceLocation'),
-                icon: BitmapDescriptor.defaultMarker,
-                position: atakum,
-              ),
-              Marker(
-                markerId: MarkerId('destinationLocation'),
-                icon: BitmapDescriptor.defaultMarkerWithHue(
-                    BitmapDescriptor.hueAzure),
-                position: atakum2,
-              ),
               if (currentLocation != null)
                 Marker(
                   markerId: MarkerId('currentLocation'),
