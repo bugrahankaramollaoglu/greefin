@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/firebase/firebase_options.dart';
 import 'package:greefin/firebase/firebase_router.dart';
 import 'package:greefin/pages/home_page.dart';
-import 'package:greefin/pages/navigation_pages/add_page.dart';
+import 'package:greefin/pages/navigation_pages/add_page/add_page.dart';
 import 'package:greefin/pages/navigation_pages/green_page/carbon_footprint.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_map.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';

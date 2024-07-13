@@ -11,7 +11,7 @@ import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
 
-import 'navigation_pages/add_page.dart';
+import 'navigation_pages/add_page/add_page.dart';
 
 enum _SelectedTab { main, green, add, stats, profile }
 
