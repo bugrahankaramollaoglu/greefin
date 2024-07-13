@@ -34,7 +34,8 @@ class LoginForm extends ConsumerWidget {
         hintText: 'Enter',
         hintStyle: const TextStyle(color: Colors.grey),
         enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.grey), // Unfocused border color
+          borderSide:
+              const BorderSide(color: Colors.grey), // Unfocused border color
           borderRadius: BorderRadius.circular(10),
         ),
         focusedBorder: const OutlineInputBorder(
@@ -73,7 +74,8 @@ class LoginForm extends ConsumerWidget {
         hintStyle: const TextStyle(color: Colors.grey),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: const BorderSide(color: Colors.grey), // Unfocused border color
+          borderSide:
+              const BorderSide(color: Colors.grey), // Unfocused border color
         ),
         focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.black), // Focused border color

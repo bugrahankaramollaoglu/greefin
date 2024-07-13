@@ -20,6 +20,38 @@ class _GreenMapState extends State<GreenMap> {
   Set<asd.Marker> _markers = {};
   Set<asd.Polyline> _polylines = {};
 
+  int walk_minute = 0;
+  double walk_carbon = 0.0;
+
+  int bicycle_minute = 0;
+  double bicycle_carbon = 0.0;
+
+  int car_minute = 0;
+  double car_carbon = 0.0;
+
+  int bike_minute = 0;
+  double bike_carbon = 0.0;
+
+  int calculateWalkMinute(int distance) {
+    int d = distance * 1000;
+    return (d / 96).round();
+  }
+
+  int calculateBicycleMinute(int distance) {
+    int d = distance * 1000;
+    return (d / 200).round();
+  }
+
+  int calculateCarMinute(int distance) {
+    int d = distance * 1000;
+    return (d / 800).round();
+  }
+
+  int calculateBikeMinute(int distance) {
+    int d = distance * 1000;
+    return (d / 600).round();
+  }
+
   void _addMarker(asd.LatLng latLng) {
     xxx.LatLng convertedLatLng = xxx.LatLng(latLng.latitude, latLng.longitude);
     setState(() {
@@ -82,7 +114,7 @@ class _GreenMapState extends State<GreenMap> {
     }
   }
 
-  void _calculateDistance() {
+/*   void _calculateDistance() {
     if (sourceLatLng != null && destinationLatLng != null) {
       double distance = xxx.SphericalUtil.computeDistanceBetween(
         sourceLatLng!,
@@ -108,9 +140,55 @@ class _GreenMapState extends State<GreenMap> {
         },
       );
     }
+  } */
+
+  String formatTime(int minutes) {
+    if (minutes < 60) {
+      return '${minutes}mn';
+    } else if (minutes < 1440) {
+      // 1440 minutes in a day
+      final hours = (minutes / 60).floor();
+      final remainingMinutes = minutes % 60;
+      return '${hours}h${remainingMinutes > 0 ? '$remainingMinutes mn.' : ''}';
+    } else {
+      final days = (minutes / 1440).floor();
+      final remainingMinutes = minutes % 1440;
+      final hours = (remainingMinutes / 60).floor();
+      final remainingMinutesAfterHours = remainingMinutes % 60;
+      return '${days}d${hours > 0 ? ' ${hours}h' : ''}';
+    }
   }
 
   void _openBottomSheet() {
+    setState(() {
+      walk_minute = calculateWalkMinute(
+          (xxx.SphericalUtil.computeDistanceBetween(
+                      sourceLatLng!, destinationLatLng!) /
+                  1000)
+              .round());
+      walk_carbon = walk_minute * 0;
+
+      bicycle_minute = calculateBicycleMinute(
+          (xxx.SphericalUtil.computeDistanceBetween(
+                      sourceLatLng!, destinationLatLng!) /
+                  1000)
+              .round());
+      bicycle_carbon = bicycle_minute * 0;
+
+      car_minute = calculateCarMinute((xxx.SphericalUtil.computeDistanceBetween(
+                  sourceLatLng!, destinationLatLng!) /
+              1000)
+          .round());
+      car_carbon = car_minute * 0.171;
+
+      bike_minute = calculateBikeMinute(
+          (xxx.SphericalUtil.computeDistanceBetween(
+                      sourceLatLng!, destinationLatLng!) /
+                  1000)
+              .round());
+      bike_carbon = bike_minute * 0.129;
+    });
+
     showModalBottomSheet(
       context: context,
       shape: RoundedRectangleBorder(
@@ -126,7 +204,7 @@ class _GreenMapState extends State<GreenMap> {
             height: 600,
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 188, 186, 186),
+              color: Color.fromARGB(255, 224, 221, 221),
               borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
             ),
             child: Column(
@@ -255,7 +333,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               left: 35,
                               child: Text(
-                                '22 minutes',
+                                formatTime(walk_minute),
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
@@ -265,7 +343,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               right: 35,
                               child: Text(
-                                '0.0 kg CO2',
+                                '$walk_carbon kg. CO2',
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
@@ -318,7 +396,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               left: 35,
                               child: Text(
-                                '22 minutes',
+                                formatTime(bicycle_minute),
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
@@ -328,7 +406,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               right: 35,
                               child: Text(
-                                '0.0 kg CO2',
+                                '$bicycle_carbon kg CO2',
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
@@ -381,7 +459,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               left: 35,
                               child: Text(
-                                '22 minutes',
+                                formatTime(car_minute),
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
@@ -391,7 +469,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               right: 35,
                               child: Text(
-                                '0.0 kg CO2',
+                                '$car_carbon kg CO2',
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
@@ -444,7 +522,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               left: 35,
                               child: Text(
-                                '22 minutes',
+                                formatTime(bike_minute),
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
@@ -454,7 +532,7 @@ class _GreenMapState extends State<GreenMap> {
                               top: 45,
                               right: 35,
                               child: Text(
-                                '0.0 kg CO2',
+                                '$bike_carbon kg CO2',
                                 style: TextStyle(
                                   color: MyColors().color5,
                                 ),
