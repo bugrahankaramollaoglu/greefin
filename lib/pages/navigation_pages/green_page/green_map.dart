@@ -1,133 +1,96 @@
 import 'dart:async';
+import 'dart:math' show cos, sqrt, asin;
 import 'package:flutter/material.dart';
-import 'package:flutter_polyline_points/flutter_polyline_points.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:greefin/utilities/my_colors.dart';
-import 'package:location/location.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart' as asd;
+import 'package:maps_toolkit/maps_toolkit.dart' as xxx;
 
 class GreenMap extends StatefulWidget {
-  const GreenMap({super.key});
+  const GreenMap({Key? key}) : super(key: key);
 
   @override
   State<GreenMap> createState() => _GreenMapState();
 }
 
 class _GreenMapState extends State<GreenMap> {
-  LatLng atakum = LatLng(41.330949, 36.290303);
-  LatLng atakum2 = LatLng(41.313949, 36.280303);
-  LocationData? currentLocation;
-  Location location = Location();
-  Completer<GoogleMapController> _controller = Completer();
+  xxx.LatLng? sourceLatLng;
+  xxx.LatLng? destinationLatLng;
+  Completer<asd.GoogleMapController> _controller = Completer();
+  Set<asd.Marker> _markers = {};
 
   @override
   void initState() {
     super.initState();
-    _getCurrentLocation();
   }
 
-  Future<void> _getCurrentLocation() async {
-    currentLocation = await location.getLocation();
-    location.onLocationChanged.listen((LocationData loc) {
-      setState(() {
-        currentLocation = loc;
-      });
-      _moveCamera();
-    });
-  }
-
-  Future<void> _moveCamera() async {
-    final GoogleMapController controller = await _controller.future;
-    if (currentLocation != null) {
-      controller.animateCamera(CameraUpdate.newCameraPosition(
-        CameraPosition(
-          target:
-              LatLng(currentLocation!.latitude!, currentLocation!.longitude!),
-          zoom: 15,
-        ),
-      ));
-    }
-  }
-
- void _openBottomSheet() {
-    showModalBottomSheet(
-      context: context,
-      builder: (BuildContext context) {
-        return Container(
-          height: 500,
-          child: ClipRRect(
-            borderRadius: BorderRadius.vertical(top: Radius.circular(50.0)),
-            child: Container(
-              color: MyColors().color12,
-              padding: EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Center(
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
-                      child: Container(
-                        width: 100,
-                        height: 5,
-                        decoration: BoxDecoration(
-                          color: MyColors().color8,
-                          borderRadius: BorderRadius.circular(25),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Center(
-                    child: Text(
-                      'Calculate your karbon emission',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: MyColors().color8,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      labelText: 'Field 1',
-                      suffixIcon: Icon(Icons.location_pin),
-                      border: OutlineInputBorder(),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      labelText: 'Field 2',
-                      suffixIcon: Icon(Icons.location_pin),
-                      border: OutlineInputBorder(),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Center(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // Add your calculate function here
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: MyColors().color10,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-                      ),
-                      child: Text(
-                        'Calculate',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: MyColors().color6,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+  void _addMarker(asd.LatLng latLng) {
+    xxx.LatLng convertedLatLng = xxx.LatLng(latLng.latitude, latLng.longitude);
+    setState(() {
+      if (sourceLatLng == null) {
+        // Add source marker (red)
+        sourceLatLng = convertedLatLng;
+        destinationLatLng = null; // Clear destination if any
+        _markers = {
+          asd.Marker(
+            markerId: asd.MarkerId('sourceMarker'),
+            position: latLng,
+            icon: asd.BitmapDescriptor.defaultMarkerWithHue(
+                asd.BitmapDescriptor.hueRed),
+            infoWindow: asd.InfoWindow(
+              title: 'Source',
+              snippet: 'Source location',
+            ),
+          ),
+        };
+      } else if (destinationLatLng == null) {
+        // Add destination marker (blue)
+        destinationLatLng = convertedLatLng;
+        _markers.add(
+          asd.Marker(
+            markerId: asd.MarkerId('destinationMarker'),
+            position: latLng,
+            icon: asd.BitmapDescriptor.defaultMarkerWithHue(
+                asd.BitmapDescriptor.hueBlue),
+            infoWindow: asd.InfoWindow(
+              title: 'Destination',
+              snippet: 'Destination location',
             ),
           ),
         );
-      },
-    );
+      } else {
+        // Clear markers and start over
+        sourceLatLng = null;
+        destinationLatLng = null;
+        _markers.clear();
+      }
+    });
+  }
+
+  void _calculateDistance() {
+    if (sourceLatLng != null && destinationLatLng != null) {
+      double distance = xxx.SphericalUtil.computeDistanceBetween(
+        sourceLatLng!,
+        destinationLatLng!,
+      ).toDouble();
+
+      showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Distance Calculation'),
+            content: Text(
+                'Distance between source and destination: ${(distance / 1000).toStringAsFixed(2)} km'),
+            actions: <Widget>[
+              TextButton(
+                child: Text('Close'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
+    }
   }
 
   @override
@@ -135,24 +98,16 @@ class _GreenMapState extends State<GreenMap> {
     return Stack(
       children: [
         Scaffold(
-          body: GoogleMap(
-            initialCameraPosition: CameraPosition(
+          body: asd.GoogleMap(
+            initialCameraPosition: asd.CameraPosition(
+              target: asd.LatLng(41.330949, 36.290303),
               zoom: 12,
-              target: atakum,
             ),
-            markers: {
-              if (currentLocation != null)
-                Marker(
-                  markerId: MarkerId('currentLocation'),
-                  icon: BitmapDescriptor.defaultMarkerWithHue(
-                      BitmapDescriptor.hueGreen),
-                  position: LatLng(
-                      currentLocation!.latitude!, currentLocation!.longitude!),
-                ),
-            },
-            onMapCreated: (GoogleMapController controller) {
+            markers: _markers,
+            onMapCreated: (asd.GoogleMapController controller) {
               _controller.complete(controller);
             },
+            onLongPress: _addMarker,
           ),
         ),
         Positioned(
@@ -163,38 +118,27 @@ class _GreenMapState extends State<GreenMap> {
               Navigator.pop(context);
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: MyColors().color10.withOpacity(0.7),
+              backgroundColor: Colors.green.withOpacity(0.7),
               elevation: 20,
             ),
             child: Icon(
               Icons.arrow_back_rounded,
-              color: MyColors().color6,
+              color: Colors.white,
             ),
           ),
         ),
         Positioned(
-          top: 30,
-          right: 10,
-          child: FloatingActionButton(
-            elevation: 20,
-            onPressed: _moveCamera,
-            backgroundColor: MyColors().color10.withOpacity(0.7),
-            child: Icon(
-              Icons.my_location,
-              color: MyColors().color6,
+          top: 50,
+          right: 20,
+          child: ElevatedButton(
+            onPressed: _calculateDistance,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue.withOpacity(0.7),
+              elevation: 20,
             ),
-          ),
-        ),
-        Positioned(
-          top: 100,
-          right: 10,
-          child: FloatingActionButton(
-            onPressed: _openBottomSheet,
-            elevation: 20,
-            backgroundColor: MyColors().color10.withOpacity(0.7),
             child: Icon(
-              Icons.energy_savings_leaf_rounded,
-              color: MyColors().color6,
+              Icons.calculate_rounded,
+              color: Colors.white,
             ),
           ),
         ),

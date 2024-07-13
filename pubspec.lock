@@ -584,6 +584,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.8"
+  google_maps_utils:
+    dependency: "direct main"
+    description:
+      name: google_maps_utils
+      sha256: a71f65116ecc3e79828d563864279c3825bcb933d33f7d2a1a20e5c5a5b230ad
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0+1"
   google_ml_kit:
     dependency: "direct main"
     description:
@@ -961,6 +969,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  maps_toolkit:
+    dependency: "direct main"
+    description:
+      name: maps_toolkit
+      sha256: "277877f9505208acacd2a0794ef190e836a5ffee58ebc8efc5b9ca8de50e3e2f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
   matcher:
     dependency: transitive
     description:

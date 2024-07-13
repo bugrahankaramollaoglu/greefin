@@ -35,9 +35,9 @@ class GreefinApp extends StatefulWidget {
   State<GreefinApp> createState() => _GreefinAppState();
 }
 
-final firebaseAuthProvider = Provider<FirebaseAuth>((ref) {
+/* final firebaseAuthProvider = Provider<FirebaseAuth>((ref) {
   return FirebaseAuth.instance;
-});
+}); */
 
 class _GreefinAppState extends State<GreefinApp> {
   bool _isOnboardingCompleted = false;
