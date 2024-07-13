@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/utilities/my_colors.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -36,11 +35,11 @@ class ProfilePage extends StatelessWidget {
           Center(
             child: Text(
               'please set up your profile',
-              style: GoogleFonts.roboto(
+            /*  style: GoogleFonts.roboto(
                 fontSize: 20,
                 fontWeight: FontWeight.w400,
                 color: Colors.grey.withOpacity(0.8),
-              ),
+              ),*/
             ),
           ),
           const SizedBox(height: 30),

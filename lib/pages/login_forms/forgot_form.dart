@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:greefin/pages/riverpod_providers.dart';
 import 'package:greefin/utilities/my_colors.dart';
 
@@ -72,11 +71,11 @@ class ForgotPasswordForm extends ConsumerWidget {
       children: [
         Text(
           'Type your email address',
-          style: GoogleFonts.roboto(
+          /*style: GoogleFonts.roboto(
             fontSize: 20,
             fontWeight: FontWeight.w400,
             color: Colors.grey.withOpacity(0.9),
-          ),
+          ),*/
         ),
         const SizedBox(height: 30),
         Padding(
