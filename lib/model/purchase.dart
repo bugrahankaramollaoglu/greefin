@@ -1,7 +1,7 @@
 class Purchase {
   final String id;
   final String name;
-  final DateTime date;
+  final DateTime? date;
   final double price;
 
   Purchase(
