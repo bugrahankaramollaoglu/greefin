@@ -180,6 +180,7 @@ class _GreenMapState extends State<GreenMap> {
               1000)
           .round());
       car_carbon = car_minute * 0.171;
+      car_carbon = double.parse(car_carbon.toStringAsFixed(2));
 
       bike_minute = calculateBikeMinute(
           (xxx.SphericalUtil.computeDistanceBetween(
@@ -187,6 +188,7 @@ class _GreenMapState extends State<GreenMap> {
                   1000)
               .round());
       bike_carbon = bike_minute * 0.129;
+      bike_carbon = double.parse(bike_carbon.toStringAsFixed(2));
     });
 
     showModalBottomSheet(

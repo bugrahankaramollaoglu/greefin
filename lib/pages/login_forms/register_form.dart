@@ -34,7 +34,8 @@ class RegisterForm extends ConsumerWidget {
         hintStyle: const TextStyle(color: Colors.grey),
         labelStyle: const TextStyle(color: Colors.grey),
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        contentPadding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+        contentPadding:
+            const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
         enabledBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: Colors.grey),
           borderRadius: BorderRadius.circular(10.0),
@@ -82,7 +83,8 @@ class RegisterForm extends ConsumerWidget {
         hintStyle: const TextStyle(color: Colors.grey),
         labelStyle: const TextStyle(color: Colors.grey),
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        contentPadding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+        contentPadding:
+            const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
         enabledBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: Colors.grey),
           borderRadius: BorderRadius.circular(10.0),
@@ -293,50 +295,53 @@ class RegisterForm extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Column(
-      key: const ValueKey('registerPage'),
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        const SizedBox(height: 20),
-        CircleAvatar(
-          radius: 50,
-          backgroundColor: MyColors().color6,
-          backgroundImage: const AssetImage('assets/avatar.png'),
-        ),
-        const SizedBox(height: 30),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-          child: nameField('Full Name', _nameController, Icons.person_outline),
-        ),
-        const SizedBox(height: 20),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-          child: emailField('Email', _emailController, Icons.email_outlined),
-        ),
-        const SizedBox(height: 20),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-          child: passwordField('Password', _passwordController,
-              Icons.lock_outline_rounded, true),
-        ),
-        const SizedBox(height: 30),
-        _signupButton(context),
-        const SizedBox(height: 30),
-        TextDivider.horizontal(
-          text: const Text(
-            'OR',
-            style: TextStyle(),
+    return SingleChildScrollView(
+      child: Column(
+        key: const ValueKey('registerPage'),
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const SizedBox(height: 20),
+          CircleAvatar(
+            radius: 50,
+            backgroundColor: MyColors().color6,
+            backgroundImage: const AssetImage('assets/avatar.png'),
           ),
-          color: Colors.black87,
-          thickness: 1,
-         indent: 20,
-          endIndent: 20,
-        ),
-        const SizedBox(height: 20),
-        oauthRow(),
-        const SizedBox(height: 20),
-        _loginText(ref),
-      ],
+          const SizedBox(height: 30),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child:
+                nameField('Full Name', _nameController, Icons.person_outline),
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: emailField('Email', _emailController, Icons.email_outlined),
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: passwordField('Password', _passwordController,
+                Icons.lock_outline_rounded, true),
+          ),
+          const SizedBox(height: 30),
+          _signupButton(context),
+          const SizedBox(height: 30),
+          TextDivider.horizontal(
+            text: const Text(
+              'OR',
+              style: TextStyle(),
+            ),
+            color: Colors.black87,
+            thickness: 1,
+            indent: 20,
+            endIndent: 20,
+          ),
+          const SizedBox(height: 20),
+          oauthRow(),
+          const SizedBox(height: 20),
+          _loginText(ref),
+        ],
+      ),
     );
   }
 }

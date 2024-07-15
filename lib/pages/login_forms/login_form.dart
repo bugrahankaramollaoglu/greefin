@@ -400,6 +400,7 @@ class LoginForm extends ConsumerWidget {
             oauthRow(context),
             const SizedBox(height: 20),
             _registerText(ref),
+            const SizedBox(height: 20),
           ],
         ),
       ),
