@@ -288,28 +288,6 @@ class LoginForm extends ConsumerWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: IconButton(
-            onPressed: null,
-            icon: Icon(
-              FontAwesomeIcons.microsoft,
-              color: MyColors().color8,
-              size: 35,
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: IconButton(
-            onPressed: null,
-            icon: Icon(
-              FontAwesomeIcons.apple,
-              color: MyColors().color8,
-              size: 35,
-            ),
-          ),
-        ),
       ],
     );
   }

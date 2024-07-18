@@ -35,7 +35,6 @@ class GradientBorderPainter extends CustomPainter {
   final Color color;
   final double width;
 
-
   GradientBorderPainter({required this.color, required this.width});
 
   @override
@@ -81,7 +80,6 @@ class GradientBorderContainer extends ConsumerWidget {
         width: 2,
       ),
       child: Container(
-        
         width: width * 0.9,
         height: height * 0.8,
         decoration: BoxDecoration(

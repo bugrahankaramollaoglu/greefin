@@ -2,6 +2,7 @@ import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/firebase/auth.dart';
+import 'package:greefin/pages/navigation_pages/add_page/add_manually.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_map.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/utilities/my_colors.dart';
@@ -105,7 +106,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildBody() {
     switch (_selectedTab) {
       case _SelectedTab.main:
-        return const MainPage();
+        return MainPage();
       case _SelectedTab.green:
         return const GreenPage();
       case _SelectedTab.add:
