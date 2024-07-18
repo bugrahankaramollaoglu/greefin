@@ -239,28 +239,6 @@ class RegisterForm extends ConsumerWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: IconButton(
-            onPressed: signInWithGoogle,
-            icon: Icon(
-              FontAwesomeIcons.microsoft,
-              color: MyColors().color8,
-              size: 35,
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: IconButton(
-            onPressed: signInWithGoogle,
-            icon: Icon(
-              FontAwesomeIcons.apple,
-              color: MyColors().color8,
-              size: 35,
-            ),
-          ),
-        ),
       ],
     );
   }

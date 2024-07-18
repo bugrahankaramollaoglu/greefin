@@ -4,8 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:greefin/firebase/firebase_options.dart';
 import 'package:greefin/firebase/firebase_router.dart';
 import 'package:greefin/pages/home_page.dart';
-import 'package:greefin/pages/navigation_pages/add_page/add_manually.dart';
-import 'package:greefin/pages/navigation_pages/add_page/add_page.dart';
+import 'package:greefin/pages/navigation_pages/add_purchase.dart';
 import 'package:greefin/pages/navigation_pages/green_page/carbon_footprint.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_map.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
@@ -60,12 +59,11 @@ class _GreefinAppState extends State<GreefinApp> {
         '/home': (context) => const HomePage(),
         '/main': (context) => MainPage(),
         '/green': (context) => const GreenPage(),
-        '/add': (context) => const AddPage(),
         '/stats': (context) => const StatsPage(),
-        '/profile': (context) => const ProfilePage(),
+        '/profile': (context) => ProfilePage(),
         '/green_map': (context) => GreenMap(),
         '/carbon_footprint': (context) => const CarbonFootprint(),
-        '/add_manually': (context) => AddManually(),
+        '/add_purchase': (context) => AddPurchase(),
       },
       home: _isOnboardingCompleted
           ? const FirebaseRouter()

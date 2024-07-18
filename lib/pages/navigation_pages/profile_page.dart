@@ -1,49 +1,23 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/firebase/auth.dart';
 import 'package:greefin/utilities/my_colors.dart';
 
 class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+  ProfilePage({super.key});
+
+  User? user = FirebaseAuth.instance.currentUser;
+  String? user_name;
 
   @override
   Widget build(BuildContext context) {
+    user_name = user?.email!.split('@')[0];
+
     return Scaffold(
-      /* appBar: AppBar(
-        centerTitle: true,
-        title: Text('PROFİLE'),
-        leadingWidth: 100,
-        leading: Padding(
-          padding: const EdgeInsets.fromLTRB(15, 10, 15, 10),
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: IconButton(
-              icon: Icon(Icons.arrow_back_rounded),
-              color: Colors.white,
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-          ),
-        ),
-      ), */
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 80),
-            Center(
-              child: Text(
-                'please set up your profile',
-                /*  style: GoogleFonts.roboto(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.grey.withOpacity(0.8),
-                ),*/
-              ),
-            ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 100),
             Container(
               padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
@@ -78,7 +52,7 @@ class ProfilePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: 'John Doe',
+                  hintText: user_name,
                   hintStyle: TextStyle(color: Colors.black.withOpacity(0.3)),
                 ),
               ),
@@ -102,12 +76,12 @@ class ProfilePage extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: 'bugrakaramollaoglu@hotmail.com',
+                  hintText: user!.email ?? 'unknown@hotmail.com',
                   hintStyle: TextStyle(color: Colors.black.withOpacity(0.3)),
                 ),
               ),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: MyColors().color9,

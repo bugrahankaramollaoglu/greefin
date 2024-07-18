@@ -2,7 +2,7 @@ import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:greefin/firebase/auth.dart';
-import 'package:greefin/pages/navigation_pages/add_page/add_manually.dart';
+import 'package:greefin/pages/navigation_pages/add_purchase.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_map.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/utilities/my_colors.dart';
@@ -11,8 +11,6 @@ import 'package:greefin/pages/navigation_pages/profile_page.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
-
-import 'navigation_pages/add_page/add_page.dart';
 
 enum _SelectedTab { main, green, add, stats, profile }
 
@@ -110,11 +108,11 @@ class _HomePageState extends State<HomePage> {
       case _SelectedTab.green:
         return const GreenPage();
       case _SelectedTab.add:
-        return const AddPage();
+        return const AddPurchase();
       case _SelectedTab.stats:
         return const StatsPage();
       case _SelectedTab.profile:
-        return const ProfilePage();
+        return ProfilePage();
     }
   }
 }
