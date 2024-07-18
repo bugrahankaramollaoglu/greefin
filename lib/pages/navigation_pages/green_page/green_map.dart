@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math' show cos, sqrt, asin;
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart' as asd;
 import 'package:greefin/utilities/my_colors.dart';
@@ -7,7 +6,7 @@ import 'package:maps_toolkit/maps_toolkit.dart' as xxx;
 import 'package:text_divider/text_divider.dart';
 
 class GreenMap extends StatefulWidget {
-  const GreenMap({Key? key}) : super(key: key);
+  const GreenMap({super.key});
 
   @override
   State<GreenMap> createState() => _GreenMapState();
@@ -16,7 +15,7 @@ class GreenMap extends StatefulWidget {
 class _GreenMapState extends State<GreenMap> {
   xxx.LatLng? sourceLatLng;
   xxx.LatLng? destinationLatLng;
-  Completer<asd.GoogleMapController> _controller = Completer();
+  final Completer<asd.GoogleMapController> _controller = Completer();
   Set<asd.Marker> _markers = {};
   Set<asd.Polyline> _polylines = {};
 
@@ -60,11 +59,11 @@ class _GreenMapState extends State<GreenMap> {
         destinationLatLng = null;
         _markers = {
           asd.Marker(
-            markerId: asd.MarkerId('sourceMarker'),
+            markerId: const asd.MarkerId('sourceMarker'),
             position: latLng,
             icon: asd.BitmapDescriptor.defaultMarkerWithHue(
                 asd.BitmapDescriptor.hueRed),
-            infoWindow: asd.InfoWindow(
+            infoWindow: const asd.InfoWindow(
               title: 'Source',
               snippet: 'Source location',
             ),
@@ -75,11 +74,11 @@ class _GreenMapState extends State<GreenMap> {
         destinationLatLng = convertedLatLng;
         _markers.add(
           asd.Marker(
-            markerId: asd.MarkerId('destinationMarker'),
+            markerId: const asd.MarkerId('destinationMarker'),
             position: latLng,
             icon: asd.BitmapDescriptor.defaultMarkerWithHue(
                 asd.BitmapDescriptor.hueBlue),
-            infoWindow: asd.InfoWindow(
+            infoWindow: const asd.InfoWindow(
               title: 'Destination',
               snippet: 'Destination location',
             ),
@@ -100,7 +99,7 @@ class _GreenMapState extends State<GreenMap> {
       setState(() {
         _polylines = {
           asd.Polyline(
-            polylineId: asd.PolylineId('polyline'),
+            polylineId: const asd.PolylineId('polyline'),
             points: [
               asd.LatLng(sourceLatLng!.latitude, sourceLatLng!.longitude),
               asd.LatLng(
@@ -193,7 +192,7 @@ class _GreenMapState extends State<GreenMap> {
 
     showModalBottomSheet(
       context: context,
-      shape: RoundedRectangleBorder(
+      shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(
           top: Radius.circular(
             20,
@@ -204,8 +203,8 @@ class _GreenMapState extends State<GreenMap> {
         return SingleChildScrollView(
           child: Container(
             height: 600,
-            padding: EdgeInsets.all(16),
-            decoration: BoxDecoration(
+            padding: const EdgeInsets.all(16),
+            decoration: const BoxDecoration(
               color: Color.fromARGB(255, 224, 221, 221),
               borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
             ),
@@ -222,8 +221,8 @@ class _GreenMapState extends State<GreenMap> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
-                Center(
+                const SizedBox(height: 20),
+                const Center(
                   child: Text(
                     'Calculate your carbon emission',
                     style: TextStyle(
@@ -232,40 +231,40 @@ class _GreenMapState extends State<GreenMap> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
 
                 // Divider(),
                 sourceLatLng != null && destinationLatLng != null
                     ? Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.location_on, color: Colors.red),
-                          SizedBox(width: 10),
+                          const Icon(Icons.location_on, color: Colors.red),
+                          const SizedBox(width: 10),
                           Text(
                             'Source: (${sourceLatLng!.latitude.toStringAsFixed(2)}, ${sourceLatLng!.longitude.toStringAsFixed(2)})',
                           ),
                         ],
                       )
                     : Container(),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 destinationLatLng != null
                     ? Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.flag, color: Colors.blue),
-                          SizedBox(width: 10),
+                          const Icon(Icons.flag, color: Colors.blue),
+                          const SizedBox(width: 10),
                           Text(
                             'Destination: (${destinationLatLng!.latitude.toStringAsFixed(2)}, ${destinationLatLng!.longitude.toStringAsFixed(2)})',
                           ),
                         ],
                       )
                     : Container(),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 sourceLatLng != null && destinationLatLng != null
                     ? TextDivider.horizontal(
                         text: Text(
                           '${(xxx.SphericalUtil.computeDistanceBetween(sourceLatLng!, destinationLatLng!) / 1000).toStringAsFixed(2)} km',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -321,7 +320,7 @@ class _GreenMapState extends State<GreenMap> {
                                 // child: ,
                               ),
                             ),
-                            Positioned(
+                            const Positioned(
                               top: 22,
                               left: 35,
                               child: Text(
@@ -384,7 +383,7 @@ class _GreenMapState extends State<GreenMap> {
                                 // child: ,
                               ),
                             ),
-                            Positioned(
+                            const Positioned(
                               top: 22,
                               left: 35,
                               child: Text(
@@ -447,7 +446,7 @@ class _GreenMapState extends State<GreenMap> {
                                 // child: ,
                               ),
                             ),
-                            Positioned(
+                            const Positioned(
                               top: 22,
                               left: 35,
                               child: Text(
@@ -510,7 +509,7 @@ class _GreenMapState extends State<GreenMap> {
                                 // child: ,
                               ),
                             ),
-                            Positioned(
+                            const Positioned(
                               top: 22,
                               left: 35,
                               child: Text(
@@ -546,7 +545,7 @@ class _GreenMapState extends State<GreenMap> {
                     ),
                   ],
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Center(
                   child: ElevatedButton.icon(
                     onPressed: () {
@@ -584,7 +583,7 @@ class _GreenMapState extends State<GreenMap> {
       children: [
         Scaffold(
           body: asd.GoogleMap(
-            initialCameraPosition: asd.CameraPosition(
+            initialCameraPosition: const asd.CameraPosition(
               target: asd.LatLng(41.330949, 36.290303),
               zoom: 12,
             ),
@@ -607,7 +606,7 @@ class _GreenMapState extends State<GreenMap> {
               backgroundColor: MyColors().color10.withOpacity(0.65),
               elevation: 20,
             ),
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back_rounded,
               color: Colors.white,
             ),
@@ -622,7 +621,7 @@ class _GreenMapState extends State<GreenMap> {
               backgroundColor: Colors.blue.withOpacity(0.7),
               elevation: 20,
             ),
-            child: Icon(
+            child: const Icon(
               Icons.calculate_rounded,
               color: Colors.white,
             ),

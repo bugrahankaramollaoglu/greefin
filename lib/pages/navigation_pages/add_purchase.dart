@@ -3,14 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:greefin/model/purchase.dart';
 import 'package:greefin/utilities/my_colors.dart';
-import 'package:uuid/uuid.dart';
 
 class AddPurchase extends StatelessWidget {
   const AddPurchase({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       // appBar: AppBar(
       //   title: Text('Add Purchase Manually'),
       // ),
@@ -20,6 +19,8 @@ class AddPurchase extends StatelessWidget {
 }
 
 class AddPurchaseForm extends StatefulWidget {
+  const AddPurchaseForm({super.key});
+
   @override
   _AddPurchaseFormState createState() => _AddPurchaseFormState();
 }
@@ -65,7 +66,7 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
               .add(purchase.toMap());
 
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Purchase saved!')),
+            const SnackBar(content: Text('Purchase saved!')),
           );
 
           _nameController.clear();
@@ -74,17 +75,17 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
           _categoryController.clear();
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('User not logged in')),
+            const SnackBar(content: Text('User not logged in')),
           );
         }
       } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to save purchase')),
+          const SnackBar(content: Text('Failed to save purchase')),
         );
       }
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Validation failed')),
+        const SnackBar(content: Text('Validation failed')),
       );
     }
   }
@@ -100,7 +101,7 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: Colors.black87),
+        borderSide: const BorderSide(color: Colors.black87),
       ),
     );
   }
@@ -127,6 +128,12 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
         key: _formKey,
         child: ListView(
           children: [
+            Text(
+              'Add Purchase Manually',
+              style: TextStyle(fontSize: 24),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 30),
             TextFormField(
               controller: _nameController,
               decoration: _buildInputDecoration('Name'),
@@ -137,7 +144,7 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
                 return null;
               },
             ),
-            SizedBox(height: 26),
+            const SizedBox(height: 26),
             TextFormField(
               controller: _dateController,
               decoration: _buildInputDecoration('Date (YYYY-MM-DD)'),
@@ -153,7 +160,7 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
                 return null;
               },
             ),
-            SizedBox(height: 26),
+            const SizedBox(height: 26),
             DropdownButtonFormField<String>(
               value: _categories.first,
               decoration: _buildInputDecoration('Category'),
@@ -173,7 +180,7 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
                 return null;
               },
             ),
-            SizedBox(height: 26),
+            const SizedBox(height: 26),
             TextFormField(
               controller: _priceController,
               decoration: _buildInputDecoration('Price \$'),
@@ -188,21 +195,21 @@ class _AddPurchaseFormState extends State<AddPurchaseForm> {
                 return null;
               },
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
               child: ElevatedButton(
                 onPressed: _savePurchase,
-                child: Text(
-                  'Save Purchase',
-                  style: TextStyle(
-                    color: MyColors().color6,
-                  ),
-                ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: MyColors().color9,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: Text(
+                  'Save Purchase',
+                  style: TextStyle(
+                    color: MyColors().color6,
                   ),
                 ),
               ),

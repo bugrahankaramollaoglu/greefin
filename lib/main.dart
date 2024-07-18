@@ -47,7 +47,7 @@ class _GreefinAppState extends State<GreefinApp> {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       _isOnboardingCompleted = prefs.getBool('onboardingCompleted') ?? false;
-    });
+    });   
   }
 
   @override
@@ -57,13 +57,13 @@ class _GreefinAppState extends State<GreefinApp> {
       initialRoute: '/',
       routes: {
         '/home': (context) => const HomePage(),
-        '/main': (context) => MainPage(),
-        '/green': (context) => const GreenPage(),
+        '/main': (context) => const MainPage(),
+        '/green': (context) =>  const GreenPage(),
         '/stats': (context) => const StatsPage(),
         '/profile': (context) => ProfilePage(),
-        '/green_map': (context) => GreenMap(),
+        '/green_map': (context) => const GreenMap(),
         '/carbon_footprint': (context) => const CarbonFootprint(),
-        '/add_purchase': (context) => AddPurchase(),
+        '/add_purchase': (context) => const AddPurchase(),
       },
       home: _isOnboardingCompleted
           ? const FirebaseRouter()

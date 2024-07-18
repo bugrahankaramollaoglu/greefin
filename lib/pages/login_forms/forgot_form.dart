@@ -69,7 +69,7 @@ class ForgotPasswordForm extends ConsumerWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           'Type your email address',
           /*style: GoogleFonts.roboto(
             fontSize: 20,
