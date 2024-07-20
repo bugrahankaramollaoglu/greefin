@@ -229,6 +229,31 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
  Toplantılara aktif olarak katılımın altı çizildi.
  Bir sonraki toplantıya kadar yapılaması gerekenler görev dağılımları  belirlendi  ve bu projeyi başarılı bir şekilde yöneteceğimiz ve ortaya güzel bir proje çıkaracağımız konusunda motivasyonlar verildi
 
+ ---
+
+# SPRİNT 2
+
+ #### SPRİNT NOTLARI 
+
+ Ürünü ortaya çıkarırken iletişim oldukça aktif tutmaya özen gösterdik.Bu yüzden *WHATSAPP* üzerinden iletişime devam ettik.
+
+ UI tasarımlarının düzenlemeleri için Figma'yı kullandık.
+
+Toplantı notları takımla her toplantının sonunda WORD belgesi olarak paylaşıldı.
+
+#### SPRİNT PUANI DEĞERLENDİRMESİ
+
+2.sprint tamamlanması gereken puan 100 olarak belirlenmiştir.10 ana görevden oluşan yapılacaklar listesinin her biri 10 puan üzerinden değerlendirilmiş ve hedefe ulaşılmıştır.
+
+#### DAILY SCRUM  
+
+Sprint boyunca 2 
+
+
+
+
+ 
+
  
 
 
