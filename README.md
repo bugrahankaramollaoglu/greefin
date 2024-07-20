@@ -18,7 +18,7 @@ TAKIM İSMİ:  F07 FLUTTER TAKIMI
 #### ÜRÜN İSMİ 
 greefin 
 
-#### PRODUCT BACKLOG : https://trello.com/b/51iisxFx/f07-bootcamp-spt-1
+#### PRODUCT BACKLOG : https://trello.com/b/WHeYnDVy/oua-bootcamp-grup-7
 
  #### ÜRÜN İSMİ ÇIKIŞ NOKTASI 
 
@@ -222,7 +222,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
- #### Sprint Retrospektif
+ #### SPRİNT RETROSPECTIVE
  Product Owner rolünü Beyza Dişli'nin yapmasına karar vermiştik ama sınav haftasından dolayı aktif katılım sağlayamayacağını belirtmesi sonucu bu görevi Bircan Aladinli'ye verdik.
  UI Tasarımlarının yeniden tasarlanmasına karar verildi.
  Bir sonraki toplantı tarihi  09.07.2024 saat 23.30 olarak belirlendi
@@ -250,7 +250,50 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğni ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
 
-          
+
+<img src="https://github.com/user-attachments/assets/8a0d30f7-3604-405f-8ab4-de8ab7b32834"  width="400" height="700">
+
+<img src="https://github.com/user-attachments/assets/5eb67490-3671-4edc-b13e-f3a14d80fa64"  width="400" height="700">
+
+<img src="https://github.com/user-attachments/assets/2034582c-140b-47ab-90bb-6ba483a4b8f4"  width="400" height="700">
+
+<img src="https://github.com/user-attachments/assets/525461e6-92c4-4825-8f89-f1d21adbe401"  width="400" height="700">
+
+
+#### ÜRÜN EKRAN GÖRÜNTÜLERİ 
+
+
+
+
+
+ #### SPRINT BOARD SCREENSHOOT 
+
+https://trello.com/b/Kskvoau2/spri%CC%87nt-2
+
+#### SPRİNT REVIEW 
+
+2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etnmesine ,Beyza Nur 'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik..2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+
+#### SPRINT RETROSPECTIVE
+
+Bİrcan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verdik.
+Uygulamanın Forget Password kısmının kodunu Burak 'ın yazmasına karar verdik.
+Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verdik.Ve kod kısmında devereye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
+Uygulamanın manuel gelir gider ekleme işlemlerinin kod tarafıyla Buğra ilgilendi.
+Bir sonraki toplantı tarihini 21Temmuz 2024 saat 21.00 olarak belirledik.
+Kod kısmında henüz istediğimiz ritmi yakalayamasakta elimizden geleni yapma konusunda motivasyonumuzu yüksek tutmaya gayret ediyor ve takım içindeki aksaklıkları en mininum seviyeye indirgeyerek yolumza devam ediyoruz.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
