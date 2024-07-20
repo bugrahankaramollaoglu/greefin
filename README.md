@@ -247,7 +247,10 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 
 #### DAILY SCRUM  
 
-Sprint boyunca 2 
+Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğni ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+
+
+          
 
 
 
