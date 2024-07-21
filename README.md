@@ -241,9 +241,13 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
 Toplantı notları takımla her toplantının sonunda WORD belgesi olarak paylaşıldı.
 
-#### SPRİNT PUANI DEĞERLENDİRMESİ
+#### SPRİNT PUANI DEĞERLENDİRMESİ 
 
-2.sprint tamamlanması gereken puan 100 olarak belirlenmiştir.10 ana görevden oluşan yapılacaklar listesinin her biri 10 puan üzerinden değerlendirilmiş ve hedefe ulaşılmıştır.
+2.sprint tamamlanması gereken puan 100 olarak belirlenmiştir.
+
+#### SPRINT PUANLAMA MANTIĞI 
+
+10 ana görevden oluşan yapılacaklar listesinin her biri 10 puan üzerinden değerlendirilmiş ve hedefe ulaşılmıştır.
 
 #### DAILY SCRUM  
 
@@ -262,18 +266,25 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
-<img src="https://github.com/user-attachments/assets/9a4309fc-1262-4c66-910f-a0b0e465434c"  width="400" height="700">
+<img src="https://github.com/user-attachments/assets/9a4309fc-1262-4c66-910f-a0b0e465434c"  width="400" height="500">
 
-<img src="https://github.com/user-attachments/assets/268e7944-96cd-4398-b317-7aca49600813"  width="400" height="700">
 
-<img src="https://github.com/user-attachments/assets/f6b7b62b-a035-46ed-bc7f-01384830f464"  width="400" height="700">
+<img src="https://github.com/user-attachments/assets/268e7944-96cd-4398-b317-7aca49600813"  width="400" height="500">
 
-<img src="https://github.com/user-attachments/assets/9e9f33b4-d89c-4109-9c12-0219b82e3b95"  width="400" height="700">
+
+<img src="https://github.com/user-attachments/assets/f6b7b62b-a035-46ed-bc7f-01384830f464"  width="400" height="500">
+
+
+<img src="https://github.com/user-attachments/assets/9e9f33b4-d89c-4109-9c12-0219b82e3b95"  width="400" height="500">
+
+
 
 
  #### SPRINT BOARD SCREENSHOOT 
+ 
+<img src="https://github.com/user-attachments/assets/e74edbfc-11c1-4abb-9130-b4106abc52ef"  width="700" height="600">
 
-
+ 
 #### SPRİNT REVIEW 
 
 2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etnmesine ,Beyza Nur 'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
