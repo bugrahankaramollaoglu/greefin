@@ -263,24 +263,25 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
 
-
+<img src=""  width="400" height="700">
 
 
  #### SPRINT BOARD SCREENSHOOT 
 
-https://trello.com/b/Kskvoau2/spri%CC%87nt-2
+
 
 #### SPRİNT REVIEW 
 
-2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etnmesine ,Beyza Nur 'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik..2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etnmesine ,Beyza Nur 'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
 #### SPRINT RETROSPECTIVE
 
 Bİrcan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verdik.
-Uygulamanın Forget Password kısmının kodunu Burak 'ın yazmasına karar verdik.
+Uygulamanın Forget Password kısmı yapıldı.
 Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verdik.Ve kod kısmında devereye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
 Uygulamanın manuel gelir gider ekleme işlemlerinin kod tarafıyla Buğra ilgilendi.
-Bir sonraki toplantı tarihini 21Temmuz 2024 saat 21.00 olarak belirledik.
+Uygulamammızın karbon ayak izi fonksiyonuna  yoğunlaşmaya karar verdik.
+Ana sayfanın mekanizmasının nasıl yapılacağına karar verildi.
 Kod kısmında henüz istediğimiz ritmi yakalayamasakta elimizden geleni yapma konusunda motivasyonumuzu yüksek tutmaya gayret ediyor ve takım içindeki aksaklıkları en mininum seviyeye indirgeyerek yolumza devam ediyoruz.
 
 
