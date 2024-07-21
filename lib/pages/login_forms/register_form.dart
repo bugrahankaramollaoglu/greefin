@@ -284,6 +284,23 @@ class RegisterForm extends ConsumerWidget {
             backgroundColor: MyColors().color6,
             backgroundImage: const AssetImage('assets/avatar.png'),
           ),
+          const SizedBox(height: 10),
+        const Text(
+          'Sign Up',
+          style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+            color: Colors.black87,
+          ),
+        ),
+        const SizedBox(height: 5),
+        const Text(
+          'Create your new account',
+          style: TextStyle(
+            fontSize: 18,
+            color: Colors.black54,
+          ),
+        ),
           const SizedBox(height: 30),
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
