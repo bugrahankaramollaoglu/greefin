@@ -213,7 +213,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  #### SPRİNT BOARD SCREENSHOOT 
  
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="600" height="400">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="800" height="600">
 
 
  #### SPRİNT REVİEW 
@@ -285,7 +285,7 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
  #### SPRINT BOARD SCREENSHOOT 
  
-<img src="https://github.com/user-attachments/assets/e74edbfc-11c1-4abb-9130-b4106abc52ef"  width="700" height="600">
+<img src="https://github.com/user-attachments/assets/e74edbfc-11c1-4abb-9130-b4106abc52ef"  width="800" height="600">
 
  
 #### SPRİNT REVIEW 
