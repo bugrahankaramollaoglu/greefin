@@ -266,16 +266,17 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
-<img src="https://github.com/user-attachments/assets/9a4309fc-1262-4c66-910f-a0b0e465434c"  width="400" height="500">
+<img src=""  width="350" height="600">
 
 
-<img src="https://github.com/user-attachments/assets/268e7944-96cd-4398-b317-7aca49600813"  width="400" height="500">
+<img src="https://github.com/user-attachments/assets/268e7944-96cd-4398-b317-7aca49600813"  width="350" height="600">
 
 
-<img src="https://github.com/user-attachments/assets/f6b7b62b-a035-46ed-bc7f-01384830f464"  width="400" height="500">
+<img src="https://github.com/user-attachments/assets/f40806e3-7b5f-4a1d-a4d7-bd4aa4abfabd"  width="350" height="600">
+
+<img src="https://github.com/user-attachments/assets/d3056279-ee93-4037-b5ea-7dc87da0c75f"  width="350" height="600">
 
 
-<img src="https://github.com/user-attachments/assets/9e9f33b4-d89c-4109-9c12-0219b82e3b95"  width="400" height="500">
 
 
 
