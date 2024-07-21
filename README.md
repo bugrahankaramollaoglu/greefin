@@ -262,12 +262,16 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
+<img src="https://github.com/user-attachments/assets/9a4309fc-1262-4c66-910f-a0b0e465434c"  width="400" height="700">
 
-<img src=""  width="400" height="700">
+<img src="https://github.com/user-attachments/assets/268e7944-96cd-4398-b317-7aca49600813"  width="400" height="700">
+
+<img src="https://github.com/user-attachments/assets/f6b7b62b-a035-46ed-bc7f-01384830f464"  width="400" height="700">
+
+<img src="https://github.com/user-attachments/assets/9e9f33b4-d89c-4109-9c12-0219b82e3b95"  width="400" height="700">
 
 
  #### SPRINT BOARD SCREENSHOOT 
-
 
 
 #### SPRİNT REVIEW 
