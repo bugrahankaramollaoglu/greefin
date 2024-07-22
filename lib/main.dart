@@ -47,7 +47,7 @@ class _GreefinAppState extends State<GreefinApp> {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       _isOnboardingCompleted = prefs.getBool('onboardingCompleted') ?? false;
-    });   
+    });
   }
 
   @override
