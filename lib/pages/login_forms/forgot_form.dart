@@ -81,7 +81,7 @@ class ForgotPasswordForm extends ConsumerWidget {
         ),
         const SizedBox(height: 35),
         Text(
-          'When Accessing Your Account\nAre You Having Problems?',
+          'Can\'t remember?',
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class ForgotPasswordForm extends ConsumerWidget {
         ),
         const SizedBox(height: 35),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0), 
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Text(
             'Please enter your email address, and we will send you a link to regain access to your account.',
             style: TextStyle(
@@ -112,13 +112,13 @@ class ForgotPasswordForm extends ConsumerWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               labelText: 'Email',
-              prefixIcon: Icon(Icons.email), 
+              prefixIcon: Icon(Icons.email),
             ),
           ),
         ),
         const SizedBox(height: 30),
         _sendButton(context),
-        const SizedBox(height: 40), 
+        const SizedBox(height: 40),
         TextDivider.horizontal(
           text: const Text(
             'OR',
@@ -129,7 +129,7 @@ class ForgotPasswordForm extends ConsumerWidget {
           indent: 20,
           endIndent: 20,
         ),
-        const SizedBox(height: 40), 
+        const SizedBox(height: 40),
         _goBackButton(ref),
       ],
     );

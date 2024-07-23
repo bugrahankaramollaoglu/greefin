@@ -213,7 +213,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  #### SPRİNT BOARD SCREENSHOOT 
  
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="600" height="400">
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="800" height="600">
 
 
  #### SPRİNT REVİEW 
@@ -241,9 +241,13 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
 Toplantı notları takımla her toplantının sonunda WORD belgesi olarak paylaşıldı.
 
-#### SPRİNT PUANI DEĞERLENDİRMESİ
+#### SPRİNT PUANI DEĞERLENDİRMESİ 
 
-2.sprint tamamlanması gereken puan 100 olarak belirlenmiştir.10 ana görevden oluşan yapılacaklar listesinin her biri 10 puan üzerinden değerlendirilmiş ve hedefe ulaşılmıştır.
+2.sprint tamamlanması gereken puan 100 olarak belirlenmiştir.
+
+#### SPRINT PUANLAMA MANTIĞI 
+
+10 ana görevden oluşan yapılacaklar listesinin her biri 10 puan üzerinden değerlendirilmiş ve hedefe ulaşılmıştır.
 
 #### DAILY SCRUM  
 
@@ -262,25 +266,40 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
+<img src="https://github.com/user-attachments/assets/291bb16d-5b32-4ef6-8653-7927d3611552"  width="350" height="600">
+
+<img src="https://github.com/user-attachments/assets/fe199eaf-c36c-4fd1-8e6f-cf5b17acb0f6"  width="350" height="600">
+
+
+<img src="https://github.com/user-attachments/assets/268e7944-96cd-4398-b317-7aca49600813"  width="350" height="600">
+
+
+<img src="https://github.com/user-attachments/assets/f40806e3-7b5f-4a1d-a4d7-bd4aa4abfabd"  width="350" height="600">
+
+<img src="https://github.com/user-attachments/assets/d3056279-ee93-4037-b5ea-7dc87da0c75f"  width="350" height="600">
+
+
 
 
 
 
  #### SPRINT BOARD SCREENSHOOT 
+ 
+<img src="https://github.com/user-attachments/assets/e74edbfc-11c1-4abb-9130-b4106abc52ef"  width="800" height="600">
 
-https://trello.com/b/Kskvoau2/spri%CC%87nt-2
-
+ 
 #### SPRİNT REVIEW 
 
-2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etnmesine ,Beyza Nur 'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik..2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur 'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
 #### SPRINT RETROSPECTIVE
 
 Bİrcan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verdik.
-Uygulamanın Forget Password kısmının kodunu Burak 'ın yazmasına karar verdik.
+Uygulamanın Forget Password kısmı Burak tarafından yapıldı.
 Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verdik.Ve kod kısmında devereye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
-Uygulamanın manuel gelir gider ekleme işlemlerinin kod tarafıyla Buğra ilgilendi.
-Bir sonraki toplantı tarihini 21Temmuz 2024 saat 21.00 olarak belirledik.
+Uygulamanın manuel gelir gider ekleme işlemleri, ana sayfa mekanizması ve underplanting kısımları  Buğra 'ya verildi.
+Uygulamammızın karbon ayak izi fonksiyonuna  yoğunlaşmaya karar verdik.
+Ana sayfanın mekanizmasının nasıl yapılacağına karar verildi.
 Kod kısmında henüz istediğimiz ritmi yakalayamasakta elimizden geleni yapma konusunda motivasyonumuzu yüksek tutmaya gayret ediyor ve takım içindeki aksaklıkları en mininum seviyeye indirgeyerek yolumza devam ediyoruz.
 
 
