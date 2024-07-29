@@ -94,6 +94,17 @@ class _GreenMapState extends State<GreenMap> {
     });
   }
 
+  void _openMapHint() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content:
+            Center(child: Text('Hold on the map to pin source & destination!')),
+        duration: Duration(seconds: 5),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
   void _addPolyline() {
     if (sourceLatLng != null && destinationLatLng != null) {
       setState(() {
@@ -579,6 +590,9 @@ class _GreenMapState extends State<GreenMap> {
 
   @override
   Widget build(BuildContext context) {
+    double widthh = MediaQuery.of(context).size.width;
+    double heightt = MediaQuery.of(context).size.height;
+
     return Stack(
       children: [
         Scaffold(
@@ -608,6 +622,21 @@ class _GreenMapState extends State<GreenMap> {
             ),
             child: const Icon(
               Icons.arrow_back_rounded,
+              color: Colors.white,
+            ),
+          ),
+        ),
+        Positioned(
+          top: 50,
+          right: widthh / 2.5,
+          child: ElevatedButton(
+            onPressed: _openMapHint,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.orange.withOpacity(0.7),
+              elevation: 20,
+            ),
+            child: const Icon(
+              Icons.help,
               color: Colors.white,
             ),
           ),
