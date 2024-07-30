@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pie_chart/pie_chart.dart';
 
 class CarbonFootprint extends StatefulWidget {
   const CarbonFootprint({super.key});
@@ -309,7 +308,7 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
               Stack(
                 alignment: Alignment.center,
                 children: [
-                  PieChart(
+               /*    PieChart(
                     dataMap: dataMap,
                     chartType: ChartType.ring,
                     chartRadius: MediaQuery.of(context).size.width / 2.5,
@@ -321,7 +320,7 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
                     ),
                     baseChartColor: Colors.grey[50]!.withOpacity(0.15),
                     colorList: colorList,
-                  ),
+                  ), */
                   const Text(
                     'CO2',
                     style: TextStyle(
