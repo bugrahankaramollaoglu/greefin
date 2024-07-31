@@ -134,9 +134,29 @@ class LoginForm extends ConsumerWidget {
     );
   }
 
-  Widget _guestButton() {
+  Future<void> _signInGuest(BuildContext context) async {
+    try {
+      await Auth().signInWithEmailAndPassword(
+        email: "guest@hotmail.com",
+        password: "guest123",
+      );
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+        (route) => false,
+      );
+    } on FirebaseAuthException {
+      /*  setState(() {
+        errorMessage = e.message;
+      }); */
+    }
+  }
+
+  Widget _guestButton(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        _signInGuest(context);
+      },
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
@@ -372,7 +392,7 @@ class LoginForm extends ConsumerWidget {
             _forgotPassword(ref), // Forgot password button
             const SizedBox(height: 20),
             _loginButton(context),
-            _guestButton(),
+            _guestButton(context),
             const SizedBox(height: 20),
             _divider(),
             oauthRow(context),
