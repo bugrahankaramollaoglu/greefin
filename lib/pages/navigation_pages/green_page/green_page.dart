@@ -150,7 +150,7 @@ class GreenPage extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

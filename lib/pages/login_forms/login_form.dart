@@ -193,7 +193,7 @@ class LoginForm extends ConsumerWidget {
           TextSpan(
             text: 'Sign up',
             style: TextStyle(
-              color: MyColors().color4, // Set your desired color her6
+              color: MyColors().color6, // Set your desired color her6
               fontWeight: FontWeight.bold,
             ),
             recognizer: TapGestureRecognizer()
