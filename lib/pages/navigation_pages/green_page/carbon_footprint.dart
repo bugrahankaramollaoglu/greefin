@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pie_chart/pie_chart.dart';
 
 class CarbonFootprint extends StatefulWidget {
   const CarbonFootprint({super.key});
@@ -30,15 +31,18 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
 
   void _calculateCarbonFootprint() {
     setState(() {
-      electricity = (double.tryParse(_electricityController.text) ?? 0.0) * 0.707; // 1 kWh = 0.707 kg CO2
+      electricity = (double.tryParse(_electricityController.text) ?? 0.0) *
+          0.707; // 1 kWh = 0.707 kg CO2
       transport = 0.0;
 
       switch (_transportMode) {
         case 'Car':
-          transport = (double.tryParse(_transportController.text) ?? 0.0) * 0.271; // 1 km = 0.271 kg CO2
+          transport = (double.tryParse(_transportController.text) ?? 0.0) *
+              0.271; // 1 km = 0.271 kg CO2
           break;
         case 'Motorcycle':
-          transport = (double.tryParse(_transportController.text) ?? 0.0) * 0.162; // 1 km = 0.162 kg CO2
+          transport = (double.tryParse(_transportController.text) ?? 0.0) *
+              0.162; // 1 km = 0.162 kg CO2
           break;
         case 'Bicycle':
         case 'Walking':
@@ -48,19 +52,27 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
           break;
       }
 
-      meat = (double.tryParse(_meatController.text) ?? 0.0) * 27; // 1 kg meat = 27 kg CO2
-      water = (double.tryParse(_waterController.text) ?? 0.0) * 0.298; // 1 m³ water = 0.298 kg CO2
-      fruit = (double.tryParse(_fruitController.text) ?? 0.0) * 0.4; // 1 kg fruit/veg = 0.4 kg CO2
+      meat = (double.tryParse(_meatController.text) ?? 0.0) *
+          27; // 1 kg meat = 27 kg CO2
+      water = (double.tryParse(_waterController.text) ?? 0.0) *
+          0.298; // 1 m³ water = 0.298 kg CO2
+      fruit = (double.tryParse(_fruitController.text) ?? 0.0) *
+          0.4; // 1 kg fruit/veg = 0.4 kg CO2
       heating = 0.0;
 
       if (_heatingType == 'Natural Gas') {
-        heating = (double.tryParse(_gasController.text) ?? 0.0) * 1.88; // 1 m³ gas = 1.88 kg CO2
+        heating = (double.tryParse(_gasController.text) ?? 0.0) *
+            1.88; // 1 m³ gas = 1.88 kg CO2
       } else if (_heatingType == 'Coal') {
-        heating = (double.tryParse(_coalController.text) ?? 0.0) * 2.414; // 1 kg coal = 2.414 kg CO2
+        heating = (double.tryParse(_coalController.text) ?? 0.0) *
+            2.414; // 1 kg coal = 2.414 kg CO2
       }
 
-      _carbonFootprint = electricity + transport + meat + water + fruit + heating;
-      _status = _carbonFootprint > 1500 ? 'High Carbon Footprint' : 'Low Carbon Footprint';
+      _carbonFootprint =
+          electricity + transport + meat + water + fruit + heating;
+      _status = _carbonFootprint > 1500
+          ? 'High Carbon Footprint'
+          : 'Low Carbon Footprint';
     });
   }
 
@@ -142,8 +154,13 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
                     _transportMode = newValue!;
                   });
                 },
-                items: <String>['Walking', 'Bicycle', 'Car', 'Motorcycle', 'Not Using Vehicle']
-                    .map<DropdownMenuItem<String>>((String value) {
+                items: <String>[
+                  'Walking',
+                  'Bicycle',
+                  'Car',
+                  'Motorcycle',
+                  'Not Using Vehicle'
+                ].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
                     child: Text(value),
@@ -243,8 +260,7 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
                   focusedBorder: _buildBorder(Colors.green),
                 ),
               ),
-              if (_heatingType == 'Natural Gas')
-                const SizedBox(height: 8),
+              if (_heatingType == 'Natural Gas') const SizedBox(height: 8),
               if (_heatingType == 'Natural Gas')
                 TextField(
                   controller: _gasController,
@@ -257,8 +273,7 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
                   ),
                   keyboardType: TextInputType.number,
                 ),
-              if (_heatingType == 'Coal')
-                const SizedBox(height: 8),
+              if (_heatingType == 'Coal') const SizedBox(height: 8),
               if (_heatingType == 'Coal')
                 TextField(
                   controller: _coalController,
@@ -308,7 +323,7 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
               Stack(
                 alignment: Alignment.center,
                 children: [
-               /*    PieChart(
+                  PieChart(
                     dataMap: dataMap,
                     chartType: ChartType.ring,
                     chartRadius: MediaQuery.of(context).size.width / 2.5,
@@ -320,7 +335,7 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
                     ),
                     baseChartColor: Colors.grey[50]!.withOpacity(0.15),
                     colorList: colorList,
-                  ), */
+                  ),
                   const Text(
                     'CO2',
                     style: TextStyle(
@@ -342,7 +357,8 @@ class _CarbonFootprintState extends State<CarbonFootprint> {
                         Container(
                           width: 16,
                           height: 16,
-                          color: colorList[percentages.keys.toList().indexOf(entry.key)],
+                          color: colorList[
+                              percentages.keys.toList().indexOf(entry.key)],
                           margin: const EdgeInsets.only(right: 8),
                         ),
                         Text(

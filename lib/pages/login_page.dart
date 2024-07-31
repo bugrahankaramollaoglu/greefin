@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors().color4.withOpacity(0.9),
+      backgroundColor: MyColors().color3,
       resizeToAvoidBottomInset: true,
       body: Center(
         child: GradientBorderContainer(),
@@ -77,7 +77,7 @@ class GradientBorderContainer extends ConsumerWidget {
 
     return CustomPaint(
       painter: GradientBorderPainter(
-        color: MyColors().color9,
+        color: MyColors().color6.withOpacity(0.7),
         width: 2,
       ),
       child: Container(

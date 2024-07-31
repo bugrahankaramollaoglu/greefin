@@ -23,7 +23,7 @@ Future<List<DocumentSnapshot>> getFilteredData(String userEmail) async {
 }
 
 class MainPage extends ConsumerWidget {
-  MainPage({super.key});
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -58,7 +58,7 @@ class MainPage extends ConsumerWidget {
             decoration: BoxDecoration(
               color: Colors.transparent,
               border: Border.all(color: Colors.black, width: 3),
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
           const SizedBox(height: 20),
@@ -69,7 +69,7 @@ class MainPage extends ConsumerWidget {
                 height: 160,
                 decoration: BoxDecoration(
                   color: MyColors().color4,
-                  borderRadius: BorderRadius.circular(50),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
               Positioned(
@@ -132,14 +132,32 @@ class MainPage extends ConsumerWidget {
                           children: [
                             Row(
                               children: [
-                                Icon(
+                                /*  Icon(
                                   Icons.add_rounded,
                                   color: MyColors().color6,
+                                ), */
+                                Container(
+                                  width: 25,
+                                  height: 25,
+                                  decoration: BoxDecoration(
+                                    color: MyColors().color6,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                        color: Colors.white, width: 2),
+                                  ),
+                                  child: const Center(
+                                    child: Icon(
+                                      Icons.add_rounded,
+                                      color: Colors.green,
+                                      size: 20,
+                                    ),
+                                  ),
                                 ),
                                 Text(
-                                  '\$ 17,000.00',
+                                  '   \$17,001.00',
                                   style: TextStyle(
                                     fontSize: 20,
+                                    fontWeight: FontWeight.bold,
                                     color: MyColors().color6,
                                   ),
                                 )
@@ -167,17 +185,31 @@ class MainPage extends ConsumerWidget {
                             ),
                             Row(
                               children: [
-                                Icon(
-                                  Icons.remove,
-                                  color: MyColors().color6,
+                                Container(
+                                  width: 25,
+                                  height: 25,
+                                  decoration: BoxDecoration(
+                                    color: MyColors().color6,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                        color: Colors.white, width: 2),
+                                  ),
+                                  child: const Center(
+                                    child: Icon(
+                                      Icons.remove,
+                                      color: Colors.green,
+                                      size: 20,
+                                    ),
+                                  ),
                                 ),
                                 Text(
-                                  '\$ 2,540.25',
+                                  '   \$2,513.25',
                                   style: TextStyle(
                                     fontSize: 20,
+                                    fontWeight: FontWeight.bold,
                                     color: MyColors().color6,
                                   ),
-                                )
+                                ),
                               ],
                             ),
                           ],
@@ -222,17 +254,30 @@ class MainPage extends ConsumerWidget {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        color: MyColors().color10,
+                        color: MyColors().color4,
                         elevation: 5,
                         child: ListTile(
                           contentPadding: EdgeInsets.symmetric(
-                              vertical: 5.0, horizontal: 20.0),
-                          leading: Icon(Icons.arrow_forward_ios),
-                          title: Text(data['name']),
+                            vertical: 5.0,
+                            horizontal: 20.0,
+                          ),
+                          leading: Icon(
+                            Icons.arrow_forward_ios,
+                            color: MyColors().color6,
+                          ),
+                          title: Text(
+                            data['name'],
+                            style: TextStyle(
+                              color: MyColors().color6,
+                            ),
+                          ),
                           subtitle: Text(
                             '\$${data['price']}',
                             style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 20,
+                              color: MyColors().color6,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       );

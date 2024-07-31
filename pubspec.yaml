@@ -72,7 +72,7 @@ dependencies:
   google_maps_utils: ^2.0.0+1
   maps_toolkit: ^3.0.0
   cloud_firestore: ^5.1.0
-
+  pie_chart: ^5.4.0
 
 dev_dependencies:
   flutter_test:
