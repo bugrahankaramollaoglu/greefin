@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildBody() {
     switch (_selectedTab) {
       case _SelectedTab.main:
-        return const MainPage();
+        return  MainPage();
       case _SelectedTab.green:
         return const GreenPage();
       case _SelectedTab.add:

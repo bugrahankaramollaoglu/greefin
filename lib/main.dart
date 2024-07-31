@@ -57,7 +57,7 @@ class _GreefinAppState extends State<GreefinApp> {
       initialRoute: '/',
       routes: {
         '/home': (context) => const HomePage(),
-        '/main': (context) => const MainPage(),
+        '/main': (context) =>   MainPage(),
         '/green': (context) => const GreenPage(),
         '/stats': (context) => const StatsPage(),
         '/profile': (context) => ProfilePage(),
