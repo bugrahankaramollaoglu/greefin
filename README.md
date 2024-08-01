@@ -70,71 +70,35 @@ greefin
 -  Finansal Bilinç Sahipleri :
 	Harcamalarını ve bütçelerini etkin bir şekilde yönetmek isteyen bireyler.
 
+------
 
-### ÜRÜN UI TASARIMI 
-
-
-
-# Proje Adı
-
-## UI Tasarımları
 
 <details>
-  <summary> ÜRÜN UI TASARIMLARI</summary>
+
+	
+  <summary> UI TASARIMLARI </summary> 
+
+  ![Sayfa 1](https://github.com/user-attachments/assets/ef6c9196-0b07-454b-850b-ad21d5609bbf)
+  
+  ![Sayfa 2](https://github.com/user-attachments/assets/ba05d4d1-4bf6-4dd3-9765-5c1f5b7cce89)  
+  
+  ![Sayfa 3](https://github.com/user-attachments/assets/303f1f1a-e4c4-4fb1-bc0b-92c44957da62)
+
+  ![Sayfa 3](https://github.com/user-attachments/assets/9270e656-9d5b-4200-b975-f79d4e95e57b)  
+  
+  ![Sayfa 3](https://github.com/user-attachments/assets/25fdaf97-ba89-4dd0-bffc-fee42d486c6f)
+  
+  ![Sayfa 3](https://github.com/user-attachments/assets/dd0db49b-a9ce-4a58-95d0-5c5ce311a601)
+  
+  ![Sayfa 3](https://github.com/user-attachments/assets/c007daf8-4957-4433-882f-edac449f2309)
+  
+  ![Sayfa 3](https://github.com/user-attachments/assets/76f0dde7-21f4-4fdc-868d-498217095cd3)
 
 
-  ![Sayfa 1](https://github.com/user-attachments/assets/c3bd3452-aacd-4c09-a41f-314b58793a2d)
-  ![Sayfa 2]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-  ![Sayfa 3]()
-      
+
 
 </details>
 
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/93393cf6-9600-4d49-bf5f-aab5d0176084"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/c2e192a8-d316-4d16-ad57-00f012958788"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/aa9d9912-76af-48b6-8766-3f87c4da258e"  width="900 " height="700">
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a2533ed9-0d80-4436-8753-1f0a245b8a4c"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/87cdd5c1-86c5-4135-80fb-de7f640f1617"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/299e0af1-176e-4e55-bd3c-1f96d5bc934b"  width="900 " height="700">
-
-
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/c87f54b7-fb46-43dc-b96c-b302cba1d79a"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6e48cb5e-76e6-4ed1-8b9c-19a4059aa9bd"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/fba96398-5815-4575-b580-91aa1dd5cbdc"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/31e515ed-8fc8-484c-8d64-8e3c2393ff50"  width="900 " height="700">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/a4df4e3a-7586-472a-be3d-bbfc1d4c5bdd"  width="900 " height="700">
 
 ---
 
@@ -176,32 +140,26 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/267f84f1-e206-438e-ae60-efe91a8a335c"  width= "400 " height="700">
 
 
- #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
+-----
 
+<details>
+
+	
+  <summary> SPRINT 1 ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary> 
+
+
+ ![] <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9" alt="Ana Sayfa" width="300"/>
+ ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/19dff7b7-55a6-4c0a-94f2-d54bd88b905d)
+ ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ff208cd0-ea19-4a46-aa69-8b529e0aa455)
+ ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/18ee974c-71be-4698-a8ed-8aba4ee1b485)
+ ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6dd19d41-e8e1-45a4-9fdb-64f85997dba3)
+ ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b)
+ ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81)
+ ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091)
+	 
  
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9"  width= "350 " height="600">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/19dff7b7-55a6-4c0a-94f2-d54bd88b905d"  width= "350 " height="600">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ff208cd0-ea19-4a46-aa69-8b529e0aa455"  width= "350 " height="600">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/18ee974c-71be-4698-a8ed-8aba4ee1b485"  width= "350 " height="600">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6dd19d41-e8e1-45a4-9fdb-64f85997dba3"  width= "350 " height="600">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b"  width= "350 " height="600">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81"  width= "350 " height="600">
-
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091"  width= "350 " height="600">
+</details>
 
 
 
