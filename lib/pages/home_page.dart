@@ -88,8 +88,8 @@ class _HomePageState extends State<HomePage> {
             unselectedIcon: IconlyLight.plus,
           ),
           CrystalNavigationBarItem(
-            icon: IconlyBold.chart,
-            unselectedIcon: IconlyLight.chart,
+            icon: Icons.lightbulb,
+            unselectedIcon: Icons.lightbulb_outline,
           ),
           CrystalNavigationBarItem(
             icon: IconlyBold.profile,
