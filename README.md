@@ -26,54 +26,39 @@ greefin
 
 #### PROJE AÇIKLAMASI 
  
- Greefin, finansal yönetimi ve sürdürülebilirliği bir araya getiren yenilikçi bir uygulamadır. Sürdürülebilir Kalkınma Amaçlarına hizmet eden Greefin, kullanıcılarına finansal işlemlerini daha bilinçli ve çevre dostu bir şekilde yönetme imkanı sunar. Uygulama, kullanıcıların harcamalarını manuel olarak veya metin tanıma teknolojisi ile kolayca ekleyebilmelerine olanak tanır. Ayrıca, aylık harcamaların alışveriş, enerji ve ulaşım gibi kategorilere göre dağılımını senkronize grafiklerle gösterir ve her bir kategorinin sürdürülebilirlik hesaplarını ayrı ayrı yapar.
-Greefin, kullanıcıların alışverişlerinin ne kadarının sürdürülebilir olduğunu belirler ve aldıkları ürünlerin sürdürülebilirlik endeksine göre bir sürdürülebilirlik puanı hesaplar. Düşük puanlı kullanıcılara sürdürülebilirliklerini artıracak tavsiyelerde bulunur. Kullanıcılar, bu puanlara göre rozetler kazanarak sürdürülebilir davranışlarını teşvik eder. Uygulama, sürdürülebilir ürünlerin tercih edilmesini teşvik ederken, gün, hafta ve ay bazlı harcama özetleri sunar.Ayrıca, Greefin'in obje tanıma ve takip özellikleri, kullanıcıların günlük yaşamlarında daha sürdürülebilir kararlar almalarını kolaylaştırır. Kullanıcılar, belirli hedefler belirleyebilir ve uygulama, örneğin "Bu ay karbon ayak izimi %x azaltacağım" gibi hedeflere ulaşmaları için motive edici push bildirimleri gönderir.
-Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılarına kapsamlı bir sürdürülebilirlik deneyimi sunar.
+ Greefin, finansal yönetimi ve sürdürülebilirliği bir araya getiren yenilikçi bir uygulamadır. Sürdürülebilir Kalkınma Amaçlarına hizmet eden Greefin, kullanıcılarına finansal işlemlerini daha bilinçli ve çevre dostu bir şekilde yönetme imkanı sunar. Uygulama, kullanıcıların harcamalarını manuel olarak kolayca ekleyebilmelerine olanak tanır. Ayrıca,  harcamaların alışveriş, enerji ve ulaşım gibi kategorilere göre dağılımını gösterir.Greefin, Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.Bu sayede kullanıcı tüketimlerinin ne kadar karbon ayakizi oluşturduğunu somut verilerle elde edebilir.Maps özelliği ile bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir.Bu sayede doğaya katkıda bulunan bilinçli zihinler perçinlenir. Ve de uygulama içi linklere tıklayarak doğaya katkıda bulunan projelere erişebilir.Özetle Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılarına kapsamlı bir sürdürülebilirlik deneyimi sunar.
 
 ####  ÜRÜN ÖZELLİKLERİ 
 
 -  Gelir - Gider Ekleme :
-	Kullanıcılar harcamalarını manuel olarak veya metin tanıma (text recognition) teknolojisiyle kolayca ekleyebilirler.
+	Kullanıcılar harcamalarını manuel olarak  ekleyebilirler.
 
 - Aylık Harcama Raporları :
-•	Kullanıcılar, aylık bazda hangi kategoride ne kadar harcama yaptıklarını senkronize grafiklerle görebilirler.
+•	Kullanıcılar, son tarihlerde hangi kategoride ne kadar harcama yaptıklarını görebilirler.
 
 -	Kategoriler
 	Alışveriş: Market alışverişleri ve diğer perakende harcamaları.
 	Enerji: Elektrik, su ve diğer enerji harcamaları.
 	Ulaşım: Toplu taşıma ve kişisel araç kullanımı. Her biri için ayrı sürdürülebilirlik hesapları yapılır.
 
-- Sürdürülebilirlik Kapsamı :
-	Kullanıcıların alışverişlerinin ne kadarının sürdürülebilir olduğunu gösterir (yeşil bütçe).
-	Aldıkları ürünlerin sürdürülebilirlik endeksine göre kullanıcıların sürdürülebilirlik puanı hesaplanır. Düşük puanlı kullanıcılara tavsiyelerde bulunur.
+- Karbon Ayak İzinin Hesaplanması :
 
--  Sürdürülebilirlik Puanı ve Rozetler :
-	Kullanıcılar, sürdürülebilirlik puanlarına göre rozetler kazanabilirler, bu da sürdürülebilir davranışlarını teşvik eder.
+  Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.
 
--  Sürdürülebilir Ürün Teşviki :
-	Uygulama, kullanıcıları sürdürülebilir ürünler satın almaya teşvik eder.
+- Maps Özelliği
 
--  Gün/Hafta/Ay Bazlı Harcama Özetleri :
-	Kullanıcılara, belirli dönemlerde yaptıkları harcamaların özetlerini sunar. Örneğin:
-	Haziran ayında gıdaya ne kadar harcandı.
-	Eğlenceye ne kadar harcandı.
-	Netflix ve Spotify gibi abonelik hizmetlerine ne kadar harcandı.
+  Bu özellikle birlikte  bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir.
 
--  Obje Tanıma ve Takip :
-	Uygulama, obje tanıma ve takip özellikleri sunar.
-
-
--  Hedef Belirleme : 
-	Kullanıcılar, sürdürülebilirlik hedefleri belirleyebilirler. Örneğin, "Bu ay karbon ayak izimi %x azaltacağım."
 
 -  Motive Edici Push Bildirimleri :
-	Kullanıcılara, hedeflerine ulaşmaları için motive edici push bildirimleri gönderir.
+	Kullanıcılara,sürdürülebilir finans konusunda bilgilendirici bilgiler verir.
+
+#### HEDEF KİTLE
 
 
 #### ÜRÜNÜN VİZYONU 
 
- Kullanıcıların günlük finansal işlemlerini yönetirken, her işlemde ürettikleri karbon emisyonlarını otomatik olarak hesaplayan bir dijital cüzdan. Bu uygulama, harcamalarından kaynaklanan çevresel etkileri görselleştirir ve daha sürdürülebilir seçenekler sunar. Kullanıcılar, karbon emisyonlarını azaltma hedefleri belirleyebilir ve bu hedeflere ulaşmak için finansal ve çevresel danışmanlık alabilir.
-
+ Kullanıcıların günlük finansal işlemlerini yönetirken, her işlemde ne kadar sürdürebilir harcamalaryaptığını görebildiği  bir finans uygulamasıdır. Bu uygulama,yapılan harcamaları manuel olarak kullanıcıdan alır ve girilen tüketim girdilerine göre karbon ayak izini hesaplar ve bunu grafik üzerinden gösterir.Ayrıca kullanıcı green page sayfasında  harita üzerinden belirlediği konuma hangi yolla gitmesinin ne kadar karbon ayakizi oluşturduğunu hesaplar bu sayede kullanıcının daha etkin ve çevreye duyarlı  tercihler yapmasına olanak sağlar,uygulama üzerindeki linke tıklayarak daha sürdürebilir bir çevreye katkıda bulunmasına olanak tanıyan, kullanıcıya sürdürülebilir finans konusunda bilgilendirici mesajlar veren bir uygulamadır.
 
 #### HEDEF KİTLE
 
@@ -83,28 +68,6 @@ Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılar
 -  Finansal Bilinç Sahipleri :
 	Harcamalarını ve bütçelerini etkin bir şekilde yönetmek isteyen bireyler.
 
--  Genç Profesyoneller :
-	Gelir ve giderlerini izlemek ve sürdürülebilir seçimler yapmak isteyen genç çalışanlar.
-
--  Aileler :
-	Aile bütçesini yönetmek ve çocuklarına çevre bilinci aşılamak isteyen ebeveynler.
-
--  Üniversite Öğrencileri :
-	Hem bütçelerini kontrol altında tutmak hem de sürdürülebilir alışkanlıklar geliştirmek isteyen öğrenciler.
-
--  Çevre Dostu İşletmeler :
-   alışanlarına çevre dostu yaşam tarzını teşvik etmek isteyen şirketler ve kurumlar.
-   
--  Finansal Danışmanlar ve Koçlar :
-  	Müşterilerine sürdürülebilir finansal çözümler sunmak isteyen profesyoneller.
-   
--  Teknoloji ve Uygulama Meraklıları :
-	Yenilikçi finansal yönetim ve sürdürülebilirlik uygulamalarını denemek isteyen teknoloji meraklıları.
-
--  Sosyal Sorumluluk ve Sürdürülebilirlik Organizasyonları :
-	Sürdürülebilirlik projeleri yürüten ve toplumu bu konuda bilinçlendirmek isteyen STK'lar ve organizasyonlar.
-
-Görüldüğü üzere uygulamamız amacı ve vizyonu itibariyle çok geniş bir hedef kitlesine sahiptir.
 
 ### ÜRÜN UI TASARIMI 
 
@@ -167,7 +130,7 @@ Proje boyunca tamamlanması gereken backlog  puanı 265 olarak belirlenmiştir. 
 İlk sprint projenin genel hatlarını dizayn ettiğimiz ve fonksiyonlar ve ürünün temel işlevleri üzerinde çalıştığımız için sprintler arasında daha uygun bir puan belirlenmiştir.Yapılması gereken görevler tamamlanmış ve belirlenen  puana ulaşılmıştır.Diğer sprintlerde projenin genel hatlarını projenin teknik kısmına odaklanacağımız ve daha fazla görev üstleneceğimizden  dolayı 2. ve 3. sprint genel görev değerlendirmesi 100 puan olarak belirlenmiştir.
 
 #### DAILY SCRUM
-Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirdik.Toplantının sıklığını görevleri yetişip yetişmeyeceğine, planın gidişatına ve takım üyelerinin müsaitlik durumlarına göre kararlaştırıp ayarladık.
+Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirildi.Toplantının sıklığını görevleri yetişip yetişmeyeceğine, planın gidişatına ve takım üyelerinin müsaitlik durumlarına göre kararlaştırıp ayarlandı.
 
 
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400 " height="700">
@@ -251,7 +214,7 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 
 #### DAILY SCRUM  
 
-Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğni ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
 
 
@@ -290,17 +253,81 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
  
 #### SPRİNT REVIEW 
 
-2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur 'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
 #### SPRINT RETROSPECTIVE
 
-Bİrcan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verdik.
+Bİrcan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verildi.
 Uygulamanın Forget Password kısmı Burak tarafından yapıldı.
-Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verdik.Ve kod kısmında devereye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
+Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verildi..Ve kod kısmında devereye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
 Uygulamanın manuel gelir gider ekleme işlemleri, ana sayfa mekanizması ve underplanting kısımları  Buğra 'ya verildi.
-Uygulamammızın karbon ayak izi fonksiyonuna  yoğunlaşmaya karar verdik.
+Uygulamammızın karbon ayak izi fonksiyonuna  yoğunlaşmaya karar verildi.
 Ana sayfanın mekanizmasının nasıl yapılacağına karar verildi.
 Kod kısmında henüz istediğimiz ritmi yakalayamasakta elimizden geleni yapma konusunda motivasyonumuzu yüksek tutmaya gayret ediyor ve takım içindeki aksaklıkları en mininum seviyeye indirgeyerek yolumza devam ediyoruz.
+
+-----
+
+ # SPRINT 3 
+
+### SPRINT NOTLARI 
+
+3.Sprint boyunca toplantılarımızı *ZOOM* üzerinden düzenli aralıklarla gerçekleştirdik.
+İletişimimize olabildiğince aktif bir şekilde *WHATSAAP* üzerinden devam ettik.
+UI Tasarımlarımızı *FIGMA* üzerinden gözden geçirdik ve düzenlenmesi gereken yerler hakkında notlar aldık
+Görev dağılımları için aktif olarak *TRELLO* kullandık.
+
+#### PUAN TAMAMLAMA MANTIĞI
+
+3.sprint boyunca yapılması gerekn görev yükünü göz önünde bulundurarak 3. sprint özelinde 100 puan belirledik.
+
+#### SPRINT PUAN DEĞERLENDİRMESİ
+
+Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlenen puana başarılı bir şekilde ulaşılmıştır.
+
+#### DAILY SCRUM
+
+ 3.Sprint proje süreci itibarıyla projenin son kısımları dahilinde ilerlenilen ve eksik kısımlara yoğunlaşılan bir süreç oldu.Bu süreç boyunca 3 toplantı gerçekleştirildi ve her toplantıda görev dağılımlarını projenin en verimli ve temposunu düşürmeden aktif bir şekilde ilerlemesi için etkin bir şekilde belirlendi.Takımda belirlenen görevler çerçevesinde takım arkadaşlarının birbiriyle yardımlaşması ve iletişimde kalmasının  önemi vurgulandı.Projenin 3. sprint itibarıyla , ,geçen iki sprintte  sağlam bir zemine oturtulan  projeyi son aşamaya kadar  ekip olarak başarılı bir şekilde getirdik.
+
+ #### Takım mesaj fotoları ekran goruntulerı 
+
+
+
+
+
+
+ #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
+
+
+
+ #### 3.SPRINT BOARD SCREENSHOOT 
+
+
+
+ #### SPRINT REVIEW 
+
+ 3.Sprint proje süreci itibariyle ürünümüze son halini verdiğimiz, eksik kısımların üzerinde yoğunlaştığımız bir süreç oldu.Uygulamanın karbon ayakizi ,maps özellikleri,profİle page kısmı gibi önemli kısımlar tekrar tekrar tüm takımla birlikte toplantılarda gözden geçirildi ve son şekli verildi.UI tasaımlarındaki ufak değişikliklerin neler olduğu konuşuldu ve düzeltildi.Geliştirdiğimiz uygulamanın görsel kısmında iyileştirmeler yapıldı ve gerekli kontroller sağlandı.Bu sprintte Burak Güngör ,Buğrahan karamollaoğlu ve Beyza Nur Taşkesen ürünün kod kısmıyla Beyza Dişli araştırma kısmıyla ,Bircan Aladinli ise ürünün UI tasarımlarında yoğunlaştı.Ekip kendilerine verilen görevleri etkin bir şekilde yapmak için çaba ve gayret gösterdi.Bu şekilde 3.Sprinti de hedefimize ve belirlediğimiz puana ulaşarak başarılı bir şekilde  süreci tamamlamış olduk.
+
+
+ #### SPRINT RETROSPECTIVE 
+
+ Ürünün ana sayfa ve karbon ayakizi kısmıyla Burak Güngör ve Beyza Nur Taşkesen ilgilendi.
+
+ Ürünün  Carbon Page kısmı,web sitesi yönlendirme, gelir gider mekanizması ile Buğrahan Karamollaoğlu ilgilendi.
+
+ Karbon ayakizi kısmı ile ilgili araştırmalarla Beyza Dişli ilgilendi.
+
+ Bircan Aladinli uygulamanın UI tasarımlarındaki değişiklikleri düzeltti.
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+
 
 
 
