@@ -111,7 +111,7 @@ greefin
 - Uygulamanın gerekleri ve fonksiyonları gibi listeler için **Google Docs** kullandık.
 - UI tassarımları için **Figma**  ve  **Canva** kullandık.
 -  Ürünü oluştururken kullandığımız kütüphaneler
-- <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/7680f54f-c797-4521-b4d1-4b755849a40b"  width="400 " height="600">
+- <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/7680f54f-c797-4521-b4d1-4b755849a40b"  width="200 " height="400">
 
 
 
@@ -128,19 +128,19 @@ Proje boyunca tamamlanması gereken backlog  puanı 265 olarak belirlenmiştir. 
 Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirildi.Toplantının sıklığını görevleri yetişip yetişmeyeceğine, planın gidişatına ve takım üyelerinin müsaitlik durumlarına göre kararlaştırıp ayarlandı.
 
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400 " height="700">
+### WHATSAAP EKRAN GÖRÜNTÜLERİ 
 
+  
 
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ae506941-3d69-41b8-96a3-1dfbb4ff42be"  width= "400 " height="700">
-
-
+ <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400 " height="700">
+ 
+ <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ae506941-3d69-41b8-96a3-1dfbb4ff42be"  width= "400 " height="700">
+ 
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/eb955ca1-b968-4738-a892-f95bdd1ffcf0"  width= "400 "  height="700">
+ 
+ <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/267f84f1-e206-438e-ae60-efe91a8a335c"  width= "400 " height="700">
 
-
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/267f84f1-e206-438e-ae60-efe91a8a335c"  width= "400 " height="700">
-
-
------
+ ----
 
 <details>
 
@@ -148,19 +148,16 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
   <summary> SPRINT 1 ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary> 
 
 
- ![] <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9" alt="Ana Sayfa" width="300"/>
- ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/19dff7b7-55a6-4c0a-94f2-d54bd88b905d)
- ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ff208cd0-ea19-4a46-aa69-8b529e0aa455)
- ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/18ee974c-71be-4698-a8ed-8aba4ee1b485)
- ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6dd19d41-e8e1-45a4-9fdb-64f85997dba3)
- ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b)
- ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81)
- ![](https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091)
-	 
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/19dff7b7-55a6-4c0a-94f2-d54bd88b905d" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/ff208cd0-ea19-4a46-aa69-8b529e0aa455" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/18ee974c-71be-4698-a8ed-8aba4ee1b485" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6dd19d41-e8e1-45a4-9fdb-64f85997dba3" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091" alt="Ana Sayfa" width="300"/
  
-
 </details>
-
 
 
  #### SPRİNT BOARD SCREENSHOOT 
@@ -277,14 +274,25 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 
  3.Sprint proje süreci itibarıyla projenin son kısımları dahilinde ilerlenilen ve eksik kısımlara yoğunlaşılan bir süreç oldu.Bu süreç boyunca 3 toplantı gerçekleştirildi ve her toplantıda görev dağılımlarını projenin en verimli ve temposunu düşürmeden aktif bir şekilde ilerlemesi için etkin bir şekilde belirlendi.Takımda belirlenen görevler çerçevesinde takım arkadaşlarının birbiriyle yardımlaşması ve iletişimde kalmasının  önemi vurgulandı.Projenin 3. sprint itibarıyla , ,geçen iki sprintte  sağlam bir zemine oturtulan  projeyi son aşamaya kadar  ekip olarak başarılı bir şekilde getirdik.
 
- #### Takım mesaj fotoları ekran goruntulerı 
-
-
-
-
-
 
  #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
+
+
+<details>
+
+	
+  <summary> SPRINT 1 ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary> 
+
+
+<img src="" alt="Ana Sayfa" width="300"/>
+<img src="" alt="Ana Sayfa" width="300"/>
+<img src="" alt="Ana Sayfa" width="300"/>
+<img src="" alt="Ana Sayfa" width="300"/>
+<img src="" alt="Ana Sayfa" width="300"/>
+<img src="" alt="Ana Sayfa" width="300"/>
+<img src="" alt="Ana Sayfa" width="300"/>
+
+
 
 
 
