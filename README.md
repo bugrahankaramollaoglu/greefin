@@ -70,7 +70,7 @@ greefin
 -  Finansal Bilinç Sahipleri :
 	Harcamalarını ve bütçelerini etkin bir şekilde yönetmek isteyen bireyler.
 
-------
+---
 
 
 <details>
@@ -100,7 +100,7 @@ greefin
 </details>
 
 
----
+-----
 
 # SPRINT 1 
 
@@ -131,7 +131,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
   <details>
 
-  <summary> WHATSAAP EKRAN GÖRÜNTÜLERİ  </summary> 
+  <summary> 1.SPRINT WHATSAAP EKRAN GÖRÜNTÜLERİ  </summary> 
 
  <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400 " height="700">
  
@@ -218,7 +218,6 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 ------
 
-#### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
 <details>
  
@@ -259,7 +258,7 @@ Uygulamammızın karbon ayak izi fonksiyonuna  yoğunlaşmaya karar verildi.
 Ana sayfanın mekanizmasının nasıl yapılacağına karar verildi.
 Kod kısmında henüz istediğimiz ritmi yakalayamasakta elimizden geleni yapma konusunda motivasyonumuzu yüksek tutmaya gayret ediyor ve takım içindeki aksaklıkları en mininum seviyeye indirgeyerek yolumza devam ediyoruz.
 
------
+------
 
  # SPRINT 3 
 
@@ -283,9 +282,19 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
  3.Sprint proje süreci itibarıyla projenin son kısımları dahilinde ilerlenilen ve eksik kısımlara yoğunlaşılan bir süreç oldu.Bu süreç boyunca 3 toplantı gerçekleştirildi ve her toplantıda görev dağılımlarını projenin en verimli ve temposunu düşürmeden aktif bir şekilde ilerlemesi için etkin bir şekilde belirlendi.Takımda belirlenen görevler çerçevesinde takım arkadaşlarının birbiriyle yardımlaşması ve iletişimde kalmasının  önemi vurgulandı.Projenin 3. sprint itibarıyla , ,geçen iki sprintte  sağlam bir zemine oturtulan  projeyi son aşamaya kadar  ekip olarak başarılı bir şekilde getirdik.
 
 
- #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
+ <details>
+
+	
+  <summary> 3.SPRİNT WHATSAAP EKRAN GÖRÜNTÜLERİ </summary> 
 
 
+<img src="https://github.com/user-attachments/assets/8de626fb-78b5-40a5-a113-237eee0c7489" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/8e84cc47-65c3-4541-98ae-0dbe8f370f49" alt="Ana Sayfa" width="300"/>
+
+ 
+</details>
+
+---
 <details>
 
 	
@@ -309,13 +318,14 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 
 </details>
 
+---
 
  #### 3.SPRINT BOARD SCREENSHOOT 
 
 
 <img src="https://github.com/user-attachments/assets/fb2b8c8c-2c11-4e05-bdcd-3263b4b4b7d3"  width="800" height="600">
 
-
+---
 
  #### SPRINT REVIEW 
 
