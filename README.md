@@ -214,9 +214,15 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 <img src="https://github.com/user-attachments/assets/525461e6-92c4-4825-8f89-f1d21adbe401"  width="400" height="700">
 
+</details>
+
 ------
 
 #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
+
+<details>
+ 
+<summary>  2. SPRINT ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary>
 
 <img src="https://github.com/user-attachments/assets/291bb16d-5b32-4ef6-8653-7927d3611552"  width="350" height="600">
 
@@ -283,7 +289,7 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 <details>
 
 	
-  <summary> 3.SPRİNT EKRAN GÖRÜNTÜLERİ </summary> 
+  <summary> 3.SPRİNT ÜRÜN EKRAN GÖRÜNTÜLERİ </summary> 
 
 
 <img src="https://github.com/user-attachments/assets/809e7137-f939-4362-a545-2b367a3a4ecc" alt="Ana Sayfa" width="300"/>
