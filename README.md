@@ -302,6 +302,9 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
  #### 3.SPRINT BOARD SCREENSHOOT 
 
 
+<img src="https://github.com/user-attachments/assets/fb2b8c8c-2c11-4e05-bdcd-3263b4b4b7d3"  width="800" height="600">
+
+
 
  #### SPRINT REVIEW 
 
