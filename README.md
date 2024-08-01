@@ -58,7 +58,9 @@ greefin
 
 #### ÜRÜNÜN VİZYONU 
 
- Kullanıcıların günlük finansal işlemlerini yönetirken, her işlemde ne kadar sürdürebilir harcamalaryaptığını görebildiği  bir finans uygulamasıdır. Bu uygulama,yapılan harcamaları manuel olarak kullanıcıdan alır ve girilen tüketim girdilerine göre karbon ayak izini hesaplar ve bunu grafik üzerinden gösterir.Ayrıca kullanıcı green page sayfasında  harita üzerinden belirlediği konuma hangi yolla gitmesinin ne kadar karbon ayakizi oluşturduğunu hesaplar bu sayede kullanıcının daha etkin ve çevreye duyarlı  tercihler yapmasına olanak sağlar,uygulama üzerindeki linke tıklayarak daha sürdürebilir bir çevreye katkıda bulunmasına olanak tanıyan, kullanıcıya sürdürülebilir finans konusunda bilgilendirici mesajlar veren bir uygulamadır.
+ Uygulamamız, kullanıcıların günlük finansal işlemlerini sürdürülebilirlik perspektifinden yönetmelerini mümkün kılar. Bu uygulama, kullanıcıların manuel olarak girdiği harcama verilerini analiz ederek, her bir işlem için karbon ayak izini hesaplar ve bu bilgileri grafiksel bir biçimde sunar. Ayrıca, kullanıcılara belirledikleri bir konuma en çevre dostu ulaşım rotasını öneren bir harita özelliği sağlar. Bu özellik, kullanıcıların daha düşük karbon ayak izine sahip ulaşım seçeneklerini tercih etmelerine olanak tanır. Uygulama, sürdürülebilir finansal yönetim konusunda bilgilendirici mesajlar sunarak, kullanıcıların çevresel etkiyi azaltmalarına katkıda bulunur ve sürdürülebilirlik hedeflerine ulaşmalarını destekler.
+
+
 
 #### HEDEF KİTLE
 
