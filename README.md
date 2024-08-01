@@ -128,9 +128,10 @@ Proje boyunca tamamlanması gereken backlog  puanı 265 olarak belirlenmiştir. 
 Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şekilde devam etmiştir. Sprint öncesinde 4 kez,sprint boyunca 2 kez olmak üzere 6 tane toplantı gerçekleştirildi.Toplantının sıklığını görevleri yetişip yetişmeyeceğine, planın gidişatına ve takım üyelerinin müsaitlik durumlarına göre kararlaştırıp ayarlandı.
 
 
-### WHATSAAP EKRAN GÖRÜNTÜLERİ 
 
-  
+  <details>
+
+  <summary> WHATSAAP EKRAN GÖRÜNTÜLERİ  </summary> 
 
  <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/9502c839-e5b9-4607-9c2f-f0521ed4e00b"  width="400 " height="700">
  
@@ -141,8 +142,6 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
  <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/267f84f1-e206-438e-ae60-efe91a8a335c"  width= "400 " height="700">
 
  ----
-
-<details>
 
 	
   <summary> SPRINT 1 ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary> 
@@ -203,6 +202,9 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
 
+<details>
+ 
+<summary> 2.SPRINT WHATSAAP EKRAN GÖRÜNTÜLERİ </summary>
 
 <img src="https://github.com/user-attachments/assets/8a0d30f7-3604-405f-8ab4-de8ab7b32834"  width="400" height="700">
 
@@ -212,6 +214,7 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 <img src="https://github.com/user-attachments/assets/525461e6-92c4-4825-8f89-f1d21adbe401"  width="400" height="700">
 
+------
 
 #### ÜRÜN EKRAN GÖRÜNTÜLERİ 
 
@@ -228,8 +231,7 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 <img src="https://github.com/user-attachments/assets/d3056279-ee93-4037-b5ea-7dc87da0c75f"  width="350" height="600">
 
 
-
-
+</details>
 
 
  #### SPRINT BOARD SCREENSHOOT 
@@ -283,22 +285,23 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 	
   <summary> 3.SPRİNT EKRAN GÖRÜNTÜLERİ </summary> 
 
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
-![Sayfa 1]()
+
+<img src="https://github.com/user-attachments/assets/809e7137-f939-4362-a545-2b367a3a4ecc" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/6abef672-7a81-4242-9468-d0345cf8da5e" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/68dbc7b7-5a6b-4bae-939a-ea2d4f61c605" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/aa2f19fe-3df8-4bc4-bcb7-b03ee7bffcf6" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/e2673c08-750e-4e9b-a929-ed1f851ddf2a" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/ea165daa-eca3-4b3e-8c67-f9cd064f5c4b" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/15973620-26cf-4563-8091-b97ba2f6e910" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/15973620-26cf-4563-8091-b97ba2f6e910" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/6604c304-3ccc-41e7-b329-7d749d6fee1a" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/297545a2-ffe9-48b9-b8fc-2bcc33aedd3f" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/cb3d0501-a655-4a3c-9877-680992f0b3f9" alt="Ana Sayfa" width="300"/>
+<img src="https://github.com/user-attachments/assets/0e2386ab-f5e5-441d-ad03-a15275adf08e" alt="Ana Sayfa" width="300"/>
+
+
+
+</details>
 
 
  #### 3.SPRINT BOARD SCREENSHOOT 
