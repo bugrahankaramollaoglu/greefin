@@ -6,7 +6,7 @@ import 'package:greefin/pages/navigation_pages/add_purchase.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/utilities/my_colors.dart';
 import 'package:greefin/pages/login_page.dart';
-import 'package:greefin/pages/navigation_pages/profile_page.dart';
+import 'package:greefin/pages/navigation_pages/profile_page/profile_page.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:iconly/iconly.dart';
