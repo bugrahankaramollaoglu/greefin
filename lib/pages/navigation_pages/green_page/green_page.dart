@@ -70,7 +70,7 @@ class GreenPage extends StatelessWidget {
                           height: 50,
                         ),
                         const SizedBox(
-                            height: 8), // space between image and text
+                            height: 8),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(context, '/carbon_footprint');
@@ -96,7 +96,7 @@ class GreenPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: 20, // adjust the position as needed
+                    top: 20,
                     right: 10,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -107,9 +107,11 @@ class GreenPage extends StatelessWidget {
                           height: 50,
                         ),
                         const SizedBox(
-                            height: 8), // space between image and text
+                            height: 8),
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/my_records');
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.green,
                             shape: RoundedRectangleBorder(
@@ -131,7 +133,7 @@ class GreenPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    bottom: 20, // adjust the position as needed
+                    bottom: 20,
                     right: 5,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -142,7 +144,7 @@ class GreenPage extends StatelessWidget {
                           height: 50,
                         ),
                         const SizedBox(
-                            height: 8), // space between image and text
+                            height: 8),
                         ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
@@ -163,7 +165,7 @@ class GreenPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    bottom: 20, // adjust the position as needed
+                    bottom: 20,
                     left: 5,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -174,7 +176,7 @@ class GreenPage extends StatelessWidget {
                           height: 50,
                         ),
                         const SizedBox(
-                            height: 8), // space between image and text
+                            height: 8),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(context, '/green_map');

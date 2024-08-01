@@ -9,7 +9,7 @@ import 'package:greefin/pages/navigation_pages/green_page/carbon_footprint.dart'
 import 'package:greefin/pages/navigation_pages/green_page/green_map.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
-import 'package:greefin/pages/navigation_pages/profile_page.dart';
+import 'package:greefin/pages/navigation_pages/profile_page/profile_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
 import 'package:greefin/pages/onboarding_pages.dart';
 import 'package:shared_preferences/shared_preferences.dart';
