@@ -155,7 +155,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/6dd19d41-e8e1-45a4-9fdb-64f85997dba3" alt="Ana Sayfa" width="300"/>
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2fbece94-848e-4507-b1ab-f118b5a9047b" alt="Ana Sayfa" width="300"/>
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/40176937-7488-4122-92de-48e0d0b8ca81" alt="Ana Sayfa" width="300"/>
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091" alt="Ana Sayfa" width="300"/
+<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/2110567f-34d0-4c50-bcd0-584a50bdc091" alt="Ana Sayfa" width="300"/>
  
 </details>
 
@@ -281,19 +281,24 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 <details>
 
 	
-  <summary> SPRINT 1 ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary> 
+  <summary> 3.SPRİNT EKRAN GÖRÜNTÜLERİ </summary> 
 
-
-<img src="" alt="Ana Sayfa" width="300"/>
-<img src="" alt="Ana Sayfa" width="300"/>
-<img src="" alt="Ana Sayfa" width="300"/>
-<img src="" alt="Ana Sayfa" width="300"/>
-<img src="" alt="Ana Sayfa" width="300"/>
-<img src="" alt="Ana Sayfa" width="300"/>
-<img src="" alt="Ana Sayfa" width="300"/>
-
-
-
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
+![Sayfa 1]()
 
 
  #### 3.SPRINT BOARD SCREENSHOOT 
