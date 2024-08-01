@@ -61,8 +61,8 @@ class _GreefinAppState extends State<GreefinApp> {
         '/green': (context) => const GreenPage(),
         '/stats': (context) => const StatsPage(),
         '/profile': (context) => ProfilePage(),
+        '/carbon_footprint': (context) => CarbonFootprint(),
         '/green_map': (context) => const GreenMap(),
-        '/carbon_footprint': (context) => const CarbonFootprint(),
         '/add_purchase': (context) => const AddPurchase(),
       },
       home: _isOnboardingCompleted
@@ -71,5 +71,3 @@ class _GreefinAppState extends State<GreefinApp> {
     );
   }
 }
-
-

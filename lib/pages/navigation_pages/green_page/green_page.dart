@@ -72,19 +72,24 @@ class GreenPage extends StatelessWidget {
                         const SizedBox(
                             height: 8), // space between image and text
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/carbon_footprint');
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.green,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
-                          child: const Text(
-                            'Calculate  \nFootprint',
-                            style: TextStyle(
-                              color: Colors.white,
+                          child: Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: const Text(
+                              'Calculate  \nFootprint',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            textAlign: TextAlign.center,
                           ),
                         )
                       ],
@@ -111,12 +116,15 @@ class GreenPage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
-                          child: const Text(
-                            'My Records',
-                            style: TextStyle(
-                              color: Colors.white,
+                          child: Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: const Text(
+                              'My Records',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            textAlign: TextAlign.center,
                           ),
                         )
                       ],
@@ -150,7 +158,7 @@ class GreenPage extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

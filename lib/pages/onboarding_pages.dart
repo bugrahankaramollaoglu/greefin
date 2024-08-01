@@ -137,7 +137,7 @@ Widget OnboardingPageTemplate(
     child: Padding(
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 75),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end, // Align content to the bottom
+        mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           StrokeText(
@@ -164,3 +164,4 @@ Widget OnboardingPageTemplate(
     ),
   );
 }
+ 

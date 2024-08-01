@@ -352,12 +352,12 @@ class _GreenMapState extends State<GreenMap> {
                               ),
                             ),
                             Positioned(
-                              top: 45,
+                              top: 35,
                               right: 35,
                               child: Text(
-                                '$walk_carbon kg. CO2',
+                                'Carbon Free!',
                                 style: TextStyle(
-                                  color: MyColors().color5,
+                                  color: MyColors().color10,
                                 ),
                               ),
                             ),
@@ -415,12 +415,12 @@ class _GreenMapState extends State<GreenMap> {
                               ),
                             ),
                             Positioned(
-                              top: 45,
+                              top: 35,
                               right: 35,
                               child: Text(
-                                '$bicycle_carbon kg CO2',
+                                'Carbon Free!',
                                 style: TextStyle(
-                                  color: MyColors().color5,
+                                  color: MyColors().color10,
                                 ),
                               ),
                             ),
