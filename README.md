@@ -74,6 +74,35 @@ greefin
 ### ÜRÜN UI TASARIMI 
 
 
+
+# Proje Adı
+
+## UI Tasarımları
+
+<details>
+  <summary> ÜRÜN UI TASARIMLARI</summary>
+
+
+  ![Sayfa 1]()
+  ![Sayfa 2]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+  ![Sayfa 3]()
+      
+
+</details>
+
+
+
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/93393cf6-9600-4d49-bf5f-aab5d0176084"  width="900 " height="700">
 
 
