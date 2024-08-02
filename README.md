@@ -227,7 +227,7 @@ Kullanıcı Yolculuğu:
    - Uygulamanın etkinliklerinde aktif rol alır ve geri bildirimlerde bulunur.
 
 
- #### Netnografik Harita
+ #### NETNOGRAFİK HARİTA
 
 Ayşe - Çevreye Duyarlı Öğretmen:
 
@@ -428,7 +428,7 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 
 #### SPRİNT PUANI DEĞERLENDİRMESİ 
 
-2.sprint tamamlanması gereken puan 100 olarak belirlenmiştir.
+2.sprintte tamamlanması gereken puan 100 olarak belirlenmiştir.
 
 #### SPRINT PUANLAMA MANTIĞI 
 
@@ -436,7 +436,7 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 
 #### DAILY SCRUM  
 
-Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde, ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bu süreci elimizden geldiği kadar yönetmeye çalıştık.
+Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiği ve takımdaki diğer üyelerinde, ileriki sprintte yetiştirilmemesi dahilinde developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bu süreci elimizden geldiği kadar yönetmeye çalıştık.
 
 -------
 <details>
