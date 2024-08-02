@@ -141,10 +141,15 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
  
  <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/267f84f1-e206-438e-ae60-efe91a8a335c"  width= "400 " height="700">
 
- ----
+ 
+</details>
 
-	
-  <summary> SPRINT 1 ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary> 
+-------- 
+ 
+ <details>
+
+   
+  <summary> 1.SPRINT ÜRÜN EKRAN GÖRÜNTÜLERİ  </summary> 
 
 
 <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/4d17c66d-3a4d-43db-bc4c-a1f37c2fc8d9" alt="Ana Sayfa" width="300"/>
@@ -158,6 +163,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
  
 </details>
 
+--------
 
  #### SPRİNT BOARD SCREENSHOOT 
  
@@ -201,7 +207,7 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 
 Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
-
+-------
 <details>
  
 <summary> 2.SPRINT WHATSAAP EKRAN GÖRÜNTÜLERİ </summary>
@@ -238,6 +244,7 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
 </details>
 
+----
 
  #### SPRINT BOARD SCREENSHOOT 
  
@@ -247,6 +254,8 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 #### SPRİNT REVIEW 
 
 2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+
+ Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
 #### SPRINT RETROSPECTIVE
 
@@ -330,6 +339,7 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
  #### SPRINT REVIEW 
 
  3.Sprint proje süreci itibariyle ürünümüze son halini verdiğimiz, eksik kısımların üzerinde yoğunlaştığımız bir süreç oldu.Uygulamanın karbon ayakizi ,maps özellikleri,profİle page kısmı gibi önemli kısımlar tekrar tekrar tüm takımla birlikte toplantılarda gözden geçirildi ve son şekli verildi.UI tasaımlarındaki ufak değişikliklerin neler olduğu konuşuldu ve düzeltildi.Geliştirdiğimiz uygulamanın görsel kısmında iyileştirmeler yapıldı ve gerekli kontroller sağlandı.Bu sprintte Burak Güngör ,Buğrahan karamollaoğlu ve Beyza Nur Taşkesen ürünün kod kısmıyla Beyza Dişli araştırma kısmıyla ,Bircan Aladinli ise ürünün UI tasarımlarında yoğunlaştı.Ekip kendilerine verilen görevleri etkin bir şekilde yapmak için çaba ve gayret gösterdi.Bu şekilde 3.Sprinti de hedefimize ve belirlediğimiz puana ulaşarak başarılı bir şekilde  süreci tamamlamış olduk.
+ Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
 
  #### SPRINT RETROSPECTIVE 
