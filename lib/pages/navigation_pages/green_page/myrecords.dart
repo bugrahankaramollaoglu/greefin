@@ -7,7 +7,8 @@ class MyRecords extends StatelessWidget {
   const MyRecords({super.key});
 
   Future<void> _deleteAllRecords(BuildContext context) async {
-    final collection = FirebaseFirestore.instance.collection('carbon_footprints');
+    final collection =
+        FirebaseFirestore.instance.collection('carbon_footprints');
 
     bool? confirm = await showDialog<bool>(
       context: context,
@@ -66,11 +67,13 @@ class MyRecords extends StatelessWidget {
             child: TextButton(
               onPressed: () => _deleteAllRecords(context),
               style: TextButton.styleFrom(
-                foregroundColor: Colors.white, backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.red,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               ),
               child: const Text(
                 'Delete All',
@@ -99,15 +102,17 @@ class MyRecords extends StatelessWidget {
             itemBuilder: (context, index) {
               var record = records[index];
               var timestamp = (record['timestamp'] as Timestamp).toDate();
-              var formattedDate = DateFormat('yyyy-MM-dd – kk:mm').format(timestamp);
+              var formattedDate =
+                  DateFormat('yyyy-MM-dd – kk:mm').format(timestamp);
 
-              double electricity = record['electricity'];
-              double transport = record['transport'];
-              double meat = record['meat'];
-              double water = record['water'];
-              double fruit = record['fruit'];
-              double heating = record['heating'];
-              double totalCO2 = record['total_co2'];
+              // Cast all numeric values to double
+              double electricity = (record['electricity'] as num).toDouble();
+              double transport = (record['transport'] as num).toDouble();
+              double meat = (record['meat'] as num).toDouble();
+              double water = (record['water'] as num).toDouble();
+              double fruit = (record['fruit'] as num).toDouble();
+              double heating = (record['heating'] as num).toDouble();
+              double totalCO2 = (record['total_co2'] as num).toDouble();
 
               Map<String, double> dataMap = {
                 "Electricity": electricity,
@@ -133,7 +138,8 @@ class MyRecords extends StatelessWidget {
                     builder: (BuildContext context) {
                       return AlertDialog(
                         title: const Text('Confirm Delete'),
-                        content: const Text('Are you sure you want to delete this record?'),
+                        content: const Text(
+                            'Are you sure you want to delete this record?'),
                         shape: RoundedRectangleBorder(
                           side: BorderSide(color: Colors.green, width: 2),
                           borderRadius: BorderRadius.circular(8),
@@ -156,7 +162,8 @@ class MyRecords extends StatelessWidget {
                   record.reference.delete();
                 },
                 child: Card(
-                  margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   elevation: 4,
                   shape: RoundedRectangleBorder(
                     side: BorderSide(color: Colors.green.shade300, width: 1),
@@ -185,7 +192,9 @@ class MyRecords extends StatelessWidget {
                         MaterialPageRoute(
                           builder: (context) => MyRecordsResultPage(
                             carbonFootprint: totalCO2,
-                            status: totalCO2 > 1500 ? 'High Carbon Footprint' : 'Low Carbon Footprint',
+                            status: totalCO2 > 1500
+                                ? 'High Carbon Footprint'
+                                : 'Low Carbon Footprint',
                             dataMap: dataMap,
                           ),
                         ),

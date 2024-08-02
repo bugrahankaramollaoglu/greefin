@@ -8,6 +8,7 @@ import 'package:greefin/pages/navigation_pages/add_purchase.dart';
 import 'package:greefin/pages/navigation_pages/green_page/carbon_footprint.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_map.dart';
 import 'package:greefin/pages/navigation_pages/green_page/green_page.dart';
+import 'package:greefin/pages/navigation_pages/green_page/myrecords.dart';
 import 'package:greefin/pages/navigation_pages/main_page.dart';
 import 'package:greefin/pages/navigation_pages/profile_page/profile_page.dart';
 import 'package:greefin/pages/navigation_pages/stats_page.dart';
@@ -63,6 +64,7 @@ class _GreefinAppState extends State<GreefinApp> {
         '/profile': (context) => ProfilePage(),
         '/carbon_footprint': (context) => CarbonFootprint(),
         '/green_map': (context) => const GreenMap(),
+        '/my_records': (context) => const MyRecords(),
         '/add_purchase': (context) => const AddPurchase(),
       },
       home: _isOnboardingCompleted
