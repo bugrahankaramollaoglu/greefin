@@ -26,7 +26,7 @@ greefin
 
 #### PROJE AÇIKLAMASI 
  
- Greefin, finansal yönetimi ve sürdürülebilirliği bir araya getiren yenilikçi bir uygulamadır. Sürdürülebilir Kalkınma Amaçlarına hizmet eden Greefin, kullanıcılarına finansal işlemlerini daha bilinçli ve çevre dostu bir şekilde yönetme imkanı sunar. Uygulama, kullanıcıların harcamalarını manuel olarak kolayca ekleyebilmelerine olanak tanır. Ayrıca,  harcamaların alışveriş, enerji ve ulaşım gibi kategorilere göre dağılımını gösterir.Greefin, Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.Bu sayede kullanıcı tüketimlerinin ne kadar karbon ayakizi oluşturduğunu somut verilerle elde edebilir.Maps özelliği ile bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir.Bu sayede doğaya katkıda bulunan bilinçli zihinler perçinlenir. Ve de uygulama içi linklere tıklayarak doğaya katkıda bulunan projelere erişebilir.Özetle Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılarına kapsamlı bir sürdürülebilirlik deneyimi sunar.
+ Greefin, finansal yönetimi ve sürdürülebilirliği bir araya getiren yenilikçi bir uygulamadır. Sürdürülebilir Kalkınma Amaçlarına hizmet eden Greefin, kullanıcılarına finansal işlemlerini daha bilinçli ve çevre dostu bir şekilde yönetme imkanı sunar. Uygulama, kullanıcıların harcamalarını manuel olarak kolayca ekleyebilmelerine olanak tanır. Ayrıca,  harcamaların alışveriş, enerji ve ulaşım gibi kategorilere göre dağılımını gösterir.Greefin, Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.My Records kısmında ise son hesapladığı karbon ayakizi verilerini  görebilir ve bunun takibini yapabilir.Bu sayede kullanıcı tüketimlerinin ne kadar karbon ayakizi oluşturduğunu somut verilerle elde edebilir ve bunun takibini kolayca yapabilir.Maps özelliği ile bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir.Bu sayede doğaya katkıda bulunan bilinçli zihinler perçinlenir. Ve de son olarak uygulama içi linklere tıklayarak doğaya katkıda bulunan projelere erişebilir.Özetle Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılarına kapsamlı bir sürdürülebilirlik deneyimi sunar.
 
 ####  ÜRÜN ÖZELLİKLERİ 
 
@@ -45,15 +45,17 @@ greefin
 
   Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.
 
+  Son Hesaplanan Karbon Ayakizi Verilerine Ulaşım
+
+  kullanıcı en son yaptığı karbon ayakizi hesaplarının miktarını ve zamanını ekranda görüntüleyebilir ve bunun takibini yapabilir.
+
 - Maps Özelliği
 
-  Bu özellikle birlikte  bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir.
+  Bu özellikle birlikte  bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir ve kullanıcıya daha çevre dostu ulaşıma teşvik edilir.
 
 
 -  Motive Edici Push Bildirimleri :
-	Kullanıcılara,sürdürülebilir finans konusunda bilgilendirici bilgiler verir.
-
-#### HEDEF KİTLE
+	Kullanıcılara,sürdürülebilir finans konusunda bilgilendirme  yapar.Kullanıcının bu konularda daha bilinçli olması esas alınır.
 
 
 #### ÜRÜNÜN VİZYONU 
@@ -167,7 +169,9 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  #### SPRİNT BOARD SCREENSHOOT 
  
-<img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/375efd7c-2f6a-4eab-83d6-850dc19fd75b"  width="800" height="600">
+<img src="https://github.com/user-attachments/assets/524fcfde-a56e-4bca-80ec-165943359b16"  width="900" height="600">
+
+
 
 
  #### SPRİNT REVİEW 
@@ -181,7 +185,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
  UI Tasarımlarının yeniden tasarlanmasına karar verildi.
  Bir sonraki toplantı tarihi  09.07.2024 saat 23.30 olarak belirlendi
  Toplantılara aktif olarak katılımın altı çizildi.
- Bir sonraki toplantıya kadar yapılaması gerekenler görev dağılımları  belirlendi  ve bu projeyi başarılı bir şekilde yöneteceğimiz ve ortaya güzel bir proje çıkaracağımız konusunda motivasyonlar verildi
+ Bir sonraki toplantıya kadar yapılması gerekenler görev dağılımları  belirlendi  ve bu projeyi başarılı bir şekilde yöneteceğimiz ve ortaya güzel bir proje çıkaracağımız konusunda motivasyonlar verildi
 
  ---
 
@@ -205,7 +209,7 @@ Toplantı notları takımla her toplantının sonunda WORD belgesi olarak payla�
 
 #### DAILY SCRUM  
 
-Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktalar üzerinde yoğunlaşmamız gerektiği hakkında konuşmalar yaptık.Bu toplantıdan itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde, ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bu süreci elimizden geldiği kadar yönetmeye çalıştık.
 
 -------
 <details>
@@ -248,20 +252,20 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 
  #### SPRINT BOARD SCREENSHOOT 
  
-<img src="https://github.com/user-attachments/assets/e74edbfc-11c1-4abb-9130-b4106abc52ef"  width="800" height="600">
+<img src="https://github.com/user-attachments/assets/a7ac9fa2-5261-4e73-bcaf-4fbdebc3961c"  width="900" height="600">
 
  
 #### SPRİNT REVIEW 
 
-2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan 'nın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan'ın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra'nın kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
 #### SPRINT RETROSPECTIVE
 
 Bİrcan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verildi.
-Uygulamanın Forget Password kısmı Burak tarafından yapıldı.
-Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verildi..Ve kod kısmında devereye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
+Uygulamanın Forget Password kısmı Burak Güngör tarafından yapıldı.
+Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verildi ve kod kısmında devreye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
 Uygulamanın manuel gelir gider ekleme işlemleri, ana sayfa mekanizması ve underplanting kısımları  Buğra 'ya verildi.
 Uygulamammızın karbon ayak izi fonksiyonuna  yoğunlaşmaya karar verildi.
 Ana sayfanın mekanizmasının nasıl yapılacağına karar verildi.
@@ -275,12 +279,12 @@ Kod kısmında henüz istediğimiz ritmi yakalayamasakta elimizden geleni yapma 
 
 3.Sprint boyunca toplantılarımızı *ZOOM* üzerinden düzenli aralıklarla gerçekleştirdik.
 İletişimimize olabildiğince aktif bir şekilde *WHATSAAP* üzerinden devam ettik.
-UI Tasarımlarımızı *FIGMA* üzerinden gözden geçirdik ve düzenlenmesi gereken yerler hakkında notlar aldık
+UI Tasarımlarımızı *FIGMA* üzerinden gözden geçirdik ve düzenlenmesi gereken yerler hakkında notlar aldık.
 Görev dağılımları için aktif olarak *TRELLO* kullandık.
 
 #### PUAN TAMAMLAMA MANTIĞI
 
-3.sprint boyunca yapılması gerekn görev yükünü göz önünde bulundurarak 3. sprint özelinde 100 puan belirledik.
+3.sprint boyunca yapılması gereken görev yükünü göz önünde bulundurarak 3. sprint özelinde 100 puan belirledik.
 
 #### SPRINT PUAN DEĞERLENDİRMESİ
 
@@ -338,7 +342,7 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 
  #### SPRINT REVIEW 
 
- 3.Sprint proje süreci itibariyle ürünümüze son halini verdiğimiz, eksik kısımların üzerinde yoğunlaştığımız bir süreç oldu.Uygulamanın karbon ayakizi ,maps özellikleri,profİle page kısmı gibi önemli kısımlar tekrar tekrar tüm takımla birlikte toplantılarda gözden geçirildi ve son şekli verildi.UI tasaımlarındaki ufak değişikliklerin neler olduğu konuşuldu ve düzeltildi.Geliştirdiğimiz uygulamanın görsel kısmında iyileştirmeler yapıldı ve gerekli kontroller sağlandı.Bu sprintte Burak Güngör ,Buğrahan karamollaoğlu ve Beyza Nur Taşkesen ürünün kod kısmıyla Beyza Dişli araştırma kısmıyla ,Bircan Aladinli ise ürünün UI tasarımlarında yoğunlaştı.Ekip kendilerine verilen görevleri etkin bir şekilde yapmak için çaba ve gayret gösterdi.Bu şekilde 3.Sprinti de hedefimize ve belirlediğimiz puana ulaşarak başarılı bir şekilde  süreci tamamlamış olduk.
+ 3.Sprint proje süreci itibariyle ürünümüze son halini verdiğimiz, eksik kısımların üzerinde yoğunlaştığımız bir süreç oldu.Uygulamanın karbon ayakizi ,maps özellikleri,profİle page kısmı gibi önemli kısımlar tekrar tekrar tüm takımla birlikte toplantılarda gözden geçirildi ve son şekli verildi.UI tasaımlarındaki ufak değişikliklerin neler olduğu konuşuldu ve düzeltildi.Geliştirdiğimiz uygulamanın görsel kısmında iyileştirmeler yapıldı ve gerekli kontroller sağlandı.Bu sprintte Burak Güngör ,Buğrahan Karamollaoğlu ve Beyza Nur Taşkesen ürünün kod kısmıyla ,Beyza Dişli araştırma kısmıyla ,Bircan Aladinli ise ürünün UI tasarımlarında yoğunlaştı.Ekip kendilerine verilen görevleri etkin bir şekilde yapmak için çaba ve gayret gösterdi.Bu şekilde 3.Sprinti de hedefimize ve belirlediğimiz puana ulaşarak başarılı bir şekilde  süreci tamamlamış olduk.
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
 
@@ -347,8 +351,6 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
  Ürünün ana sayfa ve karbon ayakizi kısmıyla Burak Güngör ve Beyza Nur Taşkesen ilgilendi.
 
  Ürünün  Carbon Page kısmı,web sitesi yönlendirme, gelir gider mekanizması ile Buğrahan Karamollaoğlu ilgilendi.
-
- Karbon ayakizi kısmı ile ilgili araştırmalarla Beyza Dişli ilgilendi.
 
  Bircan Aladinli uygulamanın UI tasarımlarındaki değişiklikleri düzeltti.
 
