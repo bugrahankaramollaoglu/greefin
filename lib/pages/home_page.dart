@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
       case _SelectedTab.add:
         return const AddPurchase();
       case _SelectedTab.stats:
-        return const StatsPage();
+        return StatsPage();
       case _SelectedTab.profile:
         return ProfilePage();
     }
