@@ -28,34 +28,22 @@ greefin
  
  Greefin, finansal yönetimi ve sürdürülebilirliği bir araya getiren yenilikçi bir uygulamadır. Sürdürülebilir Kalkınma Amaçlarına hizmet eden Greefin, kullanıcılarına finansal işlemlerini daha bilinçli ve çevre dostu bir şekilde yönetme imkanı sunar. Uygulama, kullanıcıların harcamalarını manuel olarak kolayca ekleyebilmelerine olanak tanır. Ayrıca,  harcamaların alışveriş, enerji ve ulaşım gibi kategorilere göre dağılımını gösterir.Greefin, Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.My Records kısmında ise son hesapladığı karbon ayakizi verilerini  görebilir ve bunun takibini yapabilir.Bu sayede kullanıcı tüketimlerinin ne kadar karbon ayakizi oluşturduğunu somut verilerle elde edebilir ve bunun takibini kolayca yapabilir.Maps özelliği ile bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir.Bu sayede doğaya katkıda bulunan bilinçli zihinler perçinlenir. Ve de son olarak uygulama içi linklere tıklayarak doğaya katkıda bulunan projelere erişebilir.Özetle Greefin, finansal sağlığı ve çevresel bilinci birleştirerek kullanıcılarına kapsamlı bir sürdürülebilirlik deneyimi sunar.
 
-####  ÜRÜN ÖZELLİKLERİ 
+#### ÜRÜN ÖZELLİKLERİ 
 
--  Gelir - Gider Ekleme :
-	Kullanıcılar harcamalarını manuel olarak  ekleyebilirler.
+Gelir - Gider Ekleme: Kullanıcılar harcamalarını manuel olarak ekleyebilirler.
 
-- Aylık Harcama Raporları :
-•	Kullanıcılar, son tarihlerde hangi kategoride ne kadar harcama yaptıklarını görebilirler.
+Aylık Harcama Raporları: Kullanıcılar, son tarihlerde hangi kategoride ne kadar harcama yaptıklarını görebilirler.
 
--	Kategoriler
-	Alışveriş: Market alışverişleri ve diğer perakende harcamaları.
-	Enerji: Elektrik, su ve diğer enerji harcamaları.
-	Ulaşım: Toplu taşıma ve kişisel araç kullanımı. Her biri için ayrı sürdürülebilirlik hesapları yapılır.
+Kategoriler Bazında Sürdürülebilirlik Hesaplama Market alışverişleri ve diğer perakende harcamaları. Enerji: Elektrik, su ve diğer enerji harcamaları. Ulaşım: Toplu taşıma ve kişisel araç kullanımı. Her biri için ayrı sürdürülebilirlik hesapları yapılır.
 
-- Karbon Ayak İzinin Hesaplanması :
+Karbon Ayak İzinin Hesaplanması: Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.
 
-  Kullanıcılar tüketim bilgilerini ve miktarlarını sisteme girdiklerinde uygulama karbon ayakizini hesaplar ve bunu grafikle birlikte kullanıcıya sunar.
+Son Hesaplanan Karbon Ayak izi Verilerine Ulaşım: Kullanıcı en son yaptığı karbon ayakizi hesaplarının miktarını ve zamanını ekranda görüntüleyebilir ve bunun takibini yapabilir.
 
-  Son Hesaplanan Karbon Ayakizi Verilerine Ulaşım
+Maps: Bu özellikle birlikte bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir ve kullanıcıya daha çevre dostu ulaşıma teşvik edilir.
 
-  kullanıcı en son yaptığı karbon ayakizi hesaplarının miktarını ve zamanını ekranda görüntüleyebilir ve bunun takibini yapabilir.
+Sürdürülebirlik İpuçları : Kullanıcılara sürdürülebilir finans konusunda bilgilendirme yapar. Kullanıcının bu konularda daha bilinçli olması hedef alınır.
 
-- Maps Özelliği
-
-  Bu özellikle birlikte  bir yerden bir yere giderken hangi yolla daha az karbon salınımı yapacağının bilgisi verilir ve kullanıcıya daha çevre dostu ulaşıma teşvik edilir.
-
-
--  Motive Edici Push Bildirimleri :
-	Kullanıcılara,sürdürülebilir finans konusunda bilgilendirme  yapar.Kullanıcının bu konularda daha bilinçli olması esas alınır.
 
 
  #### NETNOGRAFİK HARİTA
@@ -116,7 +104,7 @@ Elif - Yeni Mezun ve Aktif Gönüllü:
  Uygulamamız, kullanıcıların günlük finansal işlemlerini sürdürülebilirlik perspektifinden yönetmelerini mümkün kılar. Bu uygulama, kullanıcıların manuel olarak girdiği harcama verilerini analiz ederek, her bir işlem için karbon ayak izini hesaplar ve bu bilgileri grafiksel bir biçimde sunar. Ayrıca, kullanıcılara belirledikleri bir konuma en çevre dostu ulaşım rotasını öneren bir harita özelliği sağlar. Bu özellik, kullanıcıların daha düşük karbon ayak izine sahip ulaşım seçeneklerini tercih etmelerine olanak tanır. Uygulama, sürdürülebilir finansal yönetim konusunda bilgilendirici mesajlar sunarak, kullanıcıların çevresel etkiyi azaltmalarına katkıda bulunur ve sürdürülebilirlik hedeflerine ulaşmalarını destekler.
 
 
-### PERSONA
+#### PERSONA
 
 
 Persona 1: Ayşe - Çevreye Duyarlı Öğretmen
@@ -575,7 +563,9 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 
  Ürünün  Carbon Page kısmı, web sitesi yönlendirme, gelir gider mekanizması ile Buğrahan Karamollaoğlu ilgilendi.
 
- Bircan Aladinli uygulamanın UI tasarımlarındaki değişiklikleri düzeltti.
+ Bircan Aladinli uygulamanın UI tasarımlarındaki değişiklikleri düzeltti,persona, netnografi ve kullanıcı haritası yaptı.
+
+Stats Page kısmını Beyza Dişli yaptı.
 
  
 
