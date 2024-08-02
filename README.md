@@ -63,6 +63,233 @@ greefin
  Uygulamamız, kullanıcıların günlük finansal işlemlerini sürdürülebilirlik perspektifinden yönetmelerini mümkün kılar. Bu uygulama, kullanıcıların manuel olarak girdiği harcama verilerini analiz ederek, her bir işlem için karbon ayak izini hesaplar ve bu bilgileri grafiksel bir biçimde sunar. Ayrıca, kullanıcılara belirledikleri bir konuma en çevre dostu ulaşım rotasını öneren bir harita özelliği sağlar. Bu özellik, kullanıcıların daha düşük karbon ayak izine sahip ulaşım seçeneklerini tercih etmelerine olanak tanır. Uygulama, sürdürülebilir finansal yönetim konusunda bilgilendirici mesajlar sunarak, kullanıcıların çevresel etkiyi azaltmalarına katkıda bulunur ve sürdürülebilirlik hedeflerine ulaşmalarını destekler.
 
 
+#### PERSONA
+
+
+Persona 1: Ayşe - Çevreye Duyarlı Öğretmen
+
+Yaş: 34  
+Meslek: İlkokul Öğretmeni  
+Konum: İstanbul, Türkiye  
+Gelir Düzeyi: Orta  
+Teknoloji Kullanımı: Orta düzeyde teknoloji bilgisi ve kullanımı  
+Greefin Kullanımı: Çevresel etkisini azaltma ve öğrencilerine örnek olma
+
+Hedefler:
+- Günlük harcamalarının çevresel etkilerini daha iyi anlamak
+- Öğrencilerine sürdürülebilirlik konusunda bilgi verebilmek
+- Aile bütçesini sürdürülebilir bir şekilde yönetmek
+
+Zorluklar:
+- Yoğun iş temposunda çevre dostu alternatifleri araştırmak için zaman bulamamak
+- Çevresel etkilerini hesaplamak için yeterli bilgiye sahip olmamak
+
+Greefin'den Beklentiler:
+- Harcamalarını manuel olarak girdiğinde karbon ayak izini hesaplayarak görselleştirmek
+- Green Page sayfasında ulaşım alternatiflerinin karbon ayak izini gösteren harita
+- Çevreye duyarlı tercihler yapmasını sağlayacak bilgilendirici mesajlar ve öneriler
+
+Persona 2: Mehmet - Genç Profesyonel
+
+Yaş: 28  
+Meslek: Yazılım Geliştirici  
+Konum: Ankara, Türkiye  
+Gelir Düzeyi: Yüksek  
+Teknoloji Kullanımı: Yüksek düzeyde teknoloji bilgisi ve kullanımı  
+Greefin Kullanımı: Kişisel sürdürülebilirlik hedeflerini takip etme ve optimize etme
+
+Hedefler:
+- Günlük yaşamında sürdürülebilirlik prensiplerini daha etkin bir şekilde uygulamak
+- Teknolojik çözümlerle karbon ayak izini en aza indirmek
+- Ulaşım ve harcama alışkanlıklarını çevre dostu hale getirmek
+
+Zorluklar:
+- Gelişmiş teknoloji bilgisine rağmen, çevresel verileri analiz ederken zaman yetersizliği
+- Çevre dostu ürün ve hizmetlerin maliyetlerinin yüksek olması
+- Sürdürülebilirlik konusundaki bilgi kirliliği ve doğru kaynakları bulmakta zorlanma
+
+Greefin'den Beklentiler:
+- Manuel olarak girilen harcamalar üzerinden karbon ayak izi hesaplaması ve grafiksel gösterim
+- Ulaşım seçeneklerinin karbon ayak izini gösteren harita ve öneriler
+- Sürdürülebilir finans konusunda bilgilendirici mesajlar ve günlük ipuçları
+
+Persona 3: Elif - Yeni Mezun ve Aktif Gönüllü
+
+Yaş 23  
+Meslek:Pazarlama Uzmanı  
+Konum: İzmir, Türkiye  
+Gelir Düzeyi: Orta  
+Teknoloji Kullanımı: Yüksek düzeyde teknoloji bilgisi ve kullanımı  
+Greefin Kullanımı: Sosyal sorumluluk projelerine katılım ve çevresel farkındalık artırma
+
+Hedefler:
+- Gönüllü olarak katıldığı çevre projelerine katkıda bulunmak
+- Günlük harcamalarının çevresel etkilerini ölçmek ve azaltmak
+- Ulaşım tercihlerini çevre dostu hale getirmek
+
+Zorluklar:
+- Harcamalarının çevresel etkilerini anlamak ve takip etmek için yeterli bilgiye sahip olmamak
+- Farklı ulaşım seçeneklerinin çevresel etkilerini değerlendirmek için fazla zaman harcamak
+
+Greefin'den Beklentiler:
+- Manuel olarak girilen harcamalar üzerinden karbon ayak izi hesaplaması ve grafiksel gösterim
+- Ulaşım seçeneklerinin karbon ayak izini gösteren harita ve öneriler
+- Çevreye duyarlı tercihler yapmasını sağlayacak bilgilendirici mesajlar ve öneriler
+
+
+Kullanıcı Haritası
+
+1. Ayşe - Çevreye Duyarlı Öğretmen
+
+Kullanıcı Hedefleri:
+- Günlük harcamalarının çevresel etkilerini anlamak
+- Öğrencilerine sürdürülebilirlik konusunda bilgi vermek
+- Çevre dostu ulaşım seçeneklerini tercih etmek
+
+Kullanıcı Yolculuğu:
+
+1. Farkındalık:
+   - Ayşe, çevresel etkilerini ölçmek için bir uygulama arayışına girer.
+   - Çevre dostu öğretmen arkadaşları tarafından Greefin önerilir.
+
+2. Değerlendirme:
+   - Greefin'in özelliklerini araştırır ve uygulamanın kullanıcı yorumlarını okur.
+   - Ücretsiz deneme sürümünü indirir ve kullanmaya başlar.
+
+3. Kullanım:
+   - Günlük harcamalarını manuel olarak uygulamaya girer.
+   - Green Page üzerinden evden okula farklı ulaşım seçeneklerinin karbon ayak izini hesaplar.
+
+4. Destek:
+   - Uygulama içindeki finansal ve çevresel danışmanlık özelliklerinden yararlanır.
+   - Uygulamanın sunduğu sürdürülebilirlik ipuçlarını kullanarak çevre dostu alışkanlıklar geliştirir.
+
+5. Sadakat:
+   - Greefin'i düzenli olarak kullanır ve öğrencilerine de tavsiye eder.
+   - Sosyal medyada Greefin hakkında olumlu paylaşımlarda bulunur.
+
+2. Mehmet - Genç Profesyonel
+
+Kullanıcı Hedefleri:
+- Sürdürülebilir yaşam tarzını optimize etmek
+- Teknolojik çözümlerle karbon ayak izini azaltmak
+- Çevre dostu ulaşım ve harcama alışkanlıkları geliştirmek
+
+Kullanıcı Yolculuğu:
+
+1. Farkındalık:
+   - Mehmet, sürdürülebilir yaşam tarzına uygun uygulamalar araştırır.
+   - Teknoloji bloglarından ve sosyal medyadan Greefin hakkında bilgi alır.
+
+2. Değerlendirme:
+   - Greefin'in sunduğu özellikleri inceler ve kullanıcı yorumlarını okur.
+   - Uygulamanın premium sürümünü satın alarak kullanmaya başlar.
+
+3. Kullanım:
+   - Günlük harcamalarını manuel olarak uygulamaya girer.
+   - Green Page üzerinden iş yerine farklı ulaşım seçeneklerinin karbon ayak izini hesaplar.
+
+4. Destek: 
+   - Uygulamanın sunduğu finansal ve çevresel danışmanlık hizmetlerinden yararlanır.
+   - Çevre dostu yatırım önerilerini değerlendirir ve uygular.
+
+5. Sadakat:
+   - Greefin'i günlük yaşamının bir parçası haline getirir ve çevresine de tavsiye eder.
+   - Uygulamanın yeni özellikleri ve güncellemeleri hakkında geri bildirimde bulunur.
+
+3. Elif - Yeni Mezun ve Aktif Gönüllü
+
+Kullanıcı Hedefleri:
+- Çevresel farkındalık artırmak ve gönüllü projelere katılmak
+- Günlük harcamalarının çevresel etkilerini ölçmek
+- Çevre dostu ulaşım tercihleri yapmak
+
+Kullanıcı Yolculuğu:
+
+1. Farkındalık:
+   - Elif, gönüllü projelerde çevresel etkilerini azaltmak için bir araç arar.
+   - Çevre dostu yaşam tarzı gruplarından ve arkadaşlarından Greefin önerisi alır.
+
+2. Değerlendirme:
+   - Greefin'in özelliklerini araştırır ve ücretsiz deneme sürümünü indirir.
+   - Kullanıcı yorumlarını ve uygulamanın işlevselliğini değerlendirir.
+
+3. Kullanım:
+   - Günlük harcamalarını manuel olarak uygulamaya girer.
+   - Green Page üzerinden gönüllü etkinliklerine ulaşım seçeneklerinin karbon ayak izini hesaplar.
+
+4. Destek:
+   - Uygulamanın sunduğu bilgilendirici mesajlar ve sürdürülebilirlik ipuçlarından yararlanır.
+   - Karbon ayak izini azaltmak için uygulamanın önerilerini uygular.
+
+5. Sadakat:
+   - Greefin'i düzenli olarak kullanır ve çevresindeki gönüllü gruplarına da önerir.
+   - Uygulamanın etkinliklerinde aktif rol alır ve geri bildirimlerde bulunur.
+
+
+ #### Netnografik Harita
+
+Ayşe - Çevreye Duyarlı Öğretmen:
+
+1. Çevrimiçi Topluluklar:
+   - Eğitim forumları ve öğretmen grupları
+   - Çevre dostu yaşam tarzı blogları ve sosyal medya sayfaları
+
+2. Anahtar Etkinlikler:
+   - Öğretmenler arası bilgi paylaşımı
+   - Çevre konulu eğitim materyalleri arayışı
+   - Öğrenciler için sürdürülebilirlik projeleri oluşturma
+
+3. Davranışlar:
+   - Eğitim materyalleri ve araçlarını çevre dostu hale getirme çabaları
+   - Çevre dostu ürünler ve hizmetler hakkında araştırma yapma
+   - Öğrencilere örnek olma ve çevre bilincini artırma
+
+Mehmet - Genç Profesyonel:
+
+1. Çevrimiçi Topluluklar:
+   - Teknoloji ve sürdürülebilirlik forumları
+   - Finans ve yatırım grupları
+   - Yeşil teknoloji blogları ve sosyal medya sayfaları
+
+2. Anahtar Etkinlikler:
+   - Sürdürülebilir yaşam tarzı teknolojilerini araştırma
+   - Çevre dostu finansal ürünler ve hizmetler hakkında bilgi edinme
+   - Teknolojik çözümlerle yaşamını optimize etme
+
+3. Davranışlar:
+   - Sürdürülebilir yaşam tarzına uygun teknolojiler kullanma
+   - Çevre dostu yatırım fırsatlarını değerlendirme
+   - Ulaşım ve harcama alışkanlıklarını çevre dostu hale getirme
+
+Elif - Yeni Mezun ve Aktif Gönüllü:
+
+1. Çevrimiçi Topluluklar:
+   - Gönüllü çalışma ve çevre grupları
+   - Sosyal sorumluluk projeleri forumları
+   - Sürdürülebilir yaşam tarzı blogları ve sosyal medya sayfaları
+
+2. Anahtar Etkinlikler:
+   - Gönüllü projelere katılım ve organize etme
+   - Çevresel farkındalık artırma kampanyaları düzenleme
+   - Günlük yaşamında sürdürülebilir alışkanlıklar geliştirme
+
+3. Davranışlar:
+   - Gönüllü projelerde aktif rol alma
+   - Çevresel etkilerini azaltmak için bilgi ve kaynak arayışı
+   - Toplumda çevre bilincini artırma çalışmaları
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### HEDEF KİTLE
 
