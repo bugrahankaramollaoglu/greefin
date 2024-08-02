@@ -58,12 +58,65 @@ greefin
 	Kullanıcılara,sürdürülebilir finans konusunda bilgilendirme  yapar.Kullanıcının bu konularda daha bilinçli olması esas alınır.
 
 
+ #### NETNOGRAFİK HARİTA
+
+Ayşe - Çevreye Duyarlı Öğretmen:
+
+1. Çevrimiçi Topluluklar:
+   - Eğitim forumları ve öğretmen grupları
+   - Çevre dostu yaşam tarzı blogları ve sosyal medya sayfaları
+
+2. Anahtar Etkinlikler:
+   - Öğretmenler arası bilgi paylaşımı
+   - Çevre konulu eğitim materyalleri arayışı
+   - Öğrenciler için sürdürülebilirlik projeleri oluşturma
+
+3. Davranışlar:
+   - Eğitim materyalleri ve araçlarını çevre dostu hale getirme çabaları
+   - Çevre dostu ürünler ve hizmetler hakkında araştırma yapma
+   - Öğrencilere örnek olma ve çevre bilincini artırma
+
+Mehmet - Genç Profesyonel:
+
+1. Çevrimiçi Topluluklar:
+   - Teknoloji ve sürdürülebilirlik forumları
+   - Finans ve yatırım grupları
+   - Yeşil teknoloji blogları ve sosyal medya sayfaları
+
+2. Anahtar Etkinlikler:
+   - Sürdürülebilir yaşam tarzı teknolojilerini araştırma
+   - Çevre dostu finansal ürünler ve hizmetler hakkında bilgi edinme
+   - Teknolojik çözümlerle yaşamını optimize etme
+
+3. Davranışlar:
+   - Sürdürülebilir yaşam tarzına uygun teknolojiler kullanma
+   - Çevre dostu yatırım fırsatlarını değerlendirme
+   - Ulaşım ve harcama alışkanlıklarını çevre dostu hale getirme
+
+Elif - Yeni Mezun ve Aktif Gönüllü:
+
+1. Çevrimiçi Topluluklar:
+   - Gönüllü çalışma ve çevre grupları
+   - Sosyal sorumluluk projeleri forumları
+   - Sürdürülebilir yaşam tarzı blogları ve sosyal medya sayfaları
+
+2. Anahtar Etkinlikler:
+   - Gönüllü projelere katılım ve organize etme
+   - Çevresel farkındalık artırma kampanyaları düzenleme
+   - Günlük yaşamında sürdürülebilir alışkanlıklar geliştirme
+
+3. Davranışlar:
+   - Gönüllü projelerde aktif rol alma
+   - Çevresel etkilerini azaltmak için bilgi ve kaynak arayışı
+   - Toplumda çevre bilincini artırma çalışmaları
+
+
 #### ÜRÜNÜN VİZYONU 
 
  Uygulamamız, kullanıcıların günlük finansal işlemlerini sürdürülebilirlik perspektifinden yönetmelerini mümkün kılar. Bu uygulama, kullanıcıların manuel olarak girdiği harcama verilerini analiz ederek, her bir işlem için karbon ayak izini hesaplar ve bu bilgileri grafiksel bir biçimde sunar. Ayrıca, kullanıcılara belirledikleri bir konuma en çevre dostu ulaşım rotasını öneren bir harita özelliği sağlar. Bu özellik, kullanıcıların daha düşük karbon ayak izine sahip ulaşım seçeneklerini tercih etmelerine olanak tanır. Uygulama, sürdürülebilir finansal yönetim konusunda bilgilendirici mesajlar sunarak, kullanıcıların çevresel etkiyi azaltmalarına katkıda bulunur ve sürdürülebilirlik hedeflerine ulaşmalarını destekler.
 
 
-#### PERSONA
+### PERSONA
 
 
 Persona 1: Ayşe - Çevreye Duyarlı Öğretmen
@@ -137,7 +190,23 @@ Greefin'den Beklentiler:
 - Çevreye duyarlı tercihler yapmasını sağlayacak bilgilendirici mesajlar ve öneriler
 
 
-  #### Kullanıcı Haritası
+
+
+
+
+
+#### HEDEF KİTLE
+
+- Çevre Bilincine Sahip Bireyler :
+	 Karbon ayak izlerini azaltmak ve sürdürülebilir bir yaşam tarzı benimsemek isteyenler.
+
+-  Finansal Bilinç Sahipleri :
+	Harcamalarını ve bütçelerini etkin bir şekilde yönetmek isteyen bireyler.
+
+
+
+
+  ### Kullanıcı Haritası
 
 1. Ayşe - Çevreye Duyarlı Öğretmen
 
@@ -225,79 +294,6 @@ Kullanıcı Yolculuğu:
 5. Sadakat:
    - Greefin'i düzenli olarak kullanır ve çevresindeki gönüllü gruplarına da önerir.
    - Uygulamanın etkinliklerinde aktif rol alır ve geri bildirimlerde bulunur.
-
-
- #### NETNOGRAFİK HARİTA
-
-Ayşe - Çevreye Duyarlı Öğretmen:
-
-1. Çevrimiçi Topluluklar:
-   - Eğitim forumları ve öğretmen grupları
-   - Çevre dostu yaşam tarzı blogları ve sosyal medya sayfaları
-
-2. Anahtar Etkinlikler:
-   - Öğretmenler arası bilgi paylaşımı
-   - Çevre konulu eğitim materyalleri arayışı
-   - Öğrenciler için sürdürülebilirlik projeleri oluşturma
-
-3. Davranışlar:
-   - Eğitim materyalleri ve araçlarını çevre dostu hale getirme çabaları
-   - Çevre dostu ürünler ve hizmetler hakkında araştırma yapma
-   - Öğrencilere örnek olma ve çevre bilincini artırma
-
-Mehmet - Genç Profesyonel:
-
-1. Çevrimiçi Topluluklar:
-   - Teknoloji ve sürdürülebilirlik forumları
-   - Finans ve yatırım grupları
-   - Yeşil teknoloji blogları ve sosyal medya sayfaları
-
-2. Anahtar Etkinlikler:
-   - Sürdürülebilir yaşam tarzı teknolojilerini araştırma
-   - Çevre dostu finansal ürünler ve hizmetler hakkında bilgi edinme
-   - Teknolojik çözümlerle yaşamını optimize etme
-
-3. Davranışlar:
-   - Sürdürülebilir yaşam tarzına uygun teknolojiler kullanma
-   - Çevre dostu yatırım fırsatlarını değerlendirme
-   - Ulaşım ve harcama alışkanlıklarını çevre dostu hale getirme
-
-Elif - Yeni Mezun ve Aktif Gönüllü:
-
-1. Çevrimiçi Topluluklar:
-   - Gönüllü çalışma ve çevre grupları
-   - Sosyal sorumluluk projeleri forumları
-   - Sürdürülebilir yaşam tarzı blogları ve sosyal medya sayfaları
-
-2. Anahtar Etkinlikler:
-   - Gönüllü projelere katılım ve organize etme
-   - Çevresel farkındalık artırma kampanyaları düzenleme
-   - Günlük yaşamında sürdürülebilir alışkanlıklar geliştirme
-
-3. Davranışlar:
-   - Gönüllü projelerde aktif rol alma
-   - Çevresel etkilerini azaltmak için bilgi ve kaynak arayışı
-   - Toplumda çevre bilincini artırma çalışmaları
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### HEDEF KİTLE
-
-- Çevre Bilincine Sahip Bireyler :
-	 Karbon ayak izlerini azaltmak ve sürdürülebilir bir yaşam tarzı benimsemek isteyenler.
-
--  Finansal Bilinç Sahipleri :
-	Harcamalarını ve bütçelerini etkin bir şekilde yönetmek isteyen bireyler.
 
 ---
 
