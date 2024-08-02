@@ -484,13 +484,13 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
  
 #### SPRİNT REVIEW 
 
-2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan'ın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra'nın kod kısmında gelir gider mekanizması konusunda kodlamalar yazmasına karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
+2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan'ın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra'nın kod kısmında gelir gider mekanizması konusunu halletmesine karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
 #### SPRINT RETROSPECTIVE
 
-Bİrcan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verildi.
+Bircan'ın sağlık sorunlarından ve teknik eksikliklerinden dolayı UI kısmında görevlerine devam etmesine karar verildi.
 Uygulamanın Forget Password kısmı Burak Güngör tarafından yapıldı.
 Geliştirmekte olduğumuz uygulamanın android testini Beyza Dişli'ye verildi ve kod kısmında devreye girebileceğini ve buna ek önlemler alması gerektiği söylendi.
 Uygulamanın manuel gelir gider ekleme işlemleri, ana sayfa mekanizması ve underplanting kısımları  Buğra 'ya verildi.
@@ -506,7 +506,7 @@ Kod kısmında henüz istediğimiz ritmi yakalayamasakta elimizden geleni yapma 
 
 3.Sprint boyunca toplantılarımızı *ZOOM* üzerinden düzenli aralıklarla gerçekleştirdik.
 İletişimimize olabildiğince aktif bir şekilde *WHATSAAP* üzerinden devam ettik.
-UI Tasarımlarımızı *FIGMA* üzerinden gözden geçirdik ve düzenlenmesi gereken yerler hakkında notlar aldık.
+UI tasarımlarımızı *FIGMA* üzerinden gözden geçirdik ve düzenlenmesi gereken yerler hakkında notlar aldık.
 Görev dağılımları için aktif olarak *TRELLO* kullandık.
 
 #### PUAN TAMAMLAMA MANTIĞI
@@ -519,7 +519,7 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 
 #### DAILY SCRUM
 
- 3.Sprint proje süreci itibarıyla projenin son kısımları dahilinde ilerlenilen ve eksik kısımlara yoğunlaşılan bir süreç oldu.Bu süreç boyunca 3 toplantı gerçekleştirildi ve her toplantıda görev dağılımlarını projenin en verimli ve temposunu düşürmeden aktif bir şekilde ilerlemesi için etkin bir şekilde belirlendi.Takımda belirlenen görevler çerçevesinde takım arkadaşlarının birbiriyle yardımlaşması ve iletişimde kalmasının  önemi vurgulandı.Projenin 3. sprint itibarıyla , ,geçen iki sprintte  sağlam bir zemine oturtulan  projeyi son aşamaya kadar  ekip olarak başarılı bir şekilde getirdik.
+ 3.Sprint proje süreci itibarıyla projenin son kısımları dahilinde ilerlenilen ve eksik kısımlara yoğunlaşılan bir süreç oldu.Bu süreç boyunca 3 toplantı gerçekleştirildi ve her toplantıda görev dağılımları, projenin en verimli ve temposunu düşürmeden aktif bir şekilde ilerlemesi için etkin bir şekilde belirlendi.Takımda belirlenen görevler çerçevesinde takım arkadaşlarının birbiriyle yardımlaşması ve iletişimde kalmasının  önemi vurgulandı.Projenin 3. sprint itibarıyla , ,geçen iki sprintte  sağlam bir zemine oturtulan  projeyi son aşamaya kadar  ekip olarak başarılı bir şekilde getirdik.
 
 
  <details>
@@ -569,15 +569,15 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 
  #### SPRINT REVIEW 
 
- 3.Sprint proje süreci itibariyle ürünümüze son halini verdiğimiz, eksik kısımların üzerinde yoğunlaştığımız bir süreç oldu.Uygulamanın karbon ayakizi ,maps özellikleri,profİle page kısmı gibi önemli kısımlar tekrar tekrar tüm takımla birlikte toplantılarda gözden geçirildi ve son şekli verildi.UI tasaımlarındaki ufak değişikliklerin neler olduğu konuşuldu ve düzeltildi.Geliştirdiğimiz uygulamanın görsel kısmında iyileştirmeler yapıldı ve gerekli kontroller sağlandı.Bu sprintte Burak Güngör ,Buğrahan Karamollaoğlu ve Beyza Nur Taşkesen ürünün kod kısmıyla ,Beyza Dişli araştırma kısmıyla ,Bircan Aladinli ise ürünün UI tasarımlarında yoğunlaştı.Ekip kendilerine verilen görevleri etkin bir şekilde yapmak için çaba ve gayret gösterdi.Bu şekilde 3.Sprinti de hedefimize ve belirlediğimiz puana ulaşarak başarılı bir şekilde  süreci tamamlamış olduk.
+ 3.Sprint proje süreci itibariyle ürünümüze son halini verdiğimiz, eksik kısımların üzerinde yoğunlaştığımız bir süreç oldu.Uygulamanın karbon ayak izi ,maps özellikleri,profile page kısmı gibi önemli kısımlar tekrar tekrar tüm takımla birlikte toplantılarda gözden geçirildi ve son şekli verildi.UI tasaımlarındaki ufak değişikliklerin neler olduğu konuşuldu ve düzeltildi.Geliştirdiğimiz uygulamanın görsel kısmında iyileştirmeler yapıldı ve gerekli kontroller sağlandı.Bu sprintte Burak Güngör ,Buğrahan Karamollaoğlu ve Beyza Nur Taşkesen ürünün kod kısmıyla ,Beyza Dişli araştırma kısmıyla ,Bircan Aladinli ise ürünün UI tasarımlarında yoğunlaştı.Ekip kendilerine verilen görevleri etkin bir şekilde yapmak için çaba ve gayret gösterdi.Bu şekilde 3.Sprinti de hedefimize ve belirlediğimiz puana ulaşarak başarılı bir şekilde  süreci tamamlamış olduk.
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
 
  #### SPRINT RETROSPECTIVE 
 
- Ürünün ana sayfa ve karbon ayakizi kısmıyla Burak Güngör ve Beyza Nur Taşkesen ilgilendi.
+ Ürünün ana sayfa ve karbon ayak izi kısmıyla Burak Güngör ve Beyza Nur Taşkesen ilgilendi.
 
- Ürünün  Carbon Page kısmı,web sitesi yönlendirme, gelir gider mekanizması ile Buğrahan Karamollaoğlu ilgilendi.
+ Ürünün  Carbon Page kısmı, web sitesi yönlendirme, gelir gider mekanizması ile Buğrahan Karamollaoğlu ilgilendi.
 
  Bircan Aladinli uygulamanın UI tasarımlarındaki değişiklikleri düzeltti.
 
