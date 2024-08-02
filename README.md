@@ -378,20 +378,20 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
 --------
 
- #### SPRİNT BOARD SCREENSHOOT 
+ #### SPRINT BOARD SCREENSHOOT 
  
 <img src="https://github.com/user-attachments/assets/524fcfde-a56e-4bca-80ec-165943359b16"  width="900" height="600">
 
 
 
 
- #### SPRİNT REVİEW 
+ #### SPRINT REVIEW 
 
  Sprint 1 öncesinde tüm takım üyelerinin üzerinde ortak karara varması sonucu belirlediğimiz ürün fikrimiz üzerinde çalışmaya başladık.Ürünün ismi konusunda Bircan Aladinli ,Beyza Nur Taşkesen ve Buğrahan Karamaollaoğlu 'nun araştırmaları ve fikirleri dikkate alınarak uygulamamızın ismine takım olarak karar verdik.İsim belirlendikten sonra uygulamamızın logosu Bircan Aladinli tarafından tasarlandı.Bu süreçte Burak Güngör uygulamanın UI tasarımları ile ilgilendi.1. sprint süreci doğrultusundaki ilk toplantımızda UI tasarımları incelendi ve onboarding kısımları üzerinde konuşuldu.UI tasarımları üzerinde yapılan konuşmalarımız sonucu tasarımın beklentilerimizi karşılamadığı ve görsel açıdan daha şık tasarlayabileceğimiz konusunda karara vardık.Bunun sonucunda Bircan Aladinli UI tasarımlarını yaptı.Ürünün teknik kod kısmıyla ilgili kullanıcı girişi,firebase ,onboarding, gibi kısımları ile  Buğrahan Karamollaoğlu ilgilendi.Beyza Dişli araştırma kısmında yardımcı olmaya çalıştı  sınav haftası olması sebebiyle ilk sprinte aktif katılım sağlayamadı.Takım ve asistan arası iletişim ,sprint raporları hazırlanması ve toplantı raporlarının hazırlanması ile Beyza Nur Taşkesen ilgilendi.Ulaşamadığımız arkadaşlar arasında iletişimi önemli ölçüde aktif kılmaya çalışıp, projenin gidişatını sekteye uğratmadan ilk sprintte geliştireceğimiz ürüne genel bir çerçeve çizmiş ve teknik zemine yer hazırlamış olduk.İlk sprinti takım olarak başarılı bir şekilde yönettik.
 
  Sprint Review katılımcıları: Beyza Nur Taşkesen,Bircan Aladinli ,Buğrahan Karamollaoğlu,Burak Güngör,Beyza Dişli
 
- #### SPRİNT RETROSPECTIVE
+ #### SPRINT RETROSPECTIVE
  Product Owner rolünü Beyza Dişli'nin yapmasına karar vermiştik ama sınav haftasından dolayı aktif katılım sağlayamayacağını belirtmesi sonucu bu görevi Bircan Aladinli'ye verdik.
  UI Tasarımlarının yeniden tasarlanmasına karar verildi.
  Bir sonraki toplantı tarihi  09.07.2024 saat 23.30 olarak belirlendi
@@ -400,9 +400,9 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
  ---
 
-# SPRİNT 2
+# SPRINT 2
 
- #### SPRİNT NOTLARI 
+ #### SPRINT NOTLARI 
 
  Ürünü ortaya çıkarırken iletişim oldukça aktif tutmaya özen gösterdik.Bu yüzden *WHATSAPP* üzerinden iletişime devam ettik.
 
@@ -410,7 +410,7 @@ Projeye başladığımız günden itibaren iletişim koordineli ve aktif bir şe
 
 Toplantı notları takımla her toplantının sonunda WORD belgesi olarak paylaşıldı.
 
-#### SPRİNT PUANI DEĞERLENDİRMESİ 
+#### SPRINT PUANI DEĞERLENDİRMESİ 
 
 2.sprintte tamamlanması gereken puan 100 olarak belirlenmiştir.
 
@@ -466,7 +466,7 @@ Sprint boyunca 2 kez toplantı gerçekleştdik ve toplantı boyunca hangi noktal
 <img src="https://github.com/user-attachments/assets/a7ac9fa2-5261-4e73-bcaf-4fbdebc3961c"  width="900" height="600">
 
  
-#### SPRİNT REVIEW 
+#### SPRINT REVIEW 
 
 2. Sprint boyunca iki kez toplantı gerçekleştirdik.İlk toplantıdan  itibaren kod kısmında takım olarak daha fazla yoğunlaşmamız gerektiğini ve takımdaki diğer üyelerinde ileriki sprintte  developer görevini üstlenebileceği riskinin üzerinde konuştuk ve her ihtimale karşı üyelerin bireysel çalışma yapmasına  ve kod kısmına daha fazla hakim olmasına karar verdik.Uygulama için tasarlanan UI tasarımlarını koda dökerken çıkabilecek pürüzlerden bahsettik ve buna ek önlemler almaya gayret ettik.Bu karara itafen kod kısmında Beyza Dişli ve Burak Güngör'ün kod kısmında destek olmasına karar verdik.Bircan'ın teknik ve sağlık nedenlerinden dolayı UI tasarımlarının iyileştirilmesi görevine devam etmesine ,Beyza Nur'un uygulamanın anasayfa kodunun yazılması  ve 2. sprint raporunun yazılmasına ve Buğra'nın kod kısmında gelir gider mekanizması konusunu halletmesine karar verdik.2.sprint uygulamanın teknik kısımlarına daha ağırlık verdiğimiz bir sprint oldu.Bunu da elimizden geldiği kadar yönetmeye çalıştık.
 
@@ -522,7 +522,7 @@ Yapılması gereken bütün görevler yerine getirilmiş ve sprint sonu belirlen
 <details>
 
 	
-  <summary> 3.SPRİNT ÜRÜN EKRAN GÖRÜNTÜLERİ </summary> 
+  <summary> 3.SPRINT ÜRÜN EKRAN GÖRÜNTÜLERİ </summary> 
 
 
 <img src="https://github.com/user-attachments/assets/809e7137-f939-4362-a545-2b367a3a4ecc" alt="Ana Sayfa" width="300"/>
