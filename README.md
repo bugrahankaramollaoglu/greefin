@@ -45,9 +45,7 @@ Maps: Bu özellikle birlikte bir yerden bir yere giderken hangi yolla daha az ka
 
 Sürdürülebirlik İpuçları : Kullanıcılara sürdürülebilir finans konusunda bilgilendirme yapar. Kullanıcının bu konularda daha bilinçli olması hedef alınır.
 
-
-
- #### NETNOGRAFİK HARİTA
+#### NETNOGRAFİK HARİTA
 
 Ayşe - Çevreye Duyarlı Öğretmen:
 
@@ -99,14 +97,11 @@ Elif - Yeni Mezun ve Aktif Gönüllü:
    - Çevresel etkilerini azaltmak için bilgi ve kaynak arayışı
    - Toplumda çevre bilincini artırma çalışmaları
 
-
 #### ÜRÜNÜN VİZYONU 
 
  Uygulamamız, kullanıcıların günlük finansal işlemlerini sürdürülebilirlik perspektifinden yönetmelerini mümkün kılar. Bu uygulama, kullanıcıların manuel olarak girdiği harcama verilerini analiz ederek, her bir işlem için karbon ayak izini hesaplar ve bu bilgileri grafiksel bir biçimde sunar. Ayrıca, kullanıcılara belirledikleri bir konuma en çevre dostu ulaşım rotasını öneren bir harita özelliği sağlar. Bu özellik, kullanıcıların daha düşük karbon ayak izine sahip ulaşım seçeneklerini tercih etmelerine olanak tanır. Uygulama, sürdürülebilir finansal yönetim konusunda bilgilendirici mesajlar sunarak, kullanıcıların çevresel etkiyi azaltmalarına katkıda bulunur ve sürdürülebilirlik hedeflerine ulaşmalarını destekler.
 
-
 #### PERSONA
-
 
 Persona 1: Ayşe - Çevreye Duyarlı Öğretmen
 
