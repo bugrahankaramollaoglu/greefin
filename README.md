@@ -1,4 +1,4 @@
- <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/08aef891-c713-4dd3-849c-1691051045f9)"  width="600" height="480">
+ <img src="https://github.com/bugrahankaramollaoglu/GreeFin/assets/160841695/08aef891-c713-4dd3-849c-1691051045f9"  width="600" height="480">
 
 ### TAKIM VE ÜRÜN HAKKINDA BİLGİLER
 
